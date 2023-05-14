@@ -1,0 +1,8 @@
+#requirements
+numpy
+django
+djangorestframework
+gunicorn
+sklearn
+icecream
+scikit-learn
