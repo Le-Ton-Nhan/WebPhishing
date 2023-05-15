@@ -1,0 +1,1354 @@
+
+<!DOCTYPE html>
+
+<html>
+<!--[if IE 6]> <html class="ie6"> <![endif]-->
+<!--[if IE 7]> <html class="ie7"> <![endif]-->
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<head>
+<!-- Google Tag Manager -->
+<script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-PV2DVS');
+        </script>
+<!-- End Google Tag Manager -->
+<script src="/Scripts/mobile.min.js" type="text/javascript"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="AnandTech" name="application-name"/>
+<meta content="QejUZTJaqCr781DA0W_JNGjf4wS2xyffL3ohvIuRESc" name="google-site-verification"/>
+<meta content="https://www.facebook.com/AnandTech" property="article:publisher"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/content/images/podcast_a_huge.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="/rss/" rel="alternate" title="RSS Feed for AnandTech.com" type="application/rss+xml"/>
+<title>AnandTech: Hardware News and Tech Reviews Since 1997</title>
+<link href="/Content/atfonts.css" rel="stylesheet" type="text/css"/>
+<!--[if IE]><style type="text/css">.pie {behavior:url(/Content/PIE.htc);}</style><![endif]-->
+<link href="/Content/css?v=813oG_8nNyCZXz7kVAe5eS_3v4I3z_2YsaGf_j29ZEg1" rel="stylesheet">
+<link href="/Content/resp?v=bLpsGHlbt2J0jFe7q4kOjMR6XTWKxEGuyW8fHKDd5HM1" rel="stylesheet"/>
+<!--[if lt IE 9]>
+        <link type="text/css" href="/content/ie8.css" rel="stylesheet" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2pre/html5shiv.js"></script>
+    <![endif]-->
+<script src="/bundles/jquery?v=guGiAVIp0f1T2TxJO-1NYkUT4F2gOxZwD3D5fOxH8tI1"></script>
+<script src="/bundles/javascript?v=3zoMUnHQHQfKEAEU_MI-Vwh0i7NhmCdIOW4S7phdnJo1"></script>
+<script src="/Scripts/dynamic.js" type="text/javascript"></script>
+<script>
+            // Quantcast hostname logic to give us increased control over which config is selected
+            var hostname = function () { var a = window.location.hostname, o = a.match(/.*\.(.*)\.(com|co\.uk|org)/); if (o && 3 === o.length && (a = "www." + o[1] + "." + o[2]), window.URLSearchParams) { var n = new URLSearchParams(window.location.search); n.has("qc-forced-domain") && (a = n.get("qc-forced-domain")) } return a }();
+
+            /*! begin QC CHOICE TAG v2.0 (for TCF 2.0) */
+            try { !function () { var e = hostname, t = document.createElement("script"), a = document.getElementsByTagName("script")[0], n = "https://quantcast.mgr.consensu.org".concat("/choice/", "uer8ZPXHG8WDU", "/", e, "/choice.js"), i = 0; t.async = !0, t.type = "text/javascript", t.src = n, a.parentNode.insertBefore(t, a), function () { for (var e, t = "__tcfapiLocator", a = [], n = window; n;) { try { if (n.frames[t]) { e = n; break } } catch (e) { } if (n === window.top) break; n = n.parent } e || (function e() { var a = n.document, i = !!n.frames[t]; if (!i) if (a.body) { var o = a.createElement("iframe"); o.style.cssText = "display:none", o.name = t, a.body.appendChild(o) } else setTimeout(e, 5); return !i }(), n.__tcfapi = function () { var e, t = arguments; if (!t.length) return a; if ("setGdprApplies" === t[0]) t.length > 3 && 2 === t[2] && "boolean" == typeof t[3] && (e = t[3], "function" == typeof t[2] && t[2]("set", !0)); else if ("ping" === t[0]) { var n = { gdprApplies: e, cmpLoaded: !1, cmpStatus: "stub" }; "function" == typeof t[2] && t[2](n) } else a.push(t) }, n.addEventListener("message", function (e) { var t = "string" == typeof e.data, a = {}; try { a = t ? JSON.parse(e.data) : e.data } catch (e) { } var n = a.__tcfapiCall; n && window.__tcfapi(n.command, n.version, function (a, i) { var o = { __tcfapiReturn: { returnValue: a, success: i, callId: n.callId } }; t && (o = JSON.stringify(o)), e.source.postMessage(o, "*") }, n.parameter) }, !1)) }(); var o = function () { var e = arguments; typeof window.__uspapi !== o && setTimeout(function () { void 0 !== window.__uspapi && window.__uspapi.apply(window.__uspapi, e) }, 500) }; if (void 0 === window.__uspapi) { window.__uspapi = o; var s = setInterval(function () { i++, window.__uspapi === o && i < 3 ? console.warn("USP is not accessible") : clearInterval(s) }, 6e3) } }(); } catch (err) { console.warn(err) }
+            /*! end QC CHOICE TAG v2.0 (for TCF 2.0) */
+
+            // CCPA helper promise to determine if the user is in a CCPA jurisdiction
+            window.ccpaAppliesPromise = new Promise(function (i) { if ("function" == typeof window.__tcfapi) try { window.__tcfapi("getTCData", 2, function () { "function" == typeof window.__uspapi && window.__uspapi("uspPing", 1, function (n, o) { var t = o && n.mode.includes("USP") && n.jurisdiction && n.jurisdiction.length > 0 && n.jurisdiction.includes(n.location); i(t) }) }) } catch (i) { } });
+        </script>
+<script defer="" src="https://bordeaux.futurecdn.net/bordeaux.js" type="text/javascript"></script>
+<script type="text/javascript">
+            var targeting = { kw: ['homepage'] };
+            window.bordeaux = window.bordeaux || {};
+            window.bordeaux.cmd = window.bordeaux.cmd || [];
+            window.bordeaux.cmd.push(function () {
+                window.bordeaux.setTargeting(targeting);
+                window.bordeaux.setPageCategory('homepage');
+                window.bordeaux.setPageTemplate('homepage');
+                window.bordeaux.init();
+            });
+        </script>
+<script defer="" src="https://champagne.futurecdn.net/champagne.js" type="text/javascript"></script>
+<script>
+var PLAYER_ID = 'XzKn4M6Y';
+var PLAYLIST_ID = 'JgDqiWaS';
+
+function initTracking(instance) {
+  if (!window.ga) {
+    return;
+  }
+
+  function gaSend() {
+    var args = arguments;
+    if (window.ga) {
+      window.ga(function(tracker) {
+        if (tracker) {
+          tracker.send.apply(tracker, args);
+        } else {
+          window.ga.getAll().forEach(function(tracker) {
+            tracker.send.apply(tracker, args);
+          });
+        }
+      });
+    }
+  }
+
+  function getDimensions(instance, nonInteraction) {
+    var dimensions = {
+      nonInteraction: nonInteraction,
+      dimension106: document.querySelectorAll('.jwplayer').length,
+      dimension107: instance.getPlaylistItem().duration,
+      dimension113: true
+    };
+    
+    if (instance.getVisualQuality()) {
+      dimensions.dimension108 = instance.getVisualQuality().level.height;
+    }
+    
+    return Object.assign(dimensions, window.analytics_ga_data || {});
+  }
+
+  instance.on('play', function(playInfo) {
+    gaSend('event', 'jwplayer', 'play', instance.getPlaylistItem().mediaid, getDimensions(instance, playInfo.playReason === 'autostart'));
+  });
+  
+  instance.on('pause', function() {
+    gaSend('event', 'jwplayer', 'pause', instance.getPlaylistItem().mediaid, getDimensions(instance, true));
+  });
+  
+  instance.on('seek', function() {
+    gaSend('event', 'jwplayer', 'seek', instance.getPlaylistItem().mediaid, getDimensions(instance, true));
+  });
+  
+  instance.on('complete', function() {
+    gaSend('event', 'jwplayer', 'complete', instance.getPlaylistItem().mediaid, getDimensions(instance, false));
+  });
+  
+  instance.on('adImpression', function() {
+    gaSend('event', 'jwplayer', 'adplay', instance.getPlaylistItem().mediaid, getDimensions(instance, true));
+  });
+  
+  instance.on('adComplete', function() {
+    gaSend('event', 'jwplayer', 'adcomplete', instance.getPlaylistItem().mediaid, getDimensions(instance, true));
+  });
+  
+  instance.on('adSkipped', function() {
+    gaSend('event', 'jwplayer', 'adskip', instance.getPlaylistItem().mediaid, getDimensions(instance, true));
+  });
+  
+  instance.on('setupError', function() {
+    gaSend('event', 'jwplayer', 'playererror', instance.getPlaylistItem().mediaid, getDimensions(instance, true));
+  });
+  
+  instance.on('levelsChanged', function(newQuality) {
+    var dimensions = getDimensions(instance, true)
+  
+    if (newQuality.currentQuality !== 0) {
+      dimensions.dimension108 = String(newQuality.levels[newQuality.currentQuality].height);
+    }
+  
+    gaSend('event', 'jwplayer', 'qualitychange', instance.getPlaylistItem().mediaid, dimensions)
+  });
+  
+  if (instance.getViewable() === 1) {
+    gaSend('event', 'jwplayer', 'viewable', instance.getPlaylistItem().mediaid, getDimensions(instance, true))
+  }
+}
+
+var divID = 'jw-' + (new Date()).getTime();
+var playerURL = "https://videos.techradar.com/libraries/" + PLAYER_ID + ".js";
+var playlistURL = "https://content.jwplatform.com/feeds/" + PLAYLIST_ID + ".json";
+var jwPlayerConfig = {};
+var targetingObject = {
+  "ttID": "__item-mediaid__",
+  "vvid_title": "__item-title__",
+  "vdbl": "yes",
+  "pos": "preroll",
+  "max_ad_duration": "30000",
+  "url": window.location.href
+};
+
+var allowVideo = true;
+var urlLower = window.location.href.toLowerCase();
+
+if (targeting.kw.includes('live-blog') || targeting.kw.includes('sponsored-post')) {
+  console.log('keyword blocked video');
+  allowVideo = false;
+} else if (urlLower.includes('/tag') || urlLower.includes('/print') || urlLower.includes('/about') || urlLower.includes('/search')) {
+  console.log('url blocked video');
+  allowVideo = false;
+}
+
+function addJWPlayer() {
+    var playerContainerElement = document.querySelector(".articleContent p:nth-of-type(4), .content > .main_cont > .main_cont > .cont_box1:nth-of-type(4n), #video_ad");
+    if (allowVideo && !playerContainerElement) {
+        console.warn("No JWPlayer placeholder for Champagne video player injection");
+    } else if (allowVideo) {
+        var playerElement = document.createElement('div');
+        playerElement.id = divID;
+	playerElement.style.margin = '13px 0px';
+        playerContainerElement.insertAdjacentElement("afterend", playerElement);
+
+        window.champagne = window.champagne || {};
+        window.champagne.cmd = window.champagne.cmd || [];
+        window.champagne.cmd.push(function() {
+            if (window.googletag && window.googletag.pubads) {
+                var targetKeys = window.googletag.pubads().getTargetingKeys();
+                for (var t in targetKeys) {
+                    var key = targetKeys[t];
+                    targetingObject[key] = window.googletag.pubads().getTargeting(key);
+                }
+            }
+            if (window.targeting) {
+                for (var t in window.targeting) {
+                    targetingObject[t] = window.targeting[t];
+                }
+            }
+            
+            window.champagne.addJWPlayer(
+                divID,
+                playerURL,
+                playlistURL,
+                jwPlayerConfig,
+                targetingObject,
+            )
+            .then(function(jwPlayerInstance) {
+                initTracking(jwPlayerInstance);
+            }).catch(function(error) {
+                console.error(error)
+            });
+        });
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addJWPlayer);
+} else {
+    addJWPlayer();
+}
+</script>
+<script>
+    var injectTaboola = true;
+    if (targeting.kw.includes('live-blog') || targeting.kw.includes('sponsored-post')) {
+        console.log('keyword blocked taboola');
+        injectTaboola = false;
+    } else if (urlLower.includes('/tag') || urlLower.includes('/print') || urlLower.includes('/about') || urlLower.includes('/search')) {
+        console.log('url blocked taboola');
+        injectTaboola = false;
+    }
+    
+    // Commented out as g_o is currently undefined on all pages
+    // // Do not include on pages matching */####/sponsored-post*
+    // if (window.location.pathname.match(/\/[0-9]+\/sponsored-post/)) {
+    //     injectTaboola = false;
+    // }
+
+    // if (typeof g_o=='undefined' || !g_o || !g_o.channel || g_o.channel!='Editorial') {
+    //     injectTaboola = false;
+    // }
+
+    // if (typeof g_o=='undefined' || !g_o || (g_o.eVar4 && g_o.eVar4.indexOf('Listing') > -1)) {
+    //     injectTaboola = false;
+    // }
+
+    // if (typeof g_o=='undefined' || !g_o || (g_o.eVar4 && g_o.eVar4.indexOf('Article Print') > -1)) {
+    //     injectTaboola = false;
+    // }
+
+    // if (typeof g_o=='undefined' || !g_o || (g_o.prop34 && g_o.prop34.indexOf('Live Blog') > -1)) {
+    //     injectTaboola = false;
+    // }
+
+    window._taboola = window._taboola || [];
+    window._taboola.push({ article: 'auto' });
+
+    var script = document.createElement('script');
+    script.async = 1;
+    script.src = 'https://cdn.taboola.com/libtrc/futureplc-network/loader.js'
+    script.id = 'tb_loader_script';
+    window.document.head.appendChild(script);
+
+    function addTaboola() {
+        var taboolaAnchor = document.querySelectorAll('#resp_middle_ad, #comment');
+        if (taboolaAnchor.length > 0 && injectTaboola) {
+            var taboolaAnchorElement = taboolaAnchor[0];
+            var taboolaDiv = window.document.createElement('div');
+            taboolaDiv.id = 'taboola_' + Math.floor(Math.random() * 1000);
+            taboolaDiv.style.letterSpacing = '0.01px';
+            taboolaDiv.classList = 'spaceb15 taboola-anchor';
+            taboolaAnchorElement.parentNode.insertBefore(taboolaDiv, taboolaAnchorElement.previousSibling);
+
+            window._taboola.push({
+                mode: 'thumbnails-b',
+                container: taboolaDiv.id,
+                placement: 'Below Article Widget',
+                target_type: 'mix'
+            });
+        }
+
+        var taboolaMidArticleAnchor = document.querySelector('.articleContent>p:nth-of-type(3)');
+        if (taboolaMidArticleAnchor && injectTaboola) {
+            var taboolaMidArticleDiv = window.document.createElement('div');
+            taboolaMidArticleDiv.id = 'taboola-mid-article';
+            taboolaMidArticleAnchor.parentNode.insertBefore(taboolaMidArticleDiv, taboolaMidArticleAnchor.nextSibling);
+
+            window._taboola.push({
+                mode: 'thumbnails-a-mid',
+                container: 'taboola-mid-article',
+                placement: 'Mid Article',
+                target_type: 'mix'
+            });
+        }
+
+        window._taboola.push({ flush: true });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', addTaboola);
+    } else {
+        addTaboola();
+    }
+</script>
+<link href="https://www.anandtech.com/" rel="canonical"/>
+<meta content="News and reviews of PC components, smartphones, tablets, pre-built desktops, notebooks, Macs and enterprise/cloud computing technologies." name="description" property="og:description"/>
+<meta content="63rup4ia94nrrwz2gtdhf9gki201e1" name="facebook-domain-verification"/>
+</link></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PV2DVS" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Begin comScore Tag -->
+<script>
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "6035753" });
+        (function () {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+<noscript>
+<img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=6035753&amp;cv=2.0&amp;cj=1"/>
+</noscript>
+<!-- End comScore Tag -->
+<header class="header">
+<div class="header_top">
+<div class="header_ad" id="header_ad">
+</div>
+<div class="logo">
+<a href="/">
+<img alt="" src="/Content/images/logo2.png"/>
+</a>
+</div>
+<div class="header_top_right">
+<div class="search_area">
+<form action="/SearchResults" method="get">
+<div class="search">
+<input class="search_field" name="q" type="text"/>
+<input class="search_btn" name="" type="submit" value="search"/>
+<div class="clear"></div>
+</div>
+<div class="login">
+<span id="loginHeader" style="display: none;">
+                                    Welcome <a href="/Account/Details"><b><span id="loginUser"></span></b></a>
+<a href="/Account/Logout?r=%2f">Log out</a>
+</span>
+<span id="logoutHeader">
+<a href="/Account/Login?r=%2f" id="loginTop">Login</a>
+<a href="/Account/Register?r=%2f">Register</a>
+</span>
+</div>
+<div class="clear"></div>
+</form>
+</div>
+<div class="header_right_btm">
+<span>
+<a href="http://www.twitter.com/AnandTech">
+<img alt="" src="/Content/images/icon-twitter.png"/>
+</a>
+<a href="http://www.facebook.com/AnandTech/">
+<img alt="" src="/Content/images/icon-facebook.png"/>
+</a>
+<a href="/rss/">
+<img alt="" src="/Content/images/icon-rss.png"/>
+</a>
+</span>
+<ul>
+<li><a href="/home/about/">ABOUT</a></li>
+<li><a href="/bench/">BENCH</a></li>
+<li><a href="http://forums.anandtech.com">FORUMS</a></li>
+<li><a href="/tag/podcast">PODCAST</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clrflt"></div>
+</div>
+<div class="header_top_resp">
+<div class="logo_resp">
+<a href="/"><img alt="" src="/Content/images/logo_resp.png"/></a>
+</div>
+<div class="header_top_resp_right">
+<a class="search_icon" href="#"></a>
+<div class="drop_down_search">
+<span class="blk"></span>
+<form action="/SearchResults" method="get">
+<div class="search">
+<input class="search_field" name="q" type="text"/>
+<input class="search_btn" name="" type="submit" value="search"/>
+<div class="clear"></div>
+</div>
+</form>
+</div>
+<a class="home" href="#"></a>
+<div class="drop_down_home">
+<span class="blk"></span>
+<a href="/home/about/">ABOUT</a>
+<a href="/bench/">BENCH</a>
+<a href="http://forums.anandtech.com">FORUMS</a>
+<a href="/tag/podcast">PODCAST</a>
+<a href="/Account/Login" id="loginTopMobile">LOGIN</a>
+<a href="/Account/Register">REGISTER</a>
+</div>
+<a class="nav_icon show_resp2" href="#"></a>
+<div class="drop_down_nav">
+<span class="blk"></span>
+<div class="navmobile ignoreclick"><a href="#">PC Components<span>â¼</span></a></div>
+<div class="nav_sec">
+<ul>
+<li><a href="/tag/cpus">CPUs</a></li>
+<li><a href="/tag/gpus">GPUs</a></li>
+<li><a href="/tag/mb">Motherboards</a></li>
+<li><a href="/tag/ssd">SSDs</a></li>
+<li><a href="/tag/casecoolingpsus">Cases/Cooling/PSUs</a></li>
+<li><a href="/tag/memory">Memory</a></li>
+<li><a href="/tag/nas">NAS</a></li>
+<li><a href="/tag/storage">Storage</a></li>
+</ul>
+</div>
+<div class="navmobile ignoreclick"><a href="#">Smartphones &amp; tablets<span>â¼</span></a></div>
+<div class="nav_sec">
+<ul>
+<li><a href="/tag/smartphones">Smartphones</a></li>
+<li><a href="/tag/tablets">Tablets</a></li>
+<li><a href="/tag/huawei">Huawei</a></li>
+<li><a href="/tag/htc">HTC</a></li>
+<li><a href="/tag/samsung">Samsung</a></li>
+<li><a href="/tag/google">Google/Android</a></li>
+<li><a href="/tag/microsoft">Microsoft</a></li>
+<li><a href="/tag/apple">Apple</a></li>
+<li><a href="/tag/soc">SoCs</a></li>
+</ul>
+</div>
+<div class="navmobile ignoreclick"><a href="#">Systems<span>â¼</span></a></div>
+<div class="nav_sec">
+<ul>
+<li><a href="/tag/laptops">Notebook Reviews</a></li>
+<li><a href="/tag/desktops">Desktop Reviews</a></li>
+<li><a href="/tag/mac">Mac Reviews</a></li>
+<li><a href="/tag/ultrabook">Ultrabooks</a></li>
+</ul>
+</div>
+<div><a href="/tag/enterprise">ENTERPRISE &amp; IT</a></div>
+<div class="navmobile ignoreclick"><a href="#">GUIDES<span>â¼</span></a></div>
+<div class="nav_sec">
+<ul>
+<li><a href="/show/9793/best-cpus">Best CPUs</a></li>
+<li><a href="/show/9799/best-ssds">Best SSDs</a></li>
+<li><a href="/show/9798/best-laptops">Best Laptops</a></li>
+<li><a href="/show/9770/best-android-phones">Best Android Phones</a></li>
+<li><a href="/show/12050/best-video-cards">Best Video Cards</a></li>
+<li><a href="/show/12056/best-psus">Best PSUs</a></li>
+<li><a href="/show/12072/best-motherboards">Best Motherboards</a></li>
+<li><a href="/show/12058/best-gaming-laptops">Best Gaming Laptops</a></li>
+<li style="height: 60px !important;"><a href="/show/12061/best-mechanical-keyboards">Best Mechanical Keyboards</a></li>
+<li><a href="/show/12075/best-consumer-hdds">Best Consumer HDDs</a></li>
+</ul>
+</div>
+<div><a href="/tag/deals">DEALS</a></div>
+</div>
+</div>
+</div>
+<nav class="nav inner_nav animenu">
+<input id="button" type="checkbox"/>
+<label for="button">Menu</label>
+<ul>
+<li>
+<a class="ignoreclick" href="#">PC Components<span>â¼</span></a>
+<ul>
+<li><a href="/tag/cpus">CPUs</a></li>
+<li><a href="/tag/gpus">GPUs</a></li>
+<li><a href="/tag/mb">Motherboards</a></li>
+<li><a href="/tag/ssd">SSDs</a></li>
+<li><a href="/tag/casecoolingpsus">Cases/Cooling/PSUs</a></li>
+<li><a href="/tag/memory">Memory</a></li>
+<li><a href="/tag/nas">NAS</a></li>
+<li><a href="/tag/storage">Storage</a></li>
+</ul>
+</li>
+<li>
+<a class="ignoreclick" href="#">Smartphones &amp; tablets<span>â¼</span></a>
+<ul>
+<li><a href="/tag/smartphones">Smartphones</a></li>
+<li><a href="/tag/tablets">Tablets</a></li>
+<li><a href="/tag/huawei">Huawei</a></li>
+<li><a href="/tag/htc">HTC</a></li>
+<li><a href="/tag/samsung">Samsung</a></li>
+<li><a href="/tag/google">Google/Android</a></li>
+<li><a href="/tag/microsoft">Microsoft</a></li>
+<li><a href="/tag/apple">Apple</a></li>
+<li><a href="/tag/soc">SoCs</a></li>
+</ul>
+</li>
+<li>
+<a class="ignoreclick" href="#">Systems<span>â¼</span></a>
+<ul>
+<li><a href="/tag/laptops">Notebook Reviews</a></li>
+<li><a href="/tag/desktops">Desktop Reviews</a></li>
+<li><a href="/tag/mac">Mac Reviews</a></li>
+<li><a href="/tag/ultrabook">Ultrabooks</a></li>
+</ul>
+</li>
+<li>
+<a class="" href="/tag/enterprise">Enterprise &amp; IT</a>
+</li>
+<li>
+<a class="ignoreclick" href="#">Guides<span>â¼</span></a>
+<ul>
+<li><a href="/show/9793/best-cpus">Best CPUs</a></li>
+<li><a href="/show/9799/best-ssds">Best SSDs</a></li>
+<li><a href="/show/9798/best-laptops">Best Laptops</a></li>
+<li><a href="/show/9770/best-android-phones">Best Android Phones</a></li>
+<li><a href="/show/12050/best-video-cards">Best Video Cards</a></li>
+<li><a href="/show/12056/best-psus">Best PSUs</a></li>
+<li><a href="/show/12072/best-motherboards">Best Motherboards</a></li>
+<li><a href="/show/12058/best-gaming-laptops">Best Gaming Laptops</a></li>
+<li style="height: 60px !important;"><a href="/show/12061/best-mechanical-keyboards">Best Mechanical Keyboards</a></li>
+<li><a href="/show/12075/best-consumer-hdds">Best Consumer HDDs</a></li>
+</ul>
+</li>
+<li>
+<a class="" href="/tag/deals">Deals</a>
+</li>
+</ul>
+</nav>
+<nav class="topic_menu topic_inner" style="width: 280px; padding: 6px 0 0 6px;float: right;">
+<div class="fbholder-fp" style="float:left; margin-right: 15px;"><div class="fb-like" data-colorscheme="dark" data-href="http://www.facebook.com/AnandTech" data-layout="button_count" data-send="false" data-show-faces="false" data-width="100"></div></div>
+<a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/anandtech"></a>
+<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+</nav>
+<nav class="topic_menu topic_inner">
+<ul>
+<li class="topin_title">TRENDING TOPICS</li>
+<li class="nosep"><a href="/tag/cpus">CPUs</a></li>
+<li><a href="/tag/amd">AMD</a></li>
+<li><a href="/tag/intel">Intel</a></li>
+<li><a href="/tag/gpus">GPUs</a></li>
+<li><a href="/tag/mb">Motherboards</a></li>
+<li><a href="/tag/storage">Storage</a></li>
+<li><a href="/tag/mobile">Mobile</a></li>
+<li><a href="/tag/smartphones">Smartphones</a></li>
+<li><a href="/tag/ssd">SSDs</a></li>
+</ul>
+<div class="clear"></div>
+</nav>
+</header>
+<section class="content">
+<section class="main_cont">
+<div class="featured_banner">
+<a href="/show/18844/amd-unveils-ryzen-mobile-7040u-series-phoenix-to-fly-into-thin-notebooks">
+<img alt="" src="https://images.anandtech.com/doci/18844/Phoenix_CES_AMD_crop_678x291.jpg"/>
+<span>Ryzen 7040U</span>
+</a>
+<div class="featured_info">
+<a href="/show/18844/amd-unveils-ryzen-mobile-7040u-series-phoenix-to-fly-into-thin-notebooks">
+<h2>AMD Unveils Ryzen Mobile 7040U Series: Phoenix To Fly Into Thin Notebooks</h2>
+                            by Gavin Bonshor
+                        </a>
+<a href="/show/18844/amd-unveils-ryzen-mobile-7040u-series-phoenix-to-fly-into-thin-notebooks#comments" style="float: right; font-size: 13px; margin-left: 10px;">70 comments</a>
+</div>
+</div>
+<div class="sponsored_add fl-lt hide_resp2">
+<div class="cropborder"><a class="crop199" href="/show/18835/amd-issues-second-statement-on-ryzen-7000x3d-burnout-issues-caps-soc-voltages"><img alt="" src="https://images.anandtech.com/doci/18835/Sue6m2BUDuEuHBK4RzzMKX-970-80.png_carousel.jpg"/></a></div>
+<h2><a href="/show/18835/amd-issues-second-statement-on-ryzen-7000x3d-burnout-issues-caps-soc-voltages">AMD Issues Second Statement on Ryzen 7000 Burnout Issues: Caps SoC Voltages</a> </h2>
+<a href="/show/18835/amd-issues-second-statement-on-ryzen-7000x3d-burnout-issues-caps-soc-voltages#comments" style="float: right; font-size: 13px; margin-left: 10px;">41 comments</a>
+<small>by <a class="b" href="/Author/200">Gavin Bonshor</a></small>
+<p>Yesterday, AMD issued a statement surrounding the burnout issues some users have been experiencing with their Ryzen 7000X3D processors. The problem, reported in multiple...</p>
+</div>
+<div class="cont_box1 show_resp2">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18835/amd-issues-second-statement-on-ryzen-7000x3d-burnout-issues-caps-soc-voltages"><img alt="" src="https://images.anandtech.com/doci/18835/Sue6m2BUDuEuHBK4RzzMKX-970-80.png_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18835/amd-issues-second-statement-on-ryzen-7000x3d-burnout-issues-caps-soc-voltages">AMD Issues Second Statement on Ryzen 7000 Burnout Issues: Caps SoC Voltages</a></h2>
+<p>Yesterday, AMD issued a statement surrounding the burnout issues some users have been experiencing with their Ryzen 7000X3D processors. The problem, reported in multiple Reddit subforums, includes some Ryzen...</p>
+<a href="/show/18835/amd-issues-second-statement-on-ryzen-7000x3d-burnout-issues-caps-soc-voltages#comments"><strong>41</strong></a>
+<span>by <a class="b" href="/Author/200">Gavin Bonshor</a> on 4/27/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="fl-rt home_middle_ad" id="home_middle_ad">
+</div>
+<div class="clear"></div>
+<div class="sponsored_add fl-lt cb hide_resp2">
+<div class="cropborder"><a class="crop199" href="/show/18832/tsmc-outlines-2nm-plans-n2p-brings-backside-power-delivery-in-2026-n2x-added-to-roadmap"><img alt="" src="https://images.anandtech.com/doci/18832/tsmc_wafer_semiconductor_chip_300mm_fab-678_carousel.jpg"/></a></div>
+<h2><a href="/show/18832/tsmc-outlines-2nm-plans-n2p-brings-backside-power-delivery-in-2026-n2x-added-to-roadmap">TSMC Outlines 2nm Plans: N2P Brings Backside Power Delivery in 2026, N2X Added To Roadmap</a> </h2>
+<a href="/show/18832/tsmc-outlines-2nm-plans-n2p-brings-backside-power-delivery-in-2026-n2x-added-to-roadmap#comments" style="float: right; font-size: 13px; margin-left: 10px;">34 comments</a>
+<small>by <a class="b" href="/Author/191">Anton Shilov</a></small>
+<p>At its 2023 North American Technology Symposium today, TSMC has disclosed additional details about its plans for its forthcoming N2 2nm-class production nodes in...</p>
+</div>
+<div class="cont_box1 show_resp2">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18832/tsmc-outlines-2nm-plans-n2p-brings-backside-power-delivery-in-2026-n2x-added-to-roadmap"><img alt="" src="https://images.anandtech.com/doci/18832/tsmc_wafer_semiconductor_chip_300mm_fab-678_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18832/tsmc-outlines-2nm-plans-n2p-brings-backside-power-delivery-in-2026-n2x-added-to-roadmap">TSMC Outlines 2nm Plans: N2P Brings Backside Power Delivery in 2026, N2X Added To Roadmap</a></h2>
+<p>At its 2023 North American Technology Symposium today, TSMC has disclosed additional details about its plans for its forthcoming N2 2nm-class production nodes in 2025 – 2026 and beyond...</p>
+<a href="/show/18832/tsmc-outlines-2nm-plans-n2p-brings-backside-power-delivery-in-2026-n2x-added-to-roadmap#comments"><strong>34</strong></a>
+<span>by <a class="b" href="/Author/191">Anton Shilov</a> on 4/26/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="sponsored_add fl-rt hide_resp2">
+<div class="cropborder"><a class="crop199" href="/show/18828/amd-issues-official-statement-on-reported-ryzen-7000-burnout-issues"><img alt="" src="https://images.anandtech.com/doci/18828/Sue6m2BUDuEuHBK4RzzMKX-970-80.png_carousel.jpg"/></a></div>
+<h2><a href="/show/18828/amd-issues-official-statement-on-reported-ryzen-7000-burnout-issues">AMD Issues Official Statement on Reported Ryzen 7000 Burnout Issues</a> </h2>
+<a href="/show/18828/amd-issues-official-statement-on-reported-ryzen-7000-burnout-issues#comments" style="float: right; font-size: 13px; margin-left: 10px;">34 comments</a>
+<small>by <a class="b" href="/Author/200">Gavin Bonshor</a></small>
+<p>Yesterday we reported that MSI announced a wave of firmware updates designed to address and alleviate potential issues with users on AM5 using AMD's...</p>
+</div>
+<div class="clear"></div>
+<div class="cont_box1 show_resp2">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18828/amd-issues-official-statement-on-reported-ryzen-7000-burnout-issues"><img alt="" src="https://images.anandtech.com/doci/18828/Sue6m2BUDuEuHBK4RzzMKX-970-80.png_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18828/amd-issues-official-statement-on-reported-ryzen-7000-burnout-issues">AMD Issues Official Statement on Reported Ryzen 7000 Burnout Issues</a></h2>
+<p>Yesterday we reported that MSI announced a wave of firmware updates designed to address and alleviate potential issues with users on AM5 using AMD's Ryzen 7000X3D processors with 3D...</p>
+<a href="/show/18828/amd-issues-official-statement-on-reported-ryzen-7000-burnout-issues#comments"><strong>34</strong></a>
+<span>by <a class="b" href="/Author/200">Gavin Bonshor</a> on 4/25/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="pipeline">
+<h2 class="hide_resp"><a href="/pipeline">MORE PIPELINE STORIES</a></h2>
+<h2 class="show_resp"><a href="/pipeline">PIPELINE STORIES</a></h2>
+<div class="clear"></div>
+<div class="pipeline_cont">
+<ul>
+<li class="show_resp"><a class="l" href="/show/18861/asus-rog-ally-portable-console-eight-zen-4-cores-and-rdna-3-gpu-in-your-hand"><span>Asus Formally Unveils ROG Ally Portable Console: Eight Zen 4 Cores and RDNA 3 GPU in Your Hands</span></a> <a class="c hide_resp2" href="/show/18861/asus-rog-ally-portable-console-eight-zen-4-cores-and-rdna-3-gpu-in-your-hand#comments">Comments (26)</a><div class="clear"></div></li>
+<li class="show_resp"><a class="l" href="/show/18860/asus-unveils-two-new-geforce-rtx-4090-gpus"><span>Asus Unveils Two Slimmer GeForce RTX 4090 Video Cards: ROG Strix LC and TUF OG</span></a> <a class="c hide_resp2" href="/show/18860/asus-unveils-two-new-geforce-rtx-4090-gpus#comments">Comments (5)</a><div class="clear"></div></li>
+<li class="show_resp"><a class="l" href="/show/18859/philips-reveals-dual-screen-display-a-24inch-lcd-with-e-ink-secondary-screen"><span>Philips Reveals Dual Screen Display: a 24-Inch LCD with E Ink Secondary Screen</span></a> <a class="c hide_resp2" href="/show/18859/philips-reveals-dual-screen-display-a-24inch-lcd-with-e-ink-secondary-screen#comments">Comments (14)</a><div class="clear"></div></li>
+<li class="show_resp"><a class="l" href="/show/18858/samsung-to-unveil-refined-3nm-and-performanceenhanced-4nm-nodes"><span>Samsung to Unveil Refined 3nm and Performance-Enhanced 4nm Nodes at VLSI Symposium</span></a> <a class="c hide_resp2" href="/show/18858/samsung-to-unveil-refined-3nm-and-performanceenhanced-4nm-nodes#comments">Comments (2)</a><div class="clear"></div></li>
+<li class="show_resp"><a class="l" href="/show/18857/nvidia-bundles-diablo-iv-with-geforce-rtx-40-graphics-cards"><span>NVIDIA Launches Diablo IV Bundle for GeForce RTX 40 Video Cards</span></a> <a class="c hide_resp2" href="/show/18857/nvidia-bundles-diablo-iv-with-geforce-rtx-40-graphics-cards#comments">Comments (9)</a><div class="clear"></div></li>
+<li class="show_resp"><a class="l" href="/show/18856/amd-to-host-ai-and-data-center-event-on-june-13th-mi300-details-inbound"><span>AMD To Host AI and Data Center Event on June 13th - MI300 Details Inbound?</span></a> <a class="c hide_resp2" href="/show/18856/amd-to-host-ai-and-data-center-event-on-june-13th-mi300-details-inbound#comments">Comments (2)</a><div class="clear"></div></li>
+<li class="show_resp"><a class="l" href="/show/18855/noctua-publishes-roadmap"><span>Noctua Publishes Roadmap: Next-Gen AMD Threadripper Coolers Incoming</span></a> <a class="c hide_resp2" href="/show/18855/noctua-publishes-roadmap#comments">Comments (9)</a><div class="clear"></div></li>
+<li class="show_resp"><a class="l" href="/show/18854/-samsung-foundry-vows-to-surpass-tsmc-within-five-years"><span> Samsung Foundry Vows to Surpass TSMC Within Five Years</span></a> <a class="c hide_resp2" href="/show/18854/-samsung-foundry-vows-to-surpass-tsmc-within-five-years#comments">Comments (12)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18848/solidigm-synergy-20-amplifies-p41-plus-and-p44-pro-performance-with-custom-driver"><span>Solidigm Synergy 2.0 Amplifies P41 Plus and P44 Pro Performance with Custom Driver</span></a> <a class="c" href="/show/18848/solidigm-synergy-20-amplifies-p41-plus-and-p44-pro-performance-with-custom-driver#comments">Comments (14)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18846/amd-ryzen-mobile-7040hs-phoenix-laptops-to-reach-retailers-in-a-couple-more-weeks"><span>AMD: Ryzen Mobile 7040HS âPhoenixâ Laptops to Reach Retailers in a Couple More Weeks</span></a> <a class="c" href="/show/18846/amd-ryzen-mobile-7040hs-phoenix-laptops-to-reach-retailers-in-a-couple-more-weeks#comments">Comments (9)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18845/amd-reports-q1-2023-earnings-back-into-the-red-as-client-sales-crumble"><span>AMD Reports Q1 2023 Earnings: Slipping Back into the Red as Client Sales Crumble</span></a> <a class="c" href="/show/18845/amd-reports-q1-2023-earnings-back-into-the-red-as-client-sales-crumble#comments">Comments (5)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18842/intel-pr-confirms-chip-branding-changes-in-the-works-i-series-to-give-way-to-ultra"><span>Intel PR Confirms Chip Branding Changes in the Works: Core i Series to Give Way to Ultra?</span></a> <a class="c" href="/show/18842/intel-pr-confirms-chip-branding-changes-in-the-works-i-series-to-give-way-to-ultra#comments">Comments (34)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18841/microsoft-to-discontinue-self-branded-peripherals-focus-on-surface-instead"><span>Microsoft To Stop Self-Branded PC Peripherals, Set to Focus on Surface Instead</span></a> <a class="c" href="/show/18841/microsoft-to-discontinue-self-branded-peripherals-focus-on-surface-instead#comments">Comments (12)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18840/-matrox-adopts-intel-gpus-for-luma-graphics-cards"><span> Matrox Adopts Intel Alchemist GPUs for New Luma Graphics Cards</span></a> <a class="c" href="/show/18840/-matrox-adopts-intel-gpus-for-luma-graphics-cards#comments">Comments (26)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18839/intel-reports-q1-2023-earnings-a-record-losing-quarter-goes-better-than-expected"><span>Intel Reports Q1 2023 Earnings: A Record Losing Quarter Goes Better Than Expected</span></a> <a class="c" href="/show/18839/intel-reports-q1-2023-earnings-a-record-losing-quarter-goes-better-than-expected#comments">Comments (9)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18837/tsmc-announces-early-access-nodes-for-car-chips-n4ae-n3ae"><span>TSMC Announces Early Access Nodes for Next-Gen Car Chips: N4AE and N3AE</span></a> <a class="c" href="/show/18837/tsmc-announces-early-access-nodes-for-car-chips-n4ae-n3ae#comments">Comments (10)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18836/intel-meteor-lake-intel-4-process-now-ramping-for-production"><span>Intel: Meteor Lake &amp; Intel 4 Process Now Ramping for Production</span></a> <a class="c" href="/show/18836/intel-meteor-lake-intel-4-process-now-ramping-for-production#comments">Comments (18)</a><div class="clear"></div></li>
+<li class="hide_resp"><a class="l" href="/show/18833/tsmc-details-3nm-evolution-n3e-on-schedule-n3p-n3x-deliver-five-percent-gains"><span>TSMC Details 3nm Evolution: N3E On Schedule, N3P and N3X To Deliver 5% Performance Gains</span></a> <a class="c" href="/show/18833/tsmc-details-3nm-evolution-n3e-on-schedule-n3p-n3x-deliver-five-percent-gains#comments">Comments (13)</a><div class="clear"></div></li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18740/the-intel-core-i3-13100f-review-finding-value-in-intels-cheapest-chip"><img alt="" src="https://images.anandtech.com/doci/18740/Intel Core i3 13100F_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18740/the-intel-core-i3-13100f-review-finding-value-in-intels-cheapest-chip">The Intel Core i3-13100F Review: Finding Value in Intel's Cheapest Core Chip</a></h2>
+<p>While we here at AnandTech tend to be focused at the high-end of Intel's Core CPU product stacks, the company has a far more comprehensive lineup than we typically...</p>
+<a href="/show/18740/the-intel-core-i3-13100f-review-finding-value-in-intels-cheapest-chip#comments"><strong>34</strong></a>
+<span>by <a class="b" href="/Author/200">Gavin Bonshor</a> on 4/20/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18812/amd-announces-radeon-pro-w7900-w7800-rdna-3-workstation-cards"><img alt="" src="https://images.anandtech.com/doci/18812/W7900-front_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18812/amd-announces-radeon-pro-w7900-w7800-rdna-3-workstation-cards">AMD Announces Radeon Pro W7900 &amp; W7800: RDNA 3 Comes To Workstation Cards</a></h2>
+<p>With their initial consumer desktop and mobile RDNA 3 graphics products now out the door, AMD today is turning their attention to the professional visualization market. The more lucrative...</p>
+<a href="/show/18812/amd-announces-radeon-pro-w7900-w7800-rdna-3-workstation-cards#comments"><strong>30</strong></a>
+<span>by <a class="b" href="/Author/85">Ryan Smith</a> on 4/13/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18794/asrock-industrial-4x4-box7735ud5-review"><img alt="" src="https://images.anandtech.com/doci/18794/carousel_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18794/asrock-industrial-4x4-box7735ud5-review">ASRock Industrial 4X4 BOX-7735U UCFF PC Review: Zen 3+, RDNA2, and USB4 in a Potent Platform</a></h2>
+<p>ASRock Industrial is one of the few vendors with a lineup of ultra-compact form-factor (UCFF) computing systems based on the latest Intel and AMD platforms. Their lineup of NUC...</p>
+<a href="/show/18794/asrock-industrial-4x4-box7735ud5-review#comments"><strong>33</strong></a>
+<span>by <a class="b" href="/Author/134">Ganesh T S</a> on 4/6/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18795/the-amd-ryzen-7-7800x3d-review-a-simpler-slice-of-v-cache-for-gaming"><img alt="" src="https://images.anandtech.com/doci/18795/AMD Ryzen 7 7800X3D Processor Featured Image_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18795/the-amd-ryzen-7-7800x3d-review-a-simpler-slice-of-v-cache-for-gaming">The AMD Ryzen 7 7800X3D Review: A Simpler Slice of V-Cache For Gaming</a></h2>
+<p>In February, AMD released the first parts in its highly anticipated Ryzen 7000X3D series. This new line combines AMD's 3D V-Cache packaging with high-performance and highly efficient Zen 4...</p>
+<a href="/show/18795/the-amd-ryzen-7-7800x3d-review-a-simpler-slice-of-v-cache-for-gaming#comments"><strong>51</strong></a>
+<span>by <a class="b" href="/Author/200">Gavin Bonshor</a> on 4/5/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div id="resp_middle_ad" style="text-align: center;">
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18773/the-xpg-fusion-titanium-1600-review"><img alt="" src="https://images.anandtech.com/doci/18773/XPG_FUSION_TITANIUM_1600_04_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18773/the-xpg-fusion-titanium-1600-review">The XPG Fusion Titanium 1600 PSU Review: Outrageous Power, Outstanding Quality</a></h2>
+<p>One of the perks of normality largely returning to the PC components market now that the crypto mining bubble has popped has been a big improvement in component availability...</p>
+<a href="/show/18773/the-xpg-fusion-titanium-1600-review#comments"><strong>18</strong></a>
+<span>by <a class="b" href="/Author/162">E. Fylladitakis</a> on 3/30/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18797/intel-updates-data-center-roadmap-xeons-on-track-emerald-in-q423-sierra-forest-in-h124"><img alt="" src="https://images.anandtech.com/doci/18797/Intel-4th-Gen-Xeon._carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18797/intel-updates-data-center-roadmap-xeons-on-track-emerald-in-q423-sierra-forest-in-h124">Intel Updates Data Center Roadmap: Xeons On Track - Emerald in Q4'23, Sierra Forest in H1'24</a></h2>
+<p>Coming to the end of the first quarter of 2023, Intel’s Data Center and AI group is finding itself at an interesting inflection point – for reasons both good...</p>
+<a href="/show/18797/intel-updates-data-center-roadmap-xeons-on-track-emerald-in-q423-sierra-forest-in-h124#comments"><strong>47</strong></a>
+<span>by <a class="b" href="/Author/85">Ryan Smith</a> on 3/29/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18791/intel-nuc13-pro-arena-canyon-review-raptor-lake-brings-incremental-gains"><img alt="" src="https://images.anandtech.com/doci/18791/carousel_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18791/intel-nuc13-pro-arena-canyon-review-raptor-lake-brings-incremental-gains">Intel NUC 13 Pro Arena Canyon Review: Raptor Lake Brings Incremental Gains</a></h2>
+<p>Ultra-compact form-factor PCs have emerged as bright spots in the PC market over the last decade after Intel introduced the NUC. The company celebrated the 10-year anniversary of its...</p>
+<a href="/show/18791/intel-nuc13-pro-arena-canyon-review-raptor-lake-brings-incremental-gains#comments"><strong>47</strong></a>
+<span>by <a class="b" href="/Author/134">Ganesh T S</a> on 3/27/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18790/gordon-moore-intel-cofounder-and-former-ceo-passes-away-at-94"><img alt="" src="https://images.anandtech.com/doci/18790/gordon-moore-11-rwd_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18790/gordon-moore-intel-cofounder-and-former-ceo-passes-away-at-94">Gordon Moore, Intel's Co-Founder and Tech Industry Visionary, Passes Away At 94</a></h2>
+<p>Intel and the Gordon and Betty Moore Foundation have announced this evening that Gordon Moore, Intel’s famous co-founder and grandfather to much of the modern chip industry, has passed...</p>
+<a href="/show/18790/gordon-moore-intel-cofounder-and-former-ceo-passes-away-at-94#comments"><strong>20</strong></a>
+<span>by <a class="b" href="/Author/85">Ryan Smith</a> on 3/24/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/9793/best-cpus"><img alt="" src="https://images.anandtech.com/doci/9793/CPUGuide2020Carou_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/9793/best-cpus">Best CPUs for Gaming March 2023</a></h2>
+<p>Moving into the warmer and more picturesque spring season, the weather isn't the only thing hotting up. The CPU market towards the end of 2022 and the beginning of...</p>
+<a href="/show/9793/best-cpus#comments"><strong>20</strong></a>
+<span>by <a class="b" href="/Author/200">Gavin Bonshor</a> on 3/24/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18787/intel-unveils-vpro-for-13th-gen-core-series-"><img alt="" src="https://images.anandtech.com/doci/18787/vpro-family-badges-centered-i7i9i5_carousel.png"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18787/intel-unveils-vpro-for-13th-gen-core-series-">Intel Unveils vPro for 13th Gen Core Series: Enhanced Security For Raptor Lake</a></h2>
+<p>In a world that has seen various security breaches at several top companies and supposedly secure companies through hackers and exploiters, the onus isn't only on software developers to...</p>
+<a href="/show/18787/intel-unveils-vpro-for-13th-gen-core-series-#comments"><strong>24</strong></a>
+<span>by <a class="b" href="/Author/200">Gavin Bonshor</a> on 3/23/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18780/nvidia-announces-h100-nvl-max-memory-server-card-for-large-language-models"><img alt="" src="https://images.anandtech.com/doci/18780/NVIDIA-H100-NVL-Image-crop2_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18780/nvidia-announces-h100-nvl-max-memory-server-card-for-large-language-models">NVIDIA Announces H100 NVL - Max Memory Server Card for Large Language Models</a></h2>
+<p>While this year’s Spring GTC event doesn’t feature any new GPUs or GPU architectures from NVIDIA, the company is still in the process of rolling out new products based...</p>
+<a href="/show/18780/nvidia-announces-h100-nvl-max-memory-server-card-for-large-language-models#comments"><strong>23</strong></a>
+<span>by <a class="b" href="/Author/85">Ryan Smith</a> on 3/21/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18782/the-nvidia-gtc-spring-2023-keynote-live-blog-800am-pt1500-utc"><img alt="" src="https://images.anandtech.com/doci/18782/maxresdefault_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18782/the-nvidia-gtc-spring-2023-keynote-live-blog-800am-pt1500-utc">The NVIDIA GTC Spring 2023 Keynote Live Blog (8:00am PT/15:00 UTC)</a></h2>
+<p>Please join us at 8:00am PT (15:00 UTC) for our live blog coverage of NVIDIA’s Spring GTC keynote address. The traditional kick-off to the show – be it physical...</p>
+<a href="/show/18782/the-nvidia-gtc-spring-2023-keynote-live-blog-800am-pt1500-utc#comments"><strong>19</strong></a>
+<span>by <a class="b" href="/Author/85">Ryan Smith</a> on 3/21/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18763/amd-announces-zen-4-epyc-embedded-9004-series-up-to-96-cores-with-1p-and-2p-solutions"><img alt="" src="https://images.anandtech.com/doci/18763/Embedded_9004_1b_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18763/amd-announces-zen-4-epyc-embedded-9004-series-up-to-96-cores-with-1p-and-2p-solutions">AMD Announces Zen 4 EPYC Embedded 9004 Series: Up to 96 Cores With 1P and 2P Solutions</a></h2>
+<p>While AMD's portfolio of embedded products doesn't receive quite as much attention as it should, it's not a product lineup to be underestimated. AMD's "fourth platform" covers a surprisingly...</p>
+<a href="/show/18763/amd-announces-zen-4-epyc-embedded-9004-series-up-to-96-cores-with-1p-and-2p-solutions#comments"><strong>15</strong></a>
+<span>by <a class="b" href="/Author/200">Gavin Bonshor</a> on 3/14/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18744/supermicro-syse30212e-fanless-industrial-pc-review-elkhart-lake-for-iot-applications"><img alt="" src="https://images.anandtech.com/doci/18744/carousel_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18744/supermicro-syse30212e-fanless-industrial-pc-review-elkhart-lake-for-iot-applications">Supermicro SYS-E302-12E Fanless Industrial PC Review: Elkhart Lake for IoT Applications</a></h2>
+<p>Passively-cooled systems find application in a wide variety of industrial use-cases including automation, IoT gateways, medical systems, surveillance, and digital signage. In addition to avoiding moving parts, systems meant...</p>
+<a href="/show/18744/supermicro-syse30212e-fanless-industrial-pc-review-elkhart-lake-for-iot-applications#comments"><strong>16</strong></a>
+<span>by <a class="b" href="/Author/134">Ganesh T S</a> on 3/10/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18752/the-fsp-hydro-ptm-x-pro-1000w-atx-30-psu-review"><img alt="" src="https://images.anandtech.com/doci/18752/FSP_HYDRO_PTM_X_PRO_ATX3.0_1000W_08_carousel.jpg"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18752/the-fsp-hydro-ptm-x-pro-1000w-atx-30-psu-review">The FSP Hydro PTM X Pro 1000W ATX 3.0 PSU Review: Premium Platinum Power</a></h2>
+<p>Today we're taking a look at the Hydro PTM X Pro 1000W ATX 3.0, FSP’s latest ATX 3.0-compliant unit. FSP released one of the first ATX 3.0 units in...</p>
+<a href="/show/18752/the-fsp-hydro-ptm-x-pro-1000w-atx-30-psu-review#comments"><strong>3</strong></a>
+<span>by <a class="b" href="/Author/162">E. Fylladitakis</a> on 3/7/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="cont_box1 l_">
+<div class="cont_box1_pic pie">
+<a class="crop160" href="/show/18756/intel-scraps-rialto-bridge-gpu-next-server-gpu-will-be-falcon-shores-in-2025"><img alt="" src="https://images.anandtech.com/doci/18756/Rialto-Bridge_car_carousel.png"/></a>
+</div>
+<div class="cont_box1_txt">
+<h2><a href="/show/18756/intel-scraps-rialto-bridge-gpu-next-server-gpu-will-be-falcon-shores-in-2025">Intel Scraps Rialto Bridge GPU, Next Server GPU Will Be Falcon Shores In 2025</a></h2>
+<p>On Friday afternoon, Intel published a letter by Jeff McVeigh, the company’s interim GM of their Accelerated Computing Systems and Graphics group (AXG). In it, McVeigh offered a brief...</p>
+<a href="/show/18756/intel-scraps-rialto-bridge-gpu-next-server-gpu-will-be-falcon-shores-in-2025#comments"><strong>46</strong></a>
+<span>by <a class="b" href="/Author/85">Ryan Smith</a> on 3/4/2023</span>
+</div>
+<div class="clear"></div>
+</div>
+<nav class="page_nav">
+<div class="pagination">
+<ul>
+<li class="active"><div class="a">1</div></li><li><a href="/Page/2">2</a></li><li><a href="/Page/3">3</a></li><li><a href="/Page/4">4</a></li><li><a href="/Page/5">5</a></li><li><a href="/Page/6">6</a></li><li><a href="/Page/7">7</a></li><li>...</li><li><a href="/Page/365">365</a></li><li class="arrow"><a href="/Page/2" rel="next">â¶</a></li> </ul>
+</div>
+</nav>
+<div class="bench_box">
+<div class="bench_titleBox">
+<strong>BENCH</strong>
+<span>
+            Bench gives you access to our internal benchmark data so that you can compare the products without searching for an older review. Make reliable comparisons between products by clicking
+            on product categories below!
+        </span>
+<div class="clrflt"></div>
+</div>
+<div class="bench_carousel">
+<ul>
+<li><a href="/Bench/CPU"><img alt="" src="/Content/images/bench_li_pic1.jpg"/><span>CPU</span></a></li>
+<li><a href="/Bench/SSD"><img alt="" src="/Content/images/bench_li_pic2.jpg"/><span>SSD</span></a></li>
+<li><a href="/Bench/GPU13"><img alt="" src="/Content/images/gpubench2013.jpg"/><span>GPU<br/>2013</span></a></li>
+<li><a href="/Bench/GPU12"><img alt="" src="/Content/images/bench_li_pic3.jpg"/><span>GPU<br/>2012</span></a></li>
+<li><a href="/Bench/Smartphone11"><img alt="" src="/Content/images/bench_li_pic5.jpg"/><span>Smartphone<br/>2011</span></a></li>
+<li><a href="/Bench/Mobile"><img alt="" src="/Content/images/bench_li_pic6.jpg"/><span>Mobile</span></a></li>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+</section>
+<aside class="sidebar">
+<div id="side_ad">
+</div>
+<article class="pipeline_stories">
+<div class="pipeline_title">
+<h2><a href="/pipeline">PIPELINE STORIES</a>
+</h2>
+<a href="mailto:tips@anandtech.com">+ Submit News</a>
+<div class="clrflt"></div>
+</div>
+<strong>
+<a href="/show/18861/asus-rog-ally-portable-console-eight-zen-4-cores-and-rdna-3-gpu-in-your-hand">Asus Formally Unveils ROG Ally Portable Console: Eight Zen 4 Cores and RDNA 3 GPU in Your Hands</a>
+<img alt="" src="/Content/images/dell_reveal_arrow.png"/>
+</strong>
+<span><a href="/show/18860/asus-unveils-two-new-geforce-rtx-4090-gpus">Asus Unveils Two Slimmer GeForce RTX 4090 Video Cards: ROG Strix LC and TUF OG</a></span>
+<span><a href="/show/18859/philips-reveals-dual-screen-display-a-24inch-lcd-with-e-ink-secondary-screen">Philips Reveals Dual Screen Display: a 24-Inch LCD with E Ink Secondary Screen</a></span>
+<ul>
+<li><a href="/show/18858/samsung-to-unveil-refined-3nm-and-performanceenhanced-4nm-nodes">Samsung to Unveil Refined 3nm and Performance-Enhanced 4nm Nodes at VLSI Symposium</a></li>
+<li><a href="/show/18857/nvidia-bundles-diablo-iv-with-geforce-rtx-40-graphics-cards">NVIDIA Launches Diablo IV Bundle for GeForce RTX 40 Video Cards</a></li>
+<li><a href="/show/18856/amd-to-host-ai-and-data-center-event-on-june-13th-mi300-details-inbound">AMD To Host AI and Data Center Event on June 13th - MI300 Details Inbound?</a></li>
+<li><a href="/show/18855/noctua-publishes-roadmap">Noctua Publishes Roadmap: Next-Gen AMD Threadripper Coolers Incoming</a></li>
+<li><a href="/show/18854/-samsung-foundry-vows-to-surpass-tsmc-within-five-years"> Samsung Foundry Vows to Surpass TSMC Within Five Years</a></li>
+<li><a href="/show/18853/amd-opensil-planned-to-replace-agesa-firmware-in-client-and-server-in-2026">AMD openSIL Planned to Replace AGESA Firmware in Client and Server in 2026</a></li>
+<li><a href="/show/18852/topgros-499-fanless-pc-packs-core-i71255u-alder-lake-cpu">Topgro's $499 Fanless PC Packs Core i7-1255U 'Alder Lake' CPU</a></li>
+<li><a href="/show/18851/corsair-introduces-mp700-pcie-50-ssds-1-tb-starting-at-16999">Corsair Introduces MP700 PCIe 5.0 SSDs: 1 TB Starting At $169.99</a></li>
+<li><a href="/show/18850/supermicro-lists-intel-data-center-gpu-max-ponte-vecchio-based-machines">Supermicro Lists Intel Data Center GPU Max 'Ponte Vecchio' Based Machines</a></li>
+</ul>
+</article>
+<div id="side_ad2">
+</div>
+<article class="twitter">
+<h2>TWEETS <img alt="" src="/Content/images/twiiter_bird.png"/>
+</h2>
+<div class="twitter_box">
+<div class="twitter_cont">
+<ul>
+<li><a href="https://twitter.com/gavbon86"><span>gavbon86</span></a>: <a href="https://twitter.com/gavbon86/status/1657805645536452610">@boxstory_rkm Tweet of the day ð</a></li>
+<li><a href="https://twitter.com/RyanSmithAT"><span>RyanSmithAT</span></a>: <a href="https://twitter.com/RyanSmithAT/status/1657803405140836352">@Patrick1Kennedy @IanCutress @Delta Alaska still lets you in the lounge if you have a first class ticket. But they'â¦ https://t.co/oWWUd9X5eu</a></li>
+<li><a href="https://twitter.com/gavbon86"><span>gavbon86</span></a>: <a href="https://twitter.com/gavbon86/status/1657779779943165953">@faksnima @anandtech I mean, things like SQL databasing, stuff like that will benefit benefit from faster read andâ¦ https://t.co/3b7bWYCWg9</a></li>
+<li><a href="https://twitter.com/gavbon86"><span>gavbon86</span></a>: <a href="https://twitter.com/gavbon86/status/1657458276072820736">@mrsamjones88 What are you talking about? Billy already announced Bakole knocked both out in sparring, with the samâ¦ https://t.co/tj8UVUTnF0</a></li>
+<li><a href="https://twitter.com/gavbon86"><span>gavbon86</span></a>: <a href="https://twitter.com/gavbon86/status/1657458014377451520">@boxstory_rkm @Boxing_UK_ @Regan_Slaymaker There's a fine line between journalism and being a sponsored mouthpiece.â¦ https://t.co/76v4Bu4VnR</a></li>
+<li><a href="https://twitter.com/gavbon86"><span>gavbon86</span></a>: <a href="https://twitter.com/gavbon86/status/1657446836112699392">@misslucyjmac I would take a fight against one of these for free. No need for a catch weight ð</a></li>
+<li><a href="https://twitter.com/RyanSmithAT"><span>RyanSmithAT</span></a>: <a href="https://twitter.com/RyanSmithAT/status/1656798558622998528">@Darth_Goldsmith @anandtech You are correct. Thanks, Mike!</a></li>
+<li><a href="https://twitter.com/RyanSmithAT"><span>RyanSmithAT</span></a>: <a href="https://twitter.com/RyanSmithAT/status/1655980225577226240">So if AMD doesn't disclose more details about MI300 in June, the investors will be rioting in the streets. If theyâ¦ https://t.co/lbh0tJCPZz</a></li>
+<li><a href="https://twitter.com/RyanSmithAT"><span>RyanSmithAT</span></a>: <a href="https://twitter.com/RyanSmithAT/status/1655980041057226752">And MI300 has the fortuitous timing to be landing right in the middle of all of this. So even though AMD couldn't hâ¦ https://t.co/eOTO0bzG99</a></li>
+<li><a href="https://twitter.com/RyanSmithAT"><span>RyanSmithAT</span></a>: <a href="https://twitter.com/RyanSmithAT/status/1655979511270477825">NVIDIA is, frankly, making absurd amounts of money right now selling H100 products for large sums. For the near futâ¦ https://t.co/d6vgXwfUfa</a></li>
+<li><a href="https://twitter.com/ganeshts"><span>ganeshts</span></a>: <a href="https://twitter.com/ganeshts/status/1645457802473922561">@science_dot @USTreasury I've been filling up the PDF offline and uploading for ages now  ( Needs only Adobe Readerâ¦ https://t.co/eEGKjKdwGD</a></li>
+<li><a href="https://twitter.com/ganeshts"><span>ganeshts</span></a>: <a href="https://twitter.com/ganeshts/status/1642377352666828800">If you have any questions or require more information about #SB403 - including aspects that the mainstream media glâ¦ https://t.co/Cd1bGS4Bwi</a></li>
+<li><a href="https://twitter.com/ganeshts"><span>ganeshts</span></a>: <a href="https://twitter.com/ganeshts/status/1642377282554843136">You can also contact your state senator directly via the official contact form (comments restricted to 2K words), wâ¦ https://t.co/LutbT2KrLm</a></li>
+<li><a href="https://twitter.com/ganeshts"><span>ganeshts</span></a>: <a href="https://twitter.com/ganeshts/status/1642377211176157184">We are hoping for a grassroots campaign to educate lawmakers and residents on why the bill enables unfair policingâ¦ https://t.co/8rVsnK3dKb</a></li>
+<li><a href="https://twitter.com/ganeshts"><span>ganeshts</span></a>: <a href="https://twitter.com/ganeshts/status/1642376369773621248">As individuals of a micro-minority in CA, we are up against a VC-backed organization aiming to push through an appaâ¦ https://t.co/5Glyc5P7S4</a></li>
+</ul>
+</div>
+<a class="twitter_follow_btn pie" href="http://twitter.com/anandtech">Follow <span>@</span>ANANDTECH</a>
+</div>
+<strong><img alt="" src="/Content/images/twitter_down_arrow.png"/></strong>
+</article>
+<div style="clear: both;"> </div>
+<div id="side_ad3">
+</div>
+</aside>
+<div class="clear"></div>
+<div class="header_ad hide_resp" id="footer_ad">
+</div>
+</section>
+<footer class="footer">
+<div class="links">
+<h2>LINKS</h2>
+<div class="clear"></div>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/home/about/">About</a></li>
+<li><a href="http://forums.anandtech.com">Forums</a></li>
+<li><a href="/rss/">RSS</a></li>
+<li><a href="/pipeline/">Pipeline News</a></li>
+<li><a href="/bench/">Bench</a></li>
+<li><a href="https://www.futureplc.com/terms-conditions/">Terms of Use</a></li>
+<li><a href="https://www.futureplc.com/who-we-are/#contact">Contact Us</a></li>
+<li id="privacy-link-container1"></li>
+<li id="privacy-link-container2"></li>
+</ul>
+</div>
+<div class="links">
+<h2>TOPICS</h2>
+<div class="clear"></div>
+<ul>
+<li><a href="/tag/cpus">CPUs</a></li>
+<li><a href="/tag/mb">Motherboards</a></li>
+<li><a href="/tag/storage">SSD/HDD</a></li>
+<li><a href="/tag/gpus">GPUs</a></li>
+<li><a href="/tag/mobile">Mobile</a></li>
+<li><a href="/tag/enterprise">Enterprise &amp; IT</a></li>
+<li><a href="/tag/smartphones">Smartphones </a></li>
+<li><a href="/tag/memory">Memory</a></li>
+<li><a href="/tag/casecoolingpsus">Cases/Cooling/PSU(s) </a></li>
+</ul>
+</div>
+<div class="links link2">
+<ul>
+<li><a href="/tag/displays">Displays </a></li>
+<li><a href="/tag/mac">Mac </a></li>
+<li><a href="/tag/systems">Systems </a></li>
+<li><a href="/tag/cloud-computing">Cloud </a></li>
+<li><a href="/tag/tradeshows">Trade Shows </a></li>
+<li><a href="/tag/guides">Guides</a></li>
+</ul>
+</div>
+<div class="links">
+<h2>FOLLOW</h2>
+<div class="clear"></div>
+<ul class="follow">
+<li>
+<a href="http://www.facebook.com/AnandTech/">
+<img alt="" src="/Content/images/icon-facebook2.png"><span>Facebook</span>
+</img></a>
+</li>
+<li>
+<a href="http://twitter.com/AnandTech">
+<img alt="" src="/Content/images/icon-twitter2.png"><span>Twitter</span>
+</img></a>
+</li>
+<li>
+<a href="/rss/">
+<img alt="" src="/Content/images/icon-rss2.png"><span>RSS</span>
+</img></a>
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+<div class="footer_left">The Most Trusted in Tech Since 1997</div>
+<div class="footer_right">
+<ul>
+<li><a href="/home/about/">About</a></li>
+<li><a href="https://www.futureplc.com/services/advertising/">Advertising</a></li>
+<li class="nomrgn"><a href="https://www.futureplc.com/privacy-policy/">Privacy Policy</a></li>
+</ul>
+<a href="https://www.futureplc.com"><img alt="purch" src="/Content/images/FutureFooterLogo-Transparent.png" style="margin-top: 10px;"/></a>
+<span>Copyright © 2023. All rights reserved.</span>
+</div>
+<div class="clear"></div>
+</footer>
+<div class="rsp_ft">
+<div class="footer_resp">
+<ul class="tabs">
+<li class="click_btn"><a href="#">TOPICS</a></li>
+<li><a href="#">FOLLOW</a></li>
+<li class="right"><a href="#">ABOUT</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<section class="panes">
+<div class="topic_sec">
+<div class="topic">
+<span class="blk_arrow"><img alt="" src="/Content/images/gryBg1.png"/></span>
+<div class="topic_box">
+<ul>
+<li><a href="/tag/cpus">CPUs</a></li>
+<li><a href="/tag/mb">Motherboards</a></li>
+<li><a href="/tag/storage">SSD/HDD</a></li>
+<li><a href="/tag/gpus">GPUs</a></li>
+<li><a href="/tag/mobile">Mobile</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="topic_box">
+<ul>
+<li><a href="/tag/enterprise">Enterprise &amp; IT</a></li>
+<li><a href="/tag/smartphones">Smartphones </a></li>
+<li><a href="/tag/memory">Memory</a></li>
+<li><a href="/tag/casecoolingpsus">Cases/Cooling/PSU(s) </a></li>
+<li><a href="/tag/displays">Displays </a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="topic_box no_mar">
+<ul>
+<li><a href="/tag/mac">Mac </a></li>
+<li><a href="/tag/systems">Systems </a></li>
+<li><a href="/tag/cloud-computing">Cloud </a></li>
+<li><a href="/tag/tradeshows">Trade Shows </a></li>
+<li><a href="/tag/guides">Guides</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</section>
+<section class="panes">
+<div class="topic_sec">
+<div class="topic">
+<span class="blk_arrow left"><img alt="" src="/Content/images/gryBg1.png"/></span>
+<div class="follow_block ctr">
+<a href="http://www.facebook.com/AnandTech/"><img alt="" src="/Content/images/icon-facebook2.png">Facebook</img></a>
+</div>
+<div class="follow_block ctr">
+<a href="http://www.twitter.com/AnandTech"><img alt="" src="/Content/images/icon-twitter2.png">Twitter</img></a>
+</div>
+<div class="follow_block ctr">
+<a href="/rss/"><img alt="" src="/Content/images/icon-rss2.png">RSS</img></a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</section>
+<section class="panes">
+<div class="topic_sec">
+<div class="topic">
+<span class="blk_arrow right"><img alt="" src="/Content/images/gryBg1.png"/></span>
+<div class="follow_block ctr">
+<a href="/home/about/">About</a>
+</div>
+<div class="follow_block ctr">
+<a href="https://www.futureplc.com/services/advertising/">Advertising</a>
+</div>
+<div class="follow_block ctr">
+<a href="https://www.futureplc.com/privacy-policy/">Privacy Policy</a>
+</div>
+<div class="follow_block ctr">
+<a href="https://www.futureplc.com/who-we-are/#contact">Contact Us</a>
+</div>
+<div class="follow_block ctr">
+<a href="https://www.futureplc.com/terms-conditions/">Terms of Use</a>
+</div>
+<div class="follow_block ctr">
+<a href="/account/fullsite?r=%2f">Show Full Site</a>
+</div>
+<div class="follow_block ctr" id="privacy-link-container1">
+</div>
+<div class="follow_block ctr" id="privacy-link-container2">
+</div>
+<div class="clear"></div>
+<div class="footer_copy">Copyright © 2023. All rights reserved.</div>
+</div>
+</div>
+</section>
+<div class="mobi-footer">
+<div class="mobile"><a href="#">BENCH</a></div>
+<div class="topic_sec">
+<div class="bench_box show_resp2">
+<div class="bench_carousel show_resp2">
+<ul>
+<li><a href="/Bench/CPU"><img alt="" src="/Content/images/bench_li_pic1.jpg"/><span>CPU</span></a></li>
+<li><a href="/Bench/SSD"><img alt="" src="/Content/images/bench_li_pic2.jpg"/><span>SSD</span></a></li>
+<li><a href="/Bench/GPU13"><img alt="" src="/Content/images/gpubench2013.jpg"/><span>GPU<br/>2013</span></a></li>
+<li><a href="/Bench/GPU12"><img alt="" src="/Content/images/bench_li_pic3.jpg"/><span>GPU<br/>2012</span></a></li>
+<li><a href="/Bench/Smartphone11"><img alt="" src="/Content/images/bench_li_pic5.jpg"/><span>Smartphone<br/>2011</span></a></li>
+<li><a href="/Bench/Mobile"><img alt="" src="/Content/images/bench_li_pic6.jpg"/><span>Mobile</span></a></li>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="mobile"><a href="#">TOPICS</a></div>
+<div class="topic_sec">
+<div class="topic res_topic">
+<div class="topic_box res_topicBox">
+<ul>
+<li><a href="/tag/cpus">CPUs</a></li>
+<li><a href="/tag/mb">Motherboards</a></li>
+<li><a href="/tag/storage">SSD/HDD</a></li>
+<li><a href="/tag/gpus">GPUs</a></li>
+<li><a href="/tag/mobile">Mobile</a></li>
+<li><a href="/tag/enterprise">Enterprise &amp; IT</a></li>
+<li><a href="/tag/smartphones">Smartphones </a></li>
+<li><a href="/tag/memory">Memory</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="topic_box no_mar res_topicBox">
+<ul>
+<li><a href="/tag/casecoolingpsus">Cases/Cooling/PSU(s) </a></li>
+<li><a href="/tag/displays">Displays </a></li>
+<li><a href="/tag/mac">Mac </a></li>
+<li><a href="/tag/systems">Systems </a></li>
+<li><a href="/tag/cloud-computing">Cloud </a></li>
+<li><a href="/tag/tradeshows">Trade Shows </a></li>
+<li><a href="/tag/guides">Guides</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="mobile"><a href="#">FOLLOW</a></div>
+<div class="topic_sec">
+<div class="topic res_topic">
+<div class="follow_block">
+<a href="http://www.facebook.com/AnandTech/"><img alt="" src="/Content/images/icon-facebook2.png"/>Facebook</a>
+</div>
+<div class="follow_block">
+<a href="http://www.twitter.com/AnandTech"><img alt="" src="/Content/images/icon-twitter2.png"/>Twitter</a>
+</div>
+<div class="follow_block width">
+<a href="/rss/"><img alt="" src="/Content/images/icon-rss2.png"/>RSS</a>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="mobile"><a href="#">ABOUT</a></div>
+<div class="topic_sec">
+<div class="topic res_topic">
+<div class="topic_box no_mar">
+<ul>
+<li><a href="/home/about/">About</a></li>
+<li><a href="https://www.futureplc.com/services/advertising/">Advertising</a></li>
+<li><a href="https://www.futureplc.com/privacy-policy/">Privacy Policy</a></li>
+<li><a href="https://www.futureplc.com/who-we-are/#contact">Contact Us</a></li>
+<li><a href="/account/fullsite?r=%2f">Show Full Site</a></li>
+<li class="nomar">Copyright © 2023. All rights reserved.</li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="login_popup">
+<div id="inlineLogin">
+<h2>Log in</h2>
+<h3><span id="ilMessage">Don't have an account? <a href="/Account/Register?r=%2f">Sign up now</a></span></h3>
+<div class="login_left">
+<form action="#">
+<div class="login_form">
+<label>Username</label>
+<input class="login_field" id="UserName" name="UserName" type="text"/>
+<label>Password</label>
+<input class="login_field" id="Password" name="Password" type="password"/>
+<label class="fl-lt" for="RememberMe" style="margin-right: 10px;">Remember Me</label>
+<input class="fl-lt" id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false">
+<input class="login_btn" id="inlineLoginButton" name="" onclick="DoLogin(); return false;" type="submit" value="LOG IN"/><img alt="" id="ilAjaxLoader" src="/Content/images/ajax-loader.gif">
+<div class="clear"></div>
+</img></input></input></div>
+</form>
+<div id="ilLost">
+<a href="/Account/ResetPassword?r=%2f">Lost your password?</a>
+</div>
+<div id="ilTerms">
+                    Weâve updated our terms. By continuing to use the site and/or by logging into your account, you agree to the Siteâs updated <a href="https://www.futureplc.com/terms-conditions/" target="_blank">Terms of Use</a> and <a href="https://www.futureplc.com/privacy-policy/" target="_blank">Privacy Policy</a>.
+                </div>
+<div class="clear"></div>
+</div>
+</div></div>
+<div id="oop_ad">
+</div>
+<div id="1x1">
+</div>
+<script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1721979-1']);
+            _gaq.push(['_trackPageview']);
+            dataLayer.push({ 'OmnitureVars': g_o });
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+<script>
+(function () {
+    var linkContainer = document.createElement('li');
+    var linkContainerHook = document.querySelectorAll('.topic_sec .topic.res_topic ul li:nth-of-type(5)')[2];
+
+    function injectCCPALink() {
+        if (window.ccpaAppliesPromise && window.__uspapi) {
+            window.ccpaAppliesPromise.then(function (ccpaApplies) {
+                if (!ccpaApplies) {
+                    return;
+                }
+
+                if (window.top.screen.width >= 700) {
+                    linkContainer = document.querySelector('#privacy-link-container1');
+                    if (!linkContainer) {
+                        return;
+                    }
+                } else {
+                    linkContainerHook.insertAdjacentElement('beforebegin', linkContainer);
+                }
+
+                var ccpaLink = document.createElement('a');
+                ccpaLink.href = '#';
+                ccpaLink.innerText = 'Do not sell my info';
+                ccpaLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    window.__uspapi('displayUspUi');
+                    return false;
+                });
+                linkContainer.appendChild(ccpaLink);
+
+                // CSS rules to hide unecessary links in CCPA modal
+                var style = document.createElement('style')
+                style.innerText = '#qc-usp-delete-link, #qc-usp-access-link { display: none; } #qc-usp-policy-link {border-left: none;}'
+                document.head.appendChild(style)
+            });
+        }
+    }
+
+    function injectGDPRLink() {
+        if (window.__tcfapi) {
+            window.__tcfapi('addEventListener', 2, function (data, success) {
+                if (
+                    success &&
+                    (data.eventStatus === 'tcloaded' || data.eventStatus === 'useractioncomplete') &&
+                    data.gdprApplies === true
+                ) {
+                    window.__tcfapi('removeEventListener', 2, function () { }, data.listenerId);
+
+                    if (window.top.screen.width >= 700) {
+                        linkContainer = document.querySelector('#privacy-link-container2');
+                        if (!linkContainer) {
+                            return;
+                        }
+                    } else {
+                        linkContainerHook.insertAdjacentElement('beforebegin', linkContainer);
+                    }
+
+                    var link = document.createElement('a');
+                    link.href = '#';
+                    link.innerText = 'GDPR consent';
+                    link.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        window.__tcfapi('displayConsentUi', 2, function () { });
+                        return false;
+                    });
+                    linkContainer.appendChild(link);
+                }
+            })
+        }
+    }
+
+    if (document.readyState === 'loading') {  // Loading hasn't finished yet
+        document.addEventListener('DOMContentLoaded', injectCCPALink);
+        document.addEventListener('DOMContentLoaded', injectGDPRLink);
+    } else {  // `DOMContentLoaded` has already fired
+        injectCCPALink();
+        injectGDPRLink();
+    }
+}());
+    </script>
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "AnandTech",
+    "alternateName" : "AnandTech",
+    "url": "http://www.anandtech.com/"
+    ,"potentialAction": {
+        "@type": "SearchAction",
+          "target": "http://www.anandtech.com/SearchResults?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+    }
+</script>
+<script type="application/ld+json">
+    { "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "@id" : "#AnandTechOrg",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "http://www.anandtech.com/content/images/rss_logo.png",
+    "width": 400,
+    "height": 400
+    },
+    "name" : "AnandTech",
+    "url" : "http://www.anandtech.com/",
+    "memberOf": {
+    "@type": "Organization",
+    "@id": "http://www.purch.com/#PurchOrg"
+    }
+    ,"sameAs" : ["https://www.facebook.com/AnandTech/","http://twitter.com/AnandTech"]
+    }
+</script>
+<!--  .20 -->
+</body>
+</html>

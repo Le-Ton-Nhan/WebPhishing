@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="ie6 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie" lang="vi" dir="ltr"> <![endif]-->
+<!--[if !IE]> --> <html dir="ltr" lang="vi"> <!-- <![endif]-->
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="https://www.uit.edu.vn/sites/vi/files/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+<meta content="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin, Äáº¡i há»c Quá»c gia ThÃ nh phá» Há» ChÃ­ Minh (ÄHQG-HCM) lÃ  trÆ°á»ng Äáº¡i há»c cÃ´ng láº­p ÄÃ o táº¡o vá» cÃ´ng nghá» thÃ´ng tin vÃ  truyá»n thÃ´ng (CNTT&amp;TT) ÄÆ°á»£c thÃ nh láº­p theo quyáº¿t Äá»nh sá» 134/2006/QÄ-TTg ngÃ y 08/06/2006 cá»§a Thá»§ tÆ°á»ng ChÃ­nh phá»§" name="description"/>
+<meta content="Drupal 7 (http://drupal.org)" name="generator"/>
+<link href="https://www.uit.edu.vn/" rel="canonical"/>
+<link href="https://www.uit.edu.vn/" rel="shortlink"/>
+<meta content="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.uit.edu.vn" property="og:url"/>
+<meta content="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin" property="og:title"/>
+<meta content="10.772105" property="og:latitude"/>
+<meta content="106.696137" property="og:longitude"/>
+<meta content="Khu phá» 6" property="og:street_address"/>
+<meta content="P.Linh Trung, Q.Thá»§ Äá»©c" property="og:locality"/>
+<meta content="Tp.Há» ChÃ­ Minh" property="og:region"/>
+<meta content="700000" property="og:postal_code"/>
+<meta content="Viá»t Nam" property="og:country_name"/>
+<meta content="info@uit.edu.vn" property="og:email"/>
+<meta content="(028) 372 52002" property="og:phone_number"/>
+<meta content="(028) 372 52148" property="og:fax_number"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin - UIT</title>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_vZ_wrMQ9Og-YPPxa1q4us3N7DsZMJa-14jShHgRoRNo.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_xw7gVYYd5mDaKz8X3b1clJKFckx4t-ekvPXVBszqRHw.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_TVctrc-teFA9IK1pZzFtGHgmnTvUGNYmzWyhfx-bzFs.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_r6g3jNcQgn6e-x6XrUf4bnUNywmeOqVqT0wt_mQ7MPM.css" media="all" rel="stylesheet" type="text/css"/>
+<style media="all" type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+.tb-megamenu.animate .mega > .mega-dropdown-menu,.tb-megamenu.animate.slide .mega > .mega-dropdown-menu > div{transition-delay:100ms;-webkit-transition-delay:100ms;-ms-transition-delay:100ms;-o-transition-delay:100ms;transition-duration:400ms;-webkit-transition-duration:400ms;-ms-transition-duration:400ms;-o-transition-duration:400ms;}
+
+/*]]>*/-->
+</style>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_1zFb84H9sa5ltLjtimQy4Oks9GDvGT4ek_-uxT6fk_E.css" media="all" rel="stylesheet" type="text/css"/>
+<style media="all" type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+.tb-megamenu.animate .mega > .mega-dropdown-menu,.tb-megamenu.animate.slide .mega > .mega-dropdown-menu > div{transition-delay:100ms;-webkit-transition-delay:100ms;-ms-transition-delay:100ms;-o-transition-delay:100ms;transition-duration:400ms;-webkit-transition-duration:400ms;-ms-transition-duration:400ms;-o-transition-duration:400ms;}
+
+/*]]>*/-->
+</style>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_z5Rye-Qej34ZV8sTveS8W8wgFSgf1nlb7gxG4k2ufB4.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_W_k4NqwjiefoasCDFx8tZILl9h6MiFdY94ZccBwvaxY.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.uit.edu.vn/sites/vi/files/css/css_nGZ0EUi6HATidAf3pITrpLdyTGtTsmfVAzXLpUp2gr4.css" media="print" rel="stylesheet" type="text/css"/>
+<script src="https://www.uit.edu.vn/sites/vi/files/js/js_Pt6OpwTd6jcHLRIjrE-eSPLWMxWDkcyYrPTIrXDSON0.js" type="text/javascript"></script>
+<script src="https://www.uit.edu.vn/sites/vi/files/js/js_lboD8mxHbiFYKzdGkJi9JvFQWJGyCslzWjcNjvVR3X0.js" type="text/javascript"></script>
+<script src="https://www.uit.edu.vn/sites/vi/files/js/js_qrf44QUDL_YTtRm1c_V_5DthK1dj0B5pBTFSfp1hfmk.js" type="text/javascript"></script>
+<script src="https://www.uit.edu.vn/sites/vi/files/js/js_J2KQGtTJXfml2Jo1pVXR1fwQFQfHHHsTPnymuCIkN5M.js" type="text/javascript"></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-29519064-1" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-29519064-1", {"groups":"default"});
+//--><!]]>
+</script>
+<script src="https://www.uit.edu.vn/sites/vi/files/js/js_Gq691h7I2zULot1LMHH4PbtSy7UpNTuK6o9kOvnxdSA.js" type="text/javascript"></script>
+<script src="https://www.uit.edu.vn/sites/vi/files/js/js_f7gFGARNNLNZC8Vsyt79TIVA-N8wRbNyNWs8v1u1NXU.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"uitpb","theme_token":"o9w4gyKq22hh0yKXxQW3TJcbc2SrFO7AZwjDawEcWZU","js":{"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.12\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_browser.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/js\/ckeditor-accordion.js":1,"public:\/\/languages\/vi_rAx2WB4QKZvogHFlf6YCza9xXW3Hyo7ZskwCgrrRziA.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-frontend.js":1,"sites\/all\/modules\/contrib\/tb_megamenu\/js\/tb-megamenu-touch.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-29519064-1":1,"0":1,"sites\/all\/modules\/contrib\/mmenu\/js\/mmenu.js":1,"sites\/all\/modules\/contrib\/flexslider_views_slideshow\/js\/flexslider_views_slideshow.js":1,"sites\/all\/libraries\/mmenu\/hammer\/hammer.js":1,"sites\/all\/libraries\/mmenu\/jquery.hammer\/jquery.hammer.js":1,"sites\/all\/libraries\/mmenu\/main\/src\/js\/jquery.mmenu.min.all.js":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/js\/bootstrap.min.js":1,"sites\/all\/themes\/open_framework\/js\/open_framework.js":1,"sites\/all\/themes\/open_framework\/js\/jquery.placeholder.min.js":1,"sites\/all\/themes\/open_framework\/js\/override.js":1,"sites\/vi\/themes\/uitpb\/js\/script.js":1,"sites\/vi\/themes\/uitpb\/js\/countdown.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ckeditor_accordion\/css\/ckeditor-accordion.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/custom\/uit_lookup\/css\/lookup.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/font-awesome\/4.4.0\/css\/font-awesome.min.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/bootstrap.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/base.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/default.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/compatibility.css":1,"0":1,"sites\/all\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/contrib\/custom_search\/custom_search.css":1,"sites\/all\/modules\/contrib\/tb_megamenu\/css\/styles\/blue.css":1,"1":1,"public:\/\/ctools\/css\/e20d83bd1b8d99148544d4bf564c6847.css":1,"sites\/all\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"public:\/\/ctools\/css\/2672756f181344e8c9d051603d423738.css":1,"sites\/all\/libraries\/mmenu\/main\/src\/css\/jquery.mmenu.all.css":1,"sites\/all\/libraries\/mmenu\/icomoon\/icomoon.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap.min.css":1,"sites\/all\/themes\/open_framework\/packages\/bootstrap-2.3.1\/css\/bootstrap-responsive.min.css":1,"sites\/all\/themes\/open_framework\/packages\/font-awesome-4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/modules\/contrib\/mmenu\/themes\/mm-fresh\/styles\/mm-fresh.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework.css":1,"sites\/vi\/themes\/uitpb\/css\/style.css":1,"sites\/all\/themes\/open_framework\/css\/open_framework_print.css":1}},"colorbox":{"opacity":"0.85","current":"{current} trong s\u1ed1 {total}","previous":"\u00ab Tr\u01b0\u1edbc","next":"Ti\u1ebfp \u00bb","close":"\u0110\u00f3ng","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","file_public_path":"\/sites\/vi\/files","specificPagesDefaultValue":"admin*\nimagebrowser*\nimg_assist*\nimce*\nnode\/add\/*\nnode\/*\/edit\nprint\/*\nprintpdf\/*\nsystem\/ajax\nsystem\/ajax\/*"},"custom_search":{"form_target":"_self","solr":0},"urlIsAjaxTrusted":{"https:\/\/www.uit.edu.vn\/node?destination=node":true,"\/":true},"viewsSlideshow":{"featured_slider-block_1":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"pause":["viewsSlideshowControls","flexsliderViewsSlideshow"],"play":["viewsSlideshowControls","flexsliderViewsSlideshow"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0},"featured_slider-block_2":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"pause":["viewsSlideshowControls","flexsliderViewsSlideshow"],"play":["viewsSlideshowControls","flexsliderViewsSlideshow"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"flexslider_views_slideshow":{"#flexslider_views_slideshow_main_featured_slider-block_1":{"num_divs":4,"id_prefix":"#flexslider_views_slideshow_main_","vss_id":"featured_slider-block_1","namespace":"flex-","selector":".slides \u003E li","easing":"linear","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":1000,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":3,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":5000,"directionNav":true,"controlNav":true,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""},"#flexslider_views_slideshow_main_featured_slider-block_2":{"num_divs":4,"id_prefix":"#flexslider_views_slideshow_main_","vss_id":"featured_slider-block_2","namespace":"flex-","selector":".slides \u003E li","easing":"linear","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":1000,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":3,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":5000,"directionNav":true,"controlNav":1,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""}},"ckeditor_accordion":{"collapseAll":1},"mmenu":{"mmenu_left":{"enabled":"1","title":"Left menu","name":"mmenu_left","blocks":[{"module_delta":"system|main-menu","menu_parameters":{"min_depth":"1"},"title":"\u003Cnone\u003E","collapsed":"0","wrap":"0","module":"system","delta":"main-menu"}],"options":{"classes":"mm-fresh mm-slide","effects":{"mm-slide":"mm-slide"},"slidingSubmenus":true,"clickOpen":{"open":true,"selector":"#menu-icon"},"counters":{"add":true,"update":true},"dragOpen":{"open":true,"pageNode":"body","threshold":100,"maxStartPos":50},"footer":{"add":true,"content":"","title":"Khu ph\u1ed1 6, P. Linh Trung Qu\u1eadn Th\u1ee7 \u0110\u1ee9c, Tp. H\u1ed3 Ch\u00ed Minh","update":true},"header":{"add":true,"content":"Tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc C\u00f4ng ngh\u1ec7 Th\u00f4ng tin","title":"Tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc C\u00f4ng ngh\u1ec7 Th\u00f4ng tin","update":true},"labels":{"collapse":false},"offCanvas":{"enabled":true,"modal":false,"moveBackground":true,"position":"left","zposition":"front"},"searchfield":{"add":false,"addTo":"menu","search":false,"placeholder":"Search","noResults":"No results found.","showLinksOnly":true}},"configurations":{"clone":false,"preventTabbing":false,"panelNodetype":"div, ul, ol","transitionDuration":400,"classNames":{"label":"Label","panel":"Panel","selected":"Selected","buttonbars":{"buttonbar":"anchors"},"counters":{"counter":"Counter"},"fixedElements":{"fixedTop":"FixedTop","fixedBottom":"FixedBottom"},"footer":{"panelFooter":"Footer"},"header":{"panelHeader":"Header","panelNext":"Next","panelPrev":"Prev"},"labels":{"collapsed":"Collapsed"},"toggles":{"toggle":"Toggle","check":"Check"}},"dragOpen":{"width":{"perc":0.8,"min":140,"max":440},"height":{"perc":0.8,"min":140,"max":880}},"offCanvas":{"menuInjectMethod":"prepend","menuWrapperSelector":"body","pageNodetype":"div","pageSelector":"body \u003E div"}},"custom":[],"position":"left"}},"googleanalytics":{"account":["UA-29519064-1"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1}});
+//--><!]]>
+</script>
+<!--[if IE 7]>
+    <![endif]-->
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="/sites/all/themes/open_framework/js/html5shiv.js"></script>
+  <![endif]-->
+<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "WebSite",
+	  "url": "https://www.uit.edu.vn",
+	  "potentialAction": [{
+		"@type": "SearchAction",
+		"target": "https://www.uit.edu.vn/search/node/{search_term_string}",
+		"query-input": "required name=search_term_string"
+	  },{
+		"@type": "SearchAction",
+		"target": "android-app://vn.uit.edu/https/www.uit.edu.vn/search/node/{search_term_string}",
+		"query-input": "required name=search_term_string"
+	  }]
+	}
+	</script>
+</head>
+<body class="html front not-logged-in no-sidebars page-node i18n-vi">
+<a class="element-invisible element-focusable" href="#main">Skip to content</a>
+<!-- /#skipnav -->
+<!-- /#admin-shortcuts -->
+<!--Header Top-->
+<div class="header_top clearfix" id="header_top">
+<div class="container">
+<div class="region region-header-top clearfix">
+<div class="clearfix block block-block left-contact" id="block-block-23"> <div class="content"> <div>
+<ul class="list-inline">
+<li><i class="fa fa-phone text-white"><i>Â </i></i> <a class="text-white" href="#">(028) 372 52002</a></li>
+<li><i class="fa fa-envelope-o text-white"><i>Â </i></i> <a class="text-white" href="mailto:info@uit.edu.vn">info@uit.edu.vn</a></li>
+</ul>
+</div>
+</div>
+</div><div class="clearfix block block-locale" id="block-locale-language"> <div class="content"> <ul class="language-switcher-locale-url"><li class="vi first active"><a class="language-link active" href="https://www.uit.edu.vn/" xml:lang="vi"><img alt="Tiáº¿ng Viá»t" class="language-icon" height="12" src="https://www.uit.edu.vn/sites/all/modules/contrib/languageicons/flags/vi.png" title="Tiáº¿ng Viá»t" typeof="foaf:Image" width="18"/></a></li>
+<li class="en last"><a class="language-link" href="https://en.uit.edu.vn/" xml:lang="en"><img alt="English" class="language-icon" height="12" src="https://www.uit.edu.vn/sites/all/modules/contrib/languageicons/flags/en.png" title="English" typeof="foaf:Image" width="18"/></a></li>
+</ul> </div>
+</div><div class="clearfix block block-menu support" id="block-menu-menu-top-menu"> <div class="content"> <ul class="menu nav"><li class="first leaf"><a href="https://tuyensinh.uit.edu.vn" target="_blank">Tuyá»n sinh</a></li>
+<li class="leaf"><a href="https://www.uit.edu.vn/bang-vang-sinh-vien">Báº£ng vÃ ng thÃ nh tÃ­ch</a></li>
+<li class="leaf"><a href="http://thuvien.uit.edu.vn" rel="nofollow" target="_blank">ThÆ° viá»n</a></li>
+<li class="leaf"><a href="http://mail.uit.edu.vn/" rel="nofollow" target="_blank">Webmail CB</a></li>
+<li class="leaf"><a href="http://mail.gm.uit.edu.vn/" rel="nofollow" target="_blank">Webmail SV</a></li>
+<li class="last leaf cal-link"><a href="https://vnuhcm.edu.vn/" rel="nofollow" target="_blank">Website ÄHQG</a></li>
+</ul> </div>
+</div><div class="clearfix block block-block right-social" id="block-block-30"> <div class="content"> <ul>
+<li><a class="fa fa-facebook fb-btn" href="https://www.facebook.com/UIT.Fanpage" target="_blank">Â </a></li>
+<li><a class="fa fa-youtube yt-btn" href="https://www.youtube.com/c/UITtv" target="_blank">Â </a></li>
+<li><a class="fa fa-arrow-up arr-btn" href="#" id="top">Â </a></li>
+</ul>
+</div>
+</div></div>
+<!-- /.region -->
+</div>
+</div>
+<!--End Header Top-->
+<div class="bg-header">
+<div class="clearfix header" id="header" role="banner">
+<div class="container">
+<div class="row">
+<div class="header-section span12">
+<div class="site-logo" id="logo"> <a href="https://www.uit.edu.vn/" rel="home" title="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin"> <img alt="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin" role="presentation" src="https://www.uit.edu.vn/sites/vi/files/banner_uit.png"/> </a></div>
+<!-- /#logo -->
+<div class="hide" id="site">
+<div id="name"><a href="https://www.uit.edu.vn/">TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin</a></div>
+</div>
+<!-- /#name-and-slogan -->
+<div class="row-fluid header-content" id="header-content"><div class="region region-header clearfix">
+<div class="clearfix block block-search" id="block-search-form" role="search"> <div class="content"> <form accept-charset="UTF-8" action="/" class="search-form" id="search-block-form" method="post" role="search"><div><div class="container-inline">
+<h2 class="element-invisible">Biá»u máº«u tÃ¬m kiáº¿m</h2>
+<div class="form-item form-type-textfield form-item-search-block-form">
+<label class="element-invisible" for="edit-search-block-form--2">Tá»« khoÃ¡ tÃ¬m kiáº¿m </label>
+<input class="custom-search-box input-medium search-query form-text" id="edit-search-block-form--2" maxlength="128" name="search_block_form" placeholder="TÃ¬m kiáº¿m ná»i dung..." size="15" title="Enter the terms you wish to search for." type="text" value=""/>
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input alt="TÃ¬m kiáº¿m" class="btn-search form-submit" id="edit-submit" name="submit" src="https://www.uit.edu.vn/sites/all/themes/open_framework/images/searchbutton.png" type="image"/></div><input class="custom-search-selector custom-search-types" name="custom_search_types" type="hidden" value="c-baiviet"/>
+<input name="form_build_id" type="hidden" value="form-BYLs_31Br-vu8UYVHq9N_cnq_Dn-eYXli28bM3GNMQ8"/>
+<input name="form_id" type="hidden" value="search_block_form"/>
+</div>
+</div></form> </div>
+</div><div class="clearfix block block-block top-hcld" id="block-block-20"> <div class="content"> <p><img alt="HuÃ¢n chÆ°Æ¡ng lao Äá»ng háº¡ng 3" height="591" src="/sites/vi/files/uploads/images/hcld.png" title="HuÃ¢n chÆ°Æ¡ng lao Äá»ng háº¡ng 3" width="450"/></p>
+</div>
+</div></div>
+<!-- /.region -->
+</div>
+<!-- /#header-content -->
+</div>
+<!-- /#site-login -->
+</div>
+<!--Left Ads-->
+<!--End Left Ads-->
+<!--Right Ads-->
+<!--End Right Ads-->
+</div>
+</div>
+</div>
+<!-- /#header -->
+<!--Horizontal menu-->
+<div class="hoz-menu">
+<div class="container">
+<div class="region region-hoz-menu clearfix">
+<div class="clearfix block block-block" id="block-block-21"> <div class="content"> <div id="menu-icon"><a href="#"><i aria-hidden="true" class="fa fa-bars"><i>menu</i></i></a></div>
+</div>
+</div><div class="clearfix block block-tb-megamenu" id="block-tb-megamenu-main-menu"> <div class="content"> <div aria-label="Main navigation" class="tb-megamenu tb-megamenu-main-menu style-blue animate slide" data-delay="100" data-duration="400" id="tb-megamenu-main-menu" role="navigation">
+<button class="btn btn-navbar tb-megamenu-button" data-target=".nav-collapse" data-toggle="collapse" type="button">
+<i class="fa fa-reorder"></i>
+</button>
+<div class="nav-collapse">
+<ul class="tb-megamenu-nav nav level-0 items-12">
+<li class="tb-megamenu-item level-1 mega dropdown active active-trail" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="744" data-level="1" data-type="menu_item" data-xicon="fa fa-home fa-lg">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/" title="Trang chá»§">
+<i class="fa fa-home fa-lg"></i>
+                Trang chá»§                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="" data-showblocktitle="1" data-width="12" id="tb-megamenu-column-1">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<div class="tb-megamenu-block tb-block tb-megamenu-block" data-block="user--login" data-type="block">
+<div class="block-inner">
+<div class="clearfix block block-user" id="block-user-login"> <h2>ÄÄng nháº­p</h2>
+<div class="content"> <form accept-charset="UTF-8" action="https://www.uit.edu.vn/node?destination=node" id="user-login-form" method="post"><div><div class="form-item form-type-textfield form-item-name">
+<label for="edit-name--2">TÃªn ngÆ°á»i dÃ¹ng <span class="form-required" title="TrÆ°á»ng dá»¯ liá»u nÃ y lÃ  báº¯t buá»c.">*</span></label>
+<input class="form-text required" id="edit-name--2" maxlength="60" name="name" size="15" type="text" value=""/>
+<div class="description">DÃ¹ng tÃ i khoáº£n chá»©ng thá»±c</div>
+</div>
+<div class="form-item form-type-password form-item-pass">
+<label for="edit-pass--2">Máº­t kháº©u <span class="form-required" title="TrÆ°á»ng dá»¯ liá»u nÃ y lÃ  báº¯t buá»c.">*</span></label>
+<input class="form-text required" id="edit-pass--2" maxlength="128" name="pass" size="15" type="password"/>
+<div class="description">Máº­t kháº©u chá»©ng thá»±c</div>
+</div>
+<div class="item-list"></div><input name="form_build_id" type="hidden" value="form-1l2m1HRrcXlpwM2_5VQHiL1xPg8tWkhTl-vBx4pNWAI"/>
+<input name="form_id" type="hidden" value="user_login_block"/>
+<div class="form-actions form-wrapper" id="edit-actions--3"><input class="form-submit" id="edit-submit--3" name="op" type="submit" value="ÄÄng nháº­p"/></div></div></form> </div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega mobile-link" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2751" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="mobile-link" href="https://www.uit.edu.vn/user" title="ÄÄng nháº­p">
+                ÄÄng nháº­p                      </a>
+</li>
+<li class="tb-megamenu-item level-1 mega dropdown active active-trail" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2227" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                Tin tá»©c                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="500" style="width: 500px;">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span6 mega-col-nav" data-class="" data-hidewcol="" data-width="6" id="tb-megamenu-column-3">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="ThÃ´ng tin - ThÃ´ng bÃ¡o chung" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2240" data-level="2" data-type="menu_item" data-xicon="fa fa-info-circle" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-info-circle"></i>
+                ThÃ´ng tin chung                  <span class="caret"></span>
+<span class="mega-caption">ThÃ´ng tin - ThÃ´ng bÃ¡o chung</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-2">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-6">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2228" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/thong-tin-thong-bao">
+                ThÃ´ng bÃ¡o chung                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2229" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/thong-tin-tuyen-sinh">
+                ThÃ´ng tin tuyá»n sinh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2230" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tin-uit">
+                ThÃ´ng tin hoáº¡t Äá»ng                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2238" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tin-tuc-cntt">
+                Tin tá»©c CNTT                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2239" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tin-tuc-giao-duc">
+                Tin tá»©c giÃ¡o dá»¥c                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3871" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tin-xet-duyet-chuc-danh-gs-pgs">
+                Tin xÃ©t duyá»t chá»©c danh GS, PGS                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span6 mega-col-nav" data-class="" data-hidewcol="" data-width="6" id="tb-megamenu-column-5">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="Cung cáº¥p thÃ´ng tin cáº­p nháº­t" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2241" data-level="2" data-type="menu_item" data-xicon="fa fa-rss" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-rss"></i>
+                RSS                  <span class="caret"></span>
+<span class="mega-caption">Cung cáº¥p thÃ´ng tin cáº­p nháº­t</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-4">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-3">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2242" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/taxonomy/term/83/feed">
+                RSS - ThÃ´ng bÃ¡o chung                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2243" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/taxonomy/term/87/feed">
+                RSS - Tin hoáº¡t Äá»ng                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2245" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/taxonomy/term/97/feed">
+                RSS - Tin tá»©c CNTT                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega dropdown active active-trail" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2231" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                Giá»i thiá»u                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-8">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-9">
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2521" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-ve-truong-dh-cong-nghe-thong-tin">
+                Tá»ng quan                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2522" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tam-nhin-su-mang-triet-ly-giao-duc">
+                Táº§m nhÃ¬n - Sá»© máº¡ng - Triáº¿t lÃ½ GD                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega dropdown-submenu active active-trail" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3829" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                CÆ¡ cáº¥u tá» chá»©c                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span mega-col-nav" data-class="" data-hidewcol="0" data-width="" id="tb-megamenu-column-6">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-5">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3832" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/ban-giam-hieu">
+                Ban giÃ¡m hiá»u                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2526" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/co-cau-to-chuc">
+                SÆ¡ Äá» cÆ¡ cáº¥u tá» chá»©c                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3770" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/hoi-dong-truong">
+                Há»i Äá»ng TrÆ°á»ng                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3058" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/hoi-dong-khoa-hoc">
+                Há»i Äá»ng khoa há»c &amp; ÄÃ o táº¡o                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3831" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/ban-chap-hanh-dang-bo">
+                Ban cháº¥p hÃ nh Äáº£ng bá»                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2523" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/nhan-dien-thuong-hieu">
+                Nháº­n diá»n thÆ°Æ¡ng hiá»u                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2996" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/sites/vi/files/uploads/files/KeHoachChienLuoc_UIT_2021-2025.pdf?id=45632415" target="_blank" title="Káº¿ hoáº¡ch - Chiáº¿n lÆ°á»£c">
+                Káº¿ hoáº¡ch - Chiáº¿n lÆ°á»£c                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2848" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/thong-tin-quy-hoach-truong-dh-cntt-dhqg-hcm">
+                ThÃ´ng tin quy hoáº¡ch                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2524" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/dam-bao-chat-luong">
+                Äáº£m báº£o cháº¥t lÆ°á»£ng                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega dropdown-submenu" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3767" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a class="tb_nolink" href="#">
+                Quy cháº¿ - Ná»i quy      </a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-7">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-2">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2754" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/sites/vi/files/uploads/files/202111/quichedanchu_dhcntt_2020.pdf" target="_blank" title="Quy cháº¿ dÃ¢n chá»§ cÆ¡ sá»">
+                Quy cháº¿ dÃ¢n chá»§ cÆ¡ sá»                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2280" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/sites/vi/files/images/ThongTin/2012/NOI%20QUY%20CO%20QUAN%20DHCNTT-QD241.pdf" target="_blank" title="Ná»i quy cÆ¡ quan">
+                Ná»i quy cÆ¡ quan                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2527" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/lien-he">
+                LiÃªn há»                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega mega-align-left dropdown" data-alignsub="left" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2283" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://tuyensinh.uit.edu.vn" target="_blank" title="Tuyá»n sinh">
+                Tuyá»n sinh                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="740" style="width: 740px;">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="0" data-width="4" id="tb-megamenu-column-10">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="CÃ¡c sá» liá»u tuyá»n sinh" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2290" data-level="2" data-type="menu_item" data-xicon="fa fa-list-ul" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-list-ul"></i>
+                ThÃ´ng tin                  <span class="caret"></span>
+<span class="mega-caption">CÃ¡c sá» liá»u tuyá»n sinh</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-9">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-3">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2284" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://tuyensinh.uit.edu.vn" target="_blank" title="Giá»i thiá»u chung">
+                Giá»i thiá»u chung                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2285" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://tuyensinh.uit.edu.vn/diem-chuan-cua-truong-dh-cong-nghe-thong-tin-qua-cac-nam" target="_blank" title="Äiá»m chuáº©n hÃ ng nÄm">
+                Äiá»m chuáº©n hÃ ng nÄm                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2286" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://forum.uit.edu.vn/node/53" target="_blank" title="TÆ° váº¥n tuyá»n sinh">
+                TÆ° váº¥n tuyá»n sinh                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span4 mega-col-nav no-padding" data-class="no-padding" data-hidewcol="" data-width="4" id="tb-megamenu-column-12">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="ÄÃ o táº¡o Äáº¡i há»c" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2291" data-level="2" data-type="menu_item" data-xicon="fa fa-list-ol" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-list-ol"></i>
+                Äáº¡i há»c                  <span class="caret"></span>
+<span class="mega-caption">ÄÃ o táº¡o Äáº¡i há»c</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-11">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-4">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2293" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://tuyensinh.uit.edu.vn" target="_blank" title="Tuyá»n sinh Äáº¡i há»c chÃ­nh quy">
+                Tuyá»n sinh Äáº¡i há»c chÃ­nh quy                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2294" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.citd.vn/chuyen-muc/tuyen-sinh/" target="_blank" title="Tuyá»n sinh Äáº¡i há»c tá»« xa">
+                Tuyá»n sinh Äáº¡i há»c tá»« xa                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3830" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://oep.uit.edu.vn/vi/ts2021-thong-bao-tuyen-sinh-chuong-trinh-lien-ket-voi-dai-hoc-birmingham-city-vuong-quoc-anh-nam" target="_blank" title="ChÆ°Æ¡ng trÃ¬nh liÃªn káº¿t BCU">
+                ChÆ°Æ¡ng trÃ¬nh liÃªn káº¿t BCU                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3781" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://tuyensinh.uit.edu.vn/tuyen-sinh-van-bang-2" target="_blank" title="TuyÃªÌn sinh VB2">
+                TuyÃªÌn sinh VB2                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="" data-width="4" id="tb-megamenu-column-14">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="ÄÃ o táº¡o sau Äáº¡i há»c" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2292" data-level="2" data-type="menu_item" data-xicon="fa fa-th" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-th"></i>
+                Sau Äáº¡i há»c                  <span class="caret"></span>
+<span class="mega-caption">ÄÃ o táº¡o sau Äáº¡i há»c</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-13">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-1">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2914" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://sdh.uit.edu.vn/thong-tin-tuyen-sinh" target="_blank" title="Tuyá»n sinh Tháº¡c sÄ©, Tiáº¿n sÄ©">
+                Tuyá»n sinh Tháº¡c sÄ©, Tiáº¿n sÄ©                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega mega-align-center dropdown active active-trail" data-alignsub="center" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2318" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                ÄÃ o táº¡o                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="850" style="width: 850px;">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="0" data-width="4" id="tb-megamenu-column-16">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="3803" data-level="2" data-type="menu_item" data-xicon="fa fa-graduation-cap" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-graduation-cap"></i>
+                Äáº¡i há»c chÃ­nh quy                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-15">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-11">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2536" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-toan-thong-tin">
+                An toÃ n ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2532" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-cong-nghe-thong-tin">
+                CÃ´ng nghá» ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2534" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-khoa-hoc-may-tinh">
+                Khoa há»c MÃ¡y tÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3801" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-he-thong-thong-tin">
+                Há» thá»ng ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2533" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-ky-thuat-phan-mem">
+                Ká»¹ thuáº­t Pháº§n má»m                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2535" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-ky-thuat-may-tinh">
+                Ká»¹ thuáº­t MÃ¡y tÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2537" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-mang-may-tinh-va-truyen-thong-du-lieu">
+                MMT &amp; Truyá»n thÃ´ng Dá»¯ liá»u                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3802" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-thuong-mai-dien-tu">
+                ThÆ°Æ¡ng máº¡i Äiá»n tá»­                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3800" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-nganh-khoa-hoc-du-lieu">
+                Khoa há»c Dá»¯ liá»u                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2560" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/cu-nhan-tai-nang">
+                Cá»­ nhÃ¢n TÃ i nÄng                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2847" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/chuong-trinh-chat-luong-cao">
+                ChÆ°Æ¡ng trÃ¬nh Cháº¥t lÆ°á»£ng cao                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="" data-width="4" id="tb-megamenu-column-18">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2320" data-level="2" data-type="menu_item" data-xicon="fa fa-graduation-cap" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-graduation-cap"></i>
+                ÄÃ o táº¡o quá»c táº¿                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-17">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-2">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2561" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/chuong-trinh-tien-tien">
+                ChÆ°Æ¡ng trÃ¬nh TiÃªn tiáº¿n                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3789" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tong-quan-ve-chuong-trinh-lien-ket-bcu">
+                ChÆ°Æ¡ng trÃ¬nh liÃªn káº¿t BCU                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="" data-width="4" id="tb-megamenu-column-20">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2321" data-level="2" data-type="menu_item" data-xicon="fa fa-graduation-cap" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-graduation-cap"></i>
+                Sau Äáº¡i há»c                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-19">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-8">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2912" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/danh-muc-huong-nghien-cuu">
+                CÃ¡c hÆ°á»ng nghiÃªn cá»©u cá»§a NCS                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2842" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/dao-tao-thac-si-khoa-hoc-may-tinh">
+                ÄÃ o táº¡o Tháº¡c sÄ© Khoa há»c MÃ¡y tÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2843" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/dao-tao-tien-si-khoa-hoc-may-tinh">
+                ÄÃ o táº¡o Tiáº¿n sÄ© Khoa há»c MÃ¡y tÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2844" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/dao-tao-thac-si-cong-nghe-thong-tin">
+                ÄÃ o táº¡o Tháº¡c sÄ© CÃ´ng nghá» ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2845" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/dao-tao-tien-si-cong-nghe-thong-tin">
+                ÄÃ o táº¡o Tiáº¿n sÄ© CÃ´ng nghá» ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3769" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/dao-tao-thac-si-he-thong-thong-tin">
+                ÄÃ o táº¡o Tháº¡c sÄ© Há» thá»ng ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3796" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/dao-tao-thac-si-toan-thong-tin">
+                ÄÃ o táº¡o Tháº¡c sÄ© An toÃ n ThÃ´ng tin                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega dropdown active active-trail" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2299" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                NghiÃªn cá»©u                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-21">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-4">
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2302" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://khcn.uit.edu.vn/hoi-nghi-hoi-thao" target="_blank" title="Há»i nghá» - Há»i tháº£o">
+                Há»i nghá» - Há»i tháº£o                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2565" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/hop-tac-quoc-te">
+                Há»£p tÃ¡c quá»c táº¿                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2304" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://khcn.uit.edu.vn/" target="_blank" title="Khoa há»c cÃ´ng nghá»">
+                Khoa há»c cÃ´ng nghá»                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3919" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/danh-muc-cac-giai-phap-huu-ich-sang-che-kieu-dang-cong-nghiep">
+                Danh má»¥c cÃ¡c Giáº£i phÃ¡p há»¯u Ã­ch/ SÃ¡ng cháº¿/ Kiá»u dÃ¡ng cÃ´ng nghiá»p                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega mega-align-justify dropdown active active-trail" data-alignsub="justify" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2305" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                CÃ¡c ÄÆ¡n vá»                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="850" style="width: 850px;">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span4 mega-col-nav column-first" data-class="column-first" data-hidewcol="0" data-width="4" id="tb-megamenu-column-23">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="Khoa - Bá» mÃ´n trá»±c thuá»c trÆ°á»ng" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2306" data-level="2" data-type="menu_item" data-xicon="fa fa-graduation-cap" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-graduation-cap"></i>
+                Khoa - Bá» mÃ´n                  <span class="caret"></span>
+<span class="mega-caption">Khoa - Bá» mÃ´n trá»±c thuá»c trÆ°á»ng</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-22">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-7">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2310" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://se.uit.edu.vn/" target="_blank" title="Khoa CÃ´ng nghá» Pháº§n má»m">
+                Khoa CÃ´ng nghá» Pháº§n má»m                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2311" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://httt.uit.edu.vn/" target="_blank" title="Khoa Há» thá»ng ThÃ´ng tin">
+                Khoa Há» thá»ng ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2312" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://fce.uit.edu.vn/" target="_blank" title="Khoa Ká»¹ thuáº­t MÃ¡y tÃ­nh">
+                Khoa Ká»¹ thuáº­t MÃ¡y tÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2313" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://nc.uit.edu.vn/" target="_blank" title="Khoa MMT &amp; Truyá»n thÃ´ng">
+                Khoa MMT &amp; Truyá»n thÃ´ng                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2314" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://cs.uit.edu.vn/" target="_blank" title="Khoa Khoa há»c MÃ¡y tÃ­nh">
+                Khoa Khoa há»c MÃ¡y tÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3370" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://fit.uit.edu.vn/" target="_blank" title="Khoa Khoa hoÌ£c vaÌ KyÌ thuÃ¢Ì£t ThÃ´ng tin">
+                Khoa Khoa hoÌ£c vaÌ KyÌ thuÃ¢Ì£t ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2567" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/bo-mon-toan-ly">
+                Bá» mÃ´n ToÃ¡n LÃ½                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span3 mega-col-nav no-padding" data-class="no-padding" data-hidewcol="" data-width="3" id="tb-megamenu-column-25">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="CÃ¡c PhÃ²ng ban - chá»©c nÄng" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="3266" data-level="2" data-type="menu_item" data-xicon="fa fa-flag" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-flag"></i>
+                PhÃ²ng - Ban                  <span class="caret"></span>
+<span class="mega-caption">CÃ¡c PhÃ²ng ban - chá»©c nÄng</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-24">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-12">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2569" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-to-chuc-hanh-chinh">
+                Tá» chá»©c - HÃ nh chÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2570" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-ke-hoach-tai-chinh">
+                Káº¿ hoáº¡ch - TÃ i chÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2571" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-dao-tao-dai-hoc">
+                ÄÃ o táº¡o Äáº¡i há»c                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2572" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-dao-tao-sdh-khcn">
+                ÄÃ o táº¡o SÄH &amp; KHCN                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2574" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-quan-he-doi-ngoai">
+                Quan há» Äá»i ngoáº¡i                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2573" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-quan-tri-thiet-bi">
+                Quáº£n trá» Thiáº¿t bá»                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2575" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-cong-tac-sinh-vien">
+                CÃ´ng tÃ¡c Sinh viÃªn                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2576" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-thanh-tra-phap-che-dbcl">
+                Thanh tra - PhÃ¡p cháº¿ - ÄBCL                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2577" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/ban-quan-ly-co-so">
+                Quáº£n lÃ½ cÆ¡ sá»                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2578" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/phong-du-lieu-cntt">
+                Dá»¯ liá»u &amp; CNTT                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2581" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/van-phong-cac-chuong-trinh-dac-biet">
+                VÄn phÃ²ng cÃ¡c CTÄB                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2332" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://thuvien.uit.edu.vn" target="_blank" title="ThÆ° viá»n">
+                ThÆ° viá»n                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span3 mega-col-nav no-padding" data-class="no-padding" data-hidewcol="" data-width="3" id="tb-megamenu-column-27">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="Trung tÃ¢m - PhÃ²ng thÃ­ nghiá»m" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2308" data-level="2" data-type="menu_item" data-xicon="fa fa-flag" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-flag"></i>
+                Trung tÃ¢m - PTN                  <span class="caret"></span>
+<span class="mega-caption">Trung tÃ¢m - PhÃ²ng thÃ­ nghiá»m</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-26">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-6">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2333" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://www.citd.edu.vn/" target="_blank" title="TT PhÃ¡t triá»n CNTT">
+                TT PhÃ¡t triá»n CNTT                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2580" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/ptn-truyen-thong-da-phuong-tien">
+                PTN TT Äa phÆ°Æ¡ng tiá»n                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2579" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/ptn-he-thong-thong-tin">
+                PTN Há» thá»ng ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3786" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/ptn-an-toan-thong-tin">
+                PTN An toÃ n ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2855" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://cnsc.uit.edu.vn/" target="_blank" title="Trung tÃ¢m An ninh máº¡ng">
+                Trung tÃ¢m An ninh máº¡ng                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2336" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://www.celuit.edu.vn/" target="_blank" title="Trung tÃ¢m Ngoáº¡i ngá»¯">
+                Trung tÃ¢m Ngoáº¡i ngá»¯                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span2 mega-col-nav" data-class="" data-hidewcol="" data-width="2" id="tb-megamenu-column-29">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="CÃ¡c tá» chá»©c ÄoÃ n thá»" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2309" data-level="2" data-type="menu_item" data-xicon="fa fa-group" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-group"></i>
+                ÄoÃ n thá»                  <span class="caret"></span>
+<span class="mega-caption">CÃ¡c tá» chá»©c ÄoÃ n thá»</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-28">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-3">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2337" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://dangbo.uit.edu.vn/" target="_blank" title="Äáº£ng Uá»·">
+                Äáº£ng Uá»·                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2339" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://cd.uit.edu.vn/" target="_blank" title="CÃ´ng ÄoÃ n">
+                CÃ´ng ÄoÃ n                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2340" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://tuoitre.uit.edu.vn/" target="_blank" title="ÄoÃ n thanh niÃªn">
+                ÄoÃ n thanh niÃªn                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega dropdown active active-trail" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2353" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                Tra cá»©u                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-30">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-4">
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3363" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/cong-bo-ba-cong-khai">
+                CÃ´ng bá» ba cÃ´ng khai                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3289" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://tracuu.citd.vn/" target="_blank" title="Chá»©ng chá» CÃ´ng nghá» ThÃ´ng tin">
+                Chá»©ng chá» CÃ´ng nghá» ThÃ´ng tin                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2356" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tra-cuu/van-bang">
+                VÄn báº±ng tá»t nghiá»p                      </a>
+</li>
+<li class="tb-megamenu-item level-2 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3790" data-level="2" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/bang-vang-sinh-vien">
+                Báº£ng vÃ ng thÃ nh tÃ­ch                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega mega-align-right dropdown active active-trail" data-alignsub="right" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2354" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a class="dropdown-toggle" href="https://www.uit.edu.vn/">
+                LiÃªn káº¿t                  <span class="caret"></span>
+</a>
+<div class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="726" style="width: 726px;">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="0" data-width="4" id="tb-megamenu-column-32">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="DÃ nh cho sinh viÃªn" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2357" data-level="2" data-type="menu_item" data-xicon="fa fa-graduation-cap" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-graduation-cap"></i>
+                Sinh viÃªn                  <span class="caret"></span>
+<span class="mega-caption">DÃ nh cho sinh viÃªn</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-31">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-12">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2360" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://mail.gm.uit.edu.vn/">
+                Webmail                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2361" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://student.uit.edu.vn/">
+                Cá»ng thÃ´ng tin ÄÃ o táº¡o ÄH                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2648" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://sdh.uit.edu.vn" target="_blank" title="Cá»ng thÃ´ng tin ÄÃ o táº¡o SÄH">
+                Cá»ng thÃ´ng tin ÄÃ o táº¡o SÄH                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2362" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://ctsv.uit.edu.vn/">
+                PhÃ²ng CÃ´ng tÃ¡c Sinh viÃªn                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2363" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.citd.vn/">
+                Trung tÃ¢m PhÃ¡t triá»n CNTT                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2364" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://tuoitre.uit.edu.vn/">
+                ÄoÃ n thanh niÃªn                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2365" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://forum.uit.edu.vn/">
+                Diá»n ÄÃ n sinh viÃªn                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2366" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://courses.uit.edu.vn/">
+                Website mÃ´n há»c (ÄH)                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2846" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://courses.uit.edu.vn/sdh">
+                Website mÃ´n há»c (SÄH)                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2367" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://dreamspark.uit.edu.vn/">
+                Microsoft Azure                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2368" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://chungthuc.uit.edu.vn/">
+                TÃ i khoáº£n chá»©ng thá»±c                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2369" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://www.celuit.edu.vn/">
+                Trung tÃ¢m Ngoáº¡i ngá»¯                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="" data-width="4" id="tb-megamenu-column-34">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="DÃ nh cho CB-CNV" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2358" data-level="2" data-type="menu_item" data-xicon="fa  fa-user" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-user"></i>
+                CB-GV                  <span class="caret"></span>
+<span class="mega-caption">DÃ nh cho CB-CNV</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-33">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-14">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2370" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://mail.uit.edu.vn/">
+                Webmail                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2371" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://cd.uit.edu.vn/">
+                CÃ´ng ÄoÃ n                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2372" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://tchc.uit.edu.vn/">
+                PhÃ²ng Tá» chá»©c - HÃ nh chÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2373" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://khtc.uit.edu.vn/">
+                PhÃ²ng Káº¿ hoáº¡ch - TÃ i chÃ­nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2374" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://qttb.uit.edu.vn/">
+                PhÃ²ng Quáº£n trá» Thiáº¿t bá»                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2375" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://phongdl.uit.edu.vn/">
+                PhÃ²ng Dá»¯ liá»u &amp; CNTT                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3785" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://dbcl.uit.edu.vn/vi">
+                PhÃ²ng TTPC-ÄBCL                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2376" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://banqlcs.uit.edu.vn/">
+                Ban Quáº£n lÃ½ cÆ¡ sá»                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2377" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://azure.microsoft.com/en-us/" target="_blank" title="Microsoft Azure">
+                Microsoft Azure                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2378" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://auth.uit.edu.vn/">
+                TÃ i khoáº£n chá»©ng thá»±c                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2379" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://portal.uit.edu.vn/">
+                Cá»ng thÃ´ng tin CB-GV                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2380" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://ctgt.uit.edu.vn/">
+                CÃ´ng tÃ¡c giÃ¡o trÃ¬nh                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2649" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://khcn.uit.edu.vn" target="_blank" title="Website Khoa há»c cÃ´ng nghá»">
+                Website Khoa há»c cÃ´ng nghá»                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2752" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://docs.google.com/forms/d/1YLhOtRvScXX4uL2IJZ-QLn8_JYQ9MhPaKF8JItCJoPY/viewform" target="_blank" title="ÄÄng kÃ½ VPS trÃªn Cloud">
+                ÄÄng kÃ½ VPS trÃªn Cloud                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="tb-megamenu-column span4 mega-col-nav" data-class="" data-hidewcol="" data-width="4" id="tb-megamenu-column-36">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-1 items-1">
+<li class="tb-megamenu-item level-2 mega mega-group active active-trail" data-alignsub="" data-caption="DÃ nh cho khÃ¡ch" data-class="" data-group="1" data-hidesub="0" data-hidewcol="0" data-id="2359" data-level="2" data-type="menu_item" data-xicon="fa fa-user-secret" id="" style="">
+<a class="mega-group-title" href="https://www.uit.edu.vn/">
+<i class="fa fa-user-secret"></i>
+                KhÃ¡ch                  <span class="caret"></span>
+<span class="mega-caption">DÃ nh cho khÃ¡ch</span>
+</a>
+<div class="tb-megamenu-submenu mega-group-ct nav-child" data-class="" data-width="">
+<div class="mega-dropdown-inner">
+<div class="tb-megamenu-row row-fluid">
+<div class="tb-megamenu-column span12 mega-col-nav" data-class="" data-hidewcol="0" data-width="12" id="tb-megamenu-column-35">
+<div class="tb-megamenu-column-inner mega-inner clearfix">
+<ul class="tb-megamenu-subnav mega-nav level-2 items-5">
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2381" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://tuyensinh.uit.edu.vn/">
+                Tuyá»n sinh Äáº¡i há»c chÃ­nh quy                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2382" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://www.citd.edu.vn/" rel="nofollow" title="Tuyá»n sinh CN tá»« xa (á»¨ng dá»¥ng)">
+                Tuyá»n sinh CN tá»« xa (á»¨ng dá»¥ng)                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2383" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://www.citd.edu.vn/" rel="nofollow" title="Tuyá»n sinh CN tá»« xa (Máº¡ng)">
+                Tuyá»n sinh CN tá»« xa (Máº¡ng)                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="2740" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="http://www.uit.edu.vn/sites/vi/files/uploads/files/201607/bctdg_dhcntt_2016.pdf" target="_blank" title="BÃ¡o cÃ¡o tá»± ÄÃ¡nh giÃ¡">
+                BÃ¡o cÃ¡o tá»± ÄÃ¡nh giÃ¡                      </a>
+</li>
+<li class="tb-megamenu-item level-3 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3367" data-level="3" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/lien-he">
+                ThÃ´ng tin liÃªn há»                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="tb-megamenu-item level-1 mega" data-alignsub="" data-caption="" data-class="" data-group="0" data-hidesub="0" data-hidewcol="0" data-id="3241" data-level="1" data-type="menu_item" data-xicon="" id="" style="">
+<a href="https://www.uit.edu.vn/tuyen-dung">
+                Tuyá»n dá»¥ng                      </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></div>
+<!-- /.region -->
+</div>
+</div>
+<!--End Horizontal menu-->
+<!--Slideshow-->
+<div class="slider">
+<div class="container">
+<div class="region region-slider clearfix">
+<div class="clearfix block block-views" id="block-views-featured-slider-block"> <div class="content"> <div class="view view-featured-slider view-id-featured_slider view-display-id-block view-dom-id-9063b94d7d69b3f7a9e9c50a67f70cab">
+<div class="view-content">
+<div class="skin-default">
+<div class="flexslider_views_slideshow_main views_slideshow_main" id="flexslider_views_slideshow_main_featured_slider-block_1"><div class="flex-nav-container">
+<div class="flexslider">
+<ul class="flexslider-views-slideshow-main-frame slides" id="flexslider_views_slideshow_featured_slider-block_1">
+<li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-1 views-row-odd">
+<a href="https://www.uit.edu.vn/chuc-mung-uit-duoc-cong-nhan-chat-luong-csgd-theo-tieu-chuan-moet" rel="nofollow" target="_blank"><img alt="ChÃºc má»«ng UIT ÄÃ£ Äáº¡t ÄÆ°á»£c chá»©ng nháº­n kiá»m Äá»nh cháº¥t lÆ°á»£ng CSGD" height="400" src="https://www.uit.edu.vn/sites/vi/files/slider/img_4889.png" title="ChÃºc má»«ng UIT ÄÃ£ Äáº¡t ÄÆ°á»£c chá»©ng nháº­n kiá»m Äá»nh cháº¥t lÆ°á»£ng CSGD" typeof="foaf:Image" width="1090"/></a>
+</li>
+<li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+<a href="http://sdh.uit.edu.vn/" rel="nofollow" target="_blank"><img alt="Tuyá»n sinh Sau Äáº¡i há»c nÄm 2023" height="400" src="https://www.uit.edu.vn/sites/vi/files/slider/banner_sdh_2023.png" title="Tuyá»n sinh Sau Äáº¡i há»c nÄm 2023" typeof="foaf:Image" width="1090"/></a>
+</li>
+<li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+<a href="https://www.uit.edu.vn/chuc-mung-uit-duoc-cong-nhan-chat-luong-csgd-theo-tieu-chuan-moet" rel="nofollow" target="_blank"><img alt="ChÃºc má»«ng UIT ÄÃ£ Äáº¡t ÄÆ°á»£c chá»©ng nháº­n kiá»m Äá»nh cháº¥t lÆ°á»£ng CSGD" height="400" src="https://www.uit.edu.vn/sites/vi/files/slider/uit_kd_clcs_0.png" title="ChÃºc má»«ng UIT ÄÃ£ Äáº¡t ÄÆ°á»£c chá»©ng nháº­n kiá»m Äá»nh cháº¥t lÆ°á»£ng CSGD" typeof="foaf:Image" width="1090"/></a>
+</li>
+<li class="flexslider-views-slideshow-main-frame-row flexslider_views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even">
+<img alt="CÃ¡c chÆ°Æ¡ng trÃ¬nh Äáº¡t chuáº©n kiá»m Äá»nh AUN" height="400" src="https://www.uit.edu.vn/sites/vi/files/slider/nganh-kiem-dinh-aun_0.png" title="CÃ¡c chÆ°Æ¡ng trÃ¬nh Äáº¡t chuáº©n kiá»m Äá»nh AUN" typeof="foaf:Image" width="1090"/>
+</li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div> </div>
+</div></div>
+<!-- /.region -->
+<div class="mask-left"></div>
+<div class="mask-right"></div>
+</div>
+</div>
+<!--End Slideshow-->
+<!--Message-->
+<!--End Message-->
+<div class="clearfix main" id="main" role="main">
+<div class="container">
+<div class="row main-content" id="main-content">
+<div class="mc-content span12" id="content">
+<div class="content-wrapper" id="content-wrapper">
+<div class="row-fluid content-head" id="content-head">
+<h1 class="title" id="page-title"> ChÃ o má»«ng Äáº¿n vá»i TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin </h1>
+</div>
+<div class="row-fluid content-body" id="content-body"> <div class="region region-content clearfix">
+<div class="clearfix block block-system" id="block-system-main"> <div class="content"> <div id="first-time"><p>KhÃ´ng cÃ³ ná»i dung nÃ o ÄÆ°á»£c ÄÆ°a lÃªn trang chá»§.</p></div> </div>
+</div><div class="clearfix block block-panels-mini info-panel" id="block-panels-mini-thong-tin"> <div class="content"> <div class="panel-flexible panels-flexible-khoi_thong_tin clearfix" id="mini-panel-thong_tin">
+<div class="panel-flexible-inside panels-flexible-khoi_thong_tin-inside">
+<div class="panels-flexible-row panels-flexible-row-khoi_thong_tin-main-row panels-flexible-row-first clearfix">
+<div class="inside panels-flexible-row-inside panels-flexible-row-khoi_thong_tin-main-row-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-khoi_thong_tin-top_left panels-flexible-region-first tl-region">
+<div class="inside panels-flexible-region-inside panels-flexible-region-khoi_thong_tin-top_left-inside panels-flexible-region-inside-first">
+<div class="panel-pane pane-views pane-panel-views">
+<div class="pane-title">
+      Tin ná»i báº­t    </div>
+<div class="pane-content">
+<div class="view view-panel-views view-id-panel_views view-display-id-block_15 attachment view-dom-id-9ff90adca9cc58027f0b2d0792d1dbd5">
+<div class="view-header">
+<div style="margin-bottom: 10px; overflow: hidden;"><a class="colorbox-load cboxElement" href="https://www.youtube.com/embed/7fYriuhwg_s?autoplay=1&amp;rel=0&amp;width=640&amp;height=390&amp;iframe=true" target="_blank" title="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin"><img alt="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin" height="220" src="/sites/vi/files/uploads/images/202011/intro_uit_play_360.jpg" style="float: left; width: 360px; height: 220px;" title="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin" width="360"/></a></div>
+</div>
+<div class="view-content">
+<div class="item-list"> <ul> <li class="views-row views-row-1 views-row-odd views-row-first">
+<a href="https://www.uit.edu.vn/danh-sach-149-truong-thpt-dien-uu-tien-xet-tuyen-theo-quy-dinh-cua-dai-hoc-quoc-gia-tphcm-nam-2023">Danh sÃ¡ch 149 trÆ°á»ng THPT diá»n Æ°u tiÃªn xÃ©t tuyá»n theo quy Äá»nh...</a>
+<span class="date">(28-04-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-2 views-row-even">
+<a href="https://www.uit.edu.vn/thong-tin-le-hoi-viet-nhat-lan-thu-8">[THÃNG TIN]: Lá» há»i Viá»t - Nháº­t láº§n thá»© 8</a>
+<span class="date">(20-02-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-3 views-row-odd">
+<a href="https://www.uit.edu.vn/bui-cao-doanh-chang-sinh-vien-xuat-sac-duoc-tai-tro-100-tu-quy-hoc-bong-hyundai-motor-chung-mong-koo-global-program-han-quoc">BÃ¹i Cao Doanh - ChÃ ng sinh viÃªn xuáº¥t sáº¯c ÄÆ°á»£c tÃ i trá»£ 100% tá»«...</a>
+<span class="date">(17-02-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-4 views-row-even">
+<a href="https://www.uit.edu.vn/tap-doan-naver-lan-dau-chuc-cuoc-thi-danh-cho-lap-trinh-vien-viet-nam-tham-gia-naver-coding-challenge-2023">Táº­p ÄoÃ n Naver láº§n Äáº§u tá» chá»©c cuá»c thi dÃ nh cho láº­p trÃ¬nh viÃªn...</a>
+<span class="date">(10-02-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-5 views-row-odd">
+<a href="https://www.uit.edu.vn/chuc-mung-uit-duoc-cong-nhan-chat-luong-csgd-theo-tieu-chuan-moet">ChÃºc má»«ng UIT ÄÆ°á»£c cÃ´ng nháº­n cháº¥t lÆ°á»£ng CSGD theo tiÃªu chuáº©n MOET</a>
+<span class="date">(07-02-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-6 views-row-even">
+<a href="https://www.uit.edu.vn/hoc-thac-si-cong-nghe-thong-tin-o-dau">Há»c tháº¡c sÄ© CÃ´ng nghá» ThÃ´ng tin á» ÄÃ¢u</a>
+<span class="date">(26-01-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-7 views-row-odd">
+<a href="https://www.uit.edu.vn/toan-van-bai-phat-bieu-cua-tan-ky-su-nguyen-duong-tung-tai-le-tot-nghiep-va-trao-bang-dot-thang-12-nam-2022">ToÃ n vÄn bÃ i phÃ¡t biá»u cá»§a TÃ¢n ká»¹ sÆ° Nguyá»n DÆ°Æ¡ng TÃ¹ng táº¡i Lá»...</a>
+<span class="date">(15-12-2022)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-8 views-row-even views-row-last">
+<a href="https://www.uit.edu.vn/san-pham-envi-card-cua-doi-null-xuat-sac-da-dat-giai-quan-quan-cuoc-thi-gameuit-hackathon-2022">Sáº£n pháº©m Envi Card cá»§a Äá»i #null xuáº¥t sáº¯c ÄÃ£ Äáº¡t giáº£i quÃ¡n quÃ¢n...</a>
+<span class="date">(27-11-2022)</span> <img src="/sites/vi/files/new.gif"/> </li>
+</ul></div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-khoi_thong_tin-center tc-region">
+<div class="inside panels-flexible-region-inside panels-flexible-region-khoi_thong_tin-center-inside">
+<div class="panel-pane pane-views pane-panel-views">
+<div class="pane-title">
+      Tin UIT    </div>
+<div class="pane-content">
+<div class="view view-panel-views view-id-panel_views view-display-id-block_1 top-item view-dom-id-755fad0393266d0c3cda489c4a410960">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="teaser-img"><a href="https://www.uit.edu.vn/vong-quoc-gia-olympic-vi-dien-tu-quoc-te-lan-thu-18-tai-viet-nam-amo2023-uit"><img alt="VÃ²ng quá»c gia Olympic Vi Äiá»n tá»­ Quá»c táº¿ láº§n thá»© 18 táº¡i Viá»t Nam â AMO2023-UIT" height="220" src="https://www.uit.edu.vn/sites/vi/files/styles/uit_thumb/public/uploads/images/thumbs/202305/quoc_gia.jpg?itok=uZbZ3fTr" title="VÃ²ng quá»c gia Olympic Vi Äiá»n tá»­ Quá»c táº¿ láº§n thá»© 18 táº¡i Viá»t Nam â AMO2023-UIT" typeof="foaf:Image" width="360"/></a>
+<div class="month">05.2023</div>
+<div class="day">12</div>
+</div>
+<div class="top-title"><a href="https://www.uit.edu.vn/vong-quoc-gia-olympic-vi-dien-tu-quoc-te-lan-thu-18-tai-viet-nam-amo2023-uit">VÃ²ng quá»c gia Olympic Vi Äiá»n tá»­ Quá»c táº¿ láº§n thá»© 18 táº¡i Viá»t Nam...</a> <img src="/sites/vi/files/new.gif"/></div>
+<div class="desc">Cuá»c thi Olympic quá»c táº¿ vá» lÄ©nh vá»±c Vi Äiá»n tá»­ (AMO) ÄÆ°á»£c khá»i xÆ°á»ng bá»i táº­p ÄoÃ n Synopsys. Äá»i tÆ°á»£ng cá»§a cuá»c thi lÃ  sinh viÃªn Äáº¡i há»c, há»c viÃªn...</div>
+<div class="wrap-line"><div class="line"></div></div> </div>
+</div>
+<div class="attachment attachment-after">
+<div class="view view-panel-views view-id-panel_views view-display-id-attachment_1">
+<div class="view-content">
+<div class="item-list"> <ul> <li class="views-row views-row-1 views-row-odd views-row-first">
+<a href="https://www.uit.edu.vn/hon-44-ngan-thi-sinh-dang-ky-du-thi-dgnl-dot-2"> HÆ¡n 44 ngÃ n thÃ­ sinh ÄÄng kÃ½ dá»± thi ÄGNL Äá»£t 2</a>
+<span class="date">(11-05-2023)</span> </li>
+<li class="views-row views-row-2 views-row-even">
+<a href="https://www.uit.edu.vn/le-trao-hoc-bong-cuu-sinh-vien-nam-2023">Lá» trao há»c bá»ng Cá»±u sinh viÃªn nÄm 2023</a>
+<span class="date">(10-05-2023)</span> </li>
+<li class="views-row views-row-3 views-row-odd">
+<a href="https://www.uit.edu.vn/chuc-mung-egreenbin-va-sowaste-2-nhom-sinh-vien-uit-lot-top-100-solution-challenge-2023">ChÃºc má»«ng egreenbin vÃ  Sowaste - 2 nhÃ³m sinh viÃªn UIT lá»t top...</a>
+<span class="date">(09-05-2023)</span> </li>
+<li class="views-row views-row-4 views-row-even views-row-last">
+<a href="https://www.uit.edu.vn/uit-co-4-doi-lot-vao-top-10-vong-so-khao-cuoc-thi-hcmus-ctf-2023">UIT cÃ³ 4 Äá»i lá»t vÃ o top 10 vÃ²ng sÆ¡ kháº£o cuá»c thi HCMUS-CTF-2023</a>
+<span class="date">(09-05-2023)</span> </li>
+</ul></div> </div>
+<div class="more-link">
+<a href="https://www.uit.edu.vn/tin-uit">
+    Xem thÃªm  </a>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-khoi_thong_tin-top_right panels-flexible-region-last tr-region">
+<div class="inside panels-flexible-region-inside panels-flexible-region-khoi_thong_tin-top_right-inside panels-flexible-region-inside-last">
+<div class="panel-pane pane-views pane-feeds">
+<div class="pane-title">
+      Tuyá»n sinh (ÄH vÃ  SÄH)    </div>
+<div class="pane-content">
+<div class="view view-feeds view-id-feeds view-display-id-block_3 top-item view-dom-id-10a3c55162aa190a686af359bb5ebfef">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="teaser-img">
+<a href="https://sdh.uit.edu.vn/bai-viet/thong-bao-lich-thi-tieng-anh-ky-thi-tuyen-sinh-trinh-do-thac-si-dot-1-nam-2023" target="_blank"><img alt="Tuyá»n sinh sau Äáº¡i há»c - UIT" height="220" src="/sites/vi/files/uploads/images/default-sdh.png" width="360"/></a>
+<div class="month">05.2023</div>
+<div class="day">10</div>
+</div>
+<div class="top-title"><a href="https://sdh.uit.edu.vn/bai-viet/thong-bao-lich-thi-tieng-anh-ky-thi-tuyen-sinh-trinh-do-thac-si-dot-1-nam-2023" target="_blank">ThÃ´ng bÃ¡o Lá»ch thi tiáº¿ng Anh ká»³ thi tuyá»n sinh trÃ¬nh Äá» tháº¡c sÄ©...</a> <img src="/sites/vi/files/new.gif"/></div>
+<div class="desc">Lá»CH THI: NgÃ y thi Buá»i sÃ¡ng Buá»i chiá»u Äá»a Äiá»m thi 21/5/2023 MÃ´n tiáº¿ng Anh (7g00 cÃ³ máº·t táº¡i phÃ²ng thi) (ThÃ­ sinh pháº£i mang theo bÃºt chÃ¬ 2B tháº­t Äáº­m...</div>
+<div class="wrap-line"><div class="line"></div></div> </div>
+</div>
+<div class="attachment attachment-after">
+<div class="view view-feeds view-id-feeds view-display-id-attachment_3">
+<div class="view-content">
+<div class="item-list"> <ul> <li class="views-row views-row-1 views-row-odd views-row-first">
+<a href="https://tuyensinh.uit.edu.vn/thong-bao-ve-viec-tuyen-sinh-theo-phuong-thuc-xet-tuyen-dua-tren-ket-qua-ky-thi-danh-gia-nang-luc-do-dhqg-hcm-chuc-nam-2023" rel="nofollow" target="_blank">ThÃ´ng bÃ¡o vá» viá»c tuyá»n sinh theo phÆ°Æ¡ng thá»©c xÃ©t tuyá»n dá»±a trÃªn...</a>
+<span class="date">(28-04-2023)</span> </li>
+<li class="views-row views-row-2 views-row-even">
+<a href="https://tuyensinh.uit.edu.vn/thong-bao-ve-viec-xet-tuyen-vao-dai-hoc-chinh-quy-nam-2023-theo-phuong-thuc-su-dung-chung-chi-quoc-te" rel="nofollow" target="_blank">ThÃ´ng bÃ¡o vá» viá»c xÃ©t tuyá»n vÃ o Äáº¡i há»c chÃ­nh quy nÄm 2023 theo...</a>
+<span class="date">(28-04-2023)</span> </li>
+<li class="views-row views-row-3 views-row-odd">
+<a href="https://tuyensinh.uit.edu.vn/thong-bao-ve-viec-tuyen-sinh-theo-phuong-thuc-tuyen-thang-va-uu-tien-xet-tuyen-vao-dai-hoc-chinh-quy-nam-2023" rel="nofollow" target="_blank">ThÃ´ng bÃ¡o vá» viá»c tuyá»n sinh theo phÆ°Æ¡ng thá»©c Tuyá»n tháº³ng vÃ  Æ°u...</a>
+<span class="date">(27-04-2023)</span> </li>
+<li class="views-row views-row-4 views-row-even views-row-last">
+<a href="https://tuyensinh.uit.edu.vn/2023-de-tuyen-sinh-trinh-do-dai-hoc-nam-2023" rel="nofollow" target="_blank">[2023] Äá» Ã¡n tuyá»n sinh trÃ¬nh Äá» Äáº¡i há»c nÄm 2023</a>
+<span class="date">(02-04-2023)</span> </li>
+</ul></div> </div>
+<div class="more-link">
+<a href="https://www.uit.edu.vn/thong-tin-tuyen-sinh">
+    Xem thÃªm  </a>
+</div>
+</div> </div>
+<div class="more-link">
+<a href="https://www.uit.edu.vn/thong-tin-tuyen-sinh-dh-sdh">
+    Xem thÃªm  </a>
+</div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-khoi_thong_tin-1 panels-flexible-row-last clearfix row-2">
+<div class="inside panels-flexible-row-inside panels-flexible-row-khoi_thong_tin-1-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-khoi_thong_tin-bottom_left_ panels-flexible-region-first bl-region">
+<div class="inside panels-flexible-region-inside panels-flexible-region-khoi_thong_tin-bottom_left_-inside panels-flexible-region-inside-first">
+<div class="panel-pane pane-views pane-panel-views">
+<div class="pane-title">
+      Há»c táº­p - NghiÃªn cá»©u    </div>
+<div class="pane-content">
+<div class="view view-panel-views view-id-panel_views view-display-id-block_16 top-item view-dom-id-6e44f1345c429decfeedaabc272cb13c">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="teaser-img"><a href="https://www.uit.edu.vn/khoa-ky-thuat-may-tinh-thong-bao-ve-viec-nop-don-xin-doi-ten-de-tai-kltn-dot-2-nam-hoc-2022-2023"><img alt=" Khoa Ká»¹ thuáº­t MÃ¡y tÃ­nh thÃ´ng bÃ¡o vá» viá»c ná»p ÄÆ¡n xin Äá»i tÃªn Äá» tÃ i KLTN Äá»£t 2, nÄm há»c 2022 - 2023Â " height="220" src="https://www.uit.edu.vn/sites/vi/files/styles/uit_thumb/public/uploads/images/thumbs/202305/hoc_bong_khoa_khoa_hoc_may_tinh_1.jpg?itok=LVljakIZ" title=" Khoa Ká»¹ thuáº­t MÃ¡y tÃ­nh thÃ´ng bÃ¡o vá» viá»c ná»p ÄÆ¡n xin Äá»i tÃªn Äá» tÃ i KLTN Äá»£t 2, nÄm há»c 2022 - 2023Â " typeof="foaf:Image" width="360"/></a>
+<div class="month">05.2023</div>
+<div class="day">13</div>
+</div>
+<div class="top-title"><a href="https://www.uit.edu.vn/khoa-ky-thuat-may-tinh-thong-bao-ve-viec-nop-don-xin-doi-ten-de-tai-kltn-dot-2-nam-hoc-2022-2023"> Khoa Ká»¹ thuáº­t MÃ¡y tÃ­nh thÃ´ng bÃ¡o vá» viá»c ná»p ÄÆ¡n xin Äá»i tÃªn Äá»...</a> <img src="/sites/vi/files/new.gif"/></div>
+<div class="desc">Sinh viÃªn ná»p ÄÆ¡n xin Äá»i tÃªn Äá» tÃ i KLTN Äá»£t 2, nÄm há»c 2022-2023 (náº¿u cÃ³) tá»« ngÃ y 16/05/2023 â 18/05/2023
+Báº£n giáº¥y ná»p táº¡i phÃ²ng E6.2, báº£n file...</div>
+<div class="wrap-line"><div class="line"></div></div> </div>
+</div>
+<div class="attachment attachment-after">
+<div class="view view-panel-views view-id-panel_views view-display-id-attachment_11">
+<div class="view-content">
+<div class="item-list"> <ul> <li class="views-row views-row-1 views-row-odd views-row-first">
+<a href="https://www.uit.edu.vn/citd-nhac-nho-ve-viec-thi-ket-thuc-hoc-ky-2-nam-2022-2023"> CITD - Nháº¯c nhá» vá» viá»c thi káº¿t thÃºc há»c ká»³ 2 nÄm 2022 â 2023</a>
+<span class="date">(11-05-2023)</span> </li>
+<li class="views-row views-row-2 views-row-even">
+<a href="https://www.uit.edu.vn/thoi-khoa-bieu-hoc-ky-3-nam-hoc-2022-2023-chuong-trinh-lien-ket-bcu"> Thá»i khÃ³a biá»u há»c ká»³ 3 - nÄm há»c 2022-2023 - ChÆ°Æ¡ng trÃ¬nh liÃªn...</a>
+<span class="date">(10-05-2023)</span> </li>
+<li class="views-row views-row-3 views-row-odd">
+<a href="https://www.uit.edu.vn/doc-bai-bao-khoa-hoc-voi-su-ho-tro-cua-cong-cu-explainipaper"> Äá»c bÃ i bÃ¡o Khoa há»c vá»i sá»± há» trá»£ cá»§a cÃ´ng cá»¥ ExplainipaperÂ </a>
+<span class="date">(09-05-2023)</span> </li>
+<li class="views-row views-row-4 views-row-even views-row-last">
+<a href="https://www.uit.edu.vn/thong-bao-ve-viec-bao-cao-khoa-luan-tot-nghiep-dot-1-nam-hoc-2022-2023"> ThÃ´ng bÃ¡o vá» viá»c bÃ¡o cÃ¡o KhÃ³a luáº­n tá»t nghiá»p Äá»£t 1, nÄm há»c...</a>
+<span class="date">(07-05-2023)</span> </li>
+</ul></div> </div>
+<div class="more-link">
+<a href="https://www.uit.edu.vn/hoc-tap-nghien-cuu">
+    Xem thÃªm  </a>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-khoi_thong_tin-bottom_left bc-region">
+<div class="inside panels-flexible-region-inside panels-flexible-region-khoi_thong_tin-bottom_left-inside">
+<div class="panel-pane pane-views pane-panel-views">
+<div class="pane-title">
+      Hoáº¡t Äá»ng sinh viÃªn    </div>
+<div class="pane-content">
+<div class="view view-panel-views view-id-panel_views view-display-id-block_14 top-item view-dom-id-58ca0b8760eb0d5b819a7bdbb1cbb598">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="teaser-img"><a href="https://www.uit.edu.vn/tong-ket-hoi-nghi-sinh-vien-khoa-khoa-hoc-may-tinh-2023"><img alt="Tá»ng káº¿t Há»i nghá» sinh viÃªn khoa Khoa há»c MÃ¡y tÃ­nh 2023" height="220" src="https://www.uit.edu.vn/sites/vi/files/styles/uit_thumb/public/uploads/images/thumbs/202305/sv.jpg?itok=MJluvo1h" title="Tá»ng káº¿t Há»i nghá» sinh viÃªn khoa Khoa há»c MÃ¡y tÃ­nh 2023" typeof="foaf:Image" width="360"/></a>
+<div class="month">05.2023</div>
+<div class="day">14</div>
+</div>
+<div class="top-title"><a href="https://www.uit.edu.vn/tong-ket-hoi-nghi-sinh-vien-khoa-khoa-hoc-may-tinh-2023">Tá»ng káº¿t Há»i nghá» sinh viÃªn khoa Khoa há»c MÃ¡y tÃ­nh 2023</a> <img src="/sites/vi/files/new.gif"/></div>
+<div class="desc">VÃ o sÃ¡ng 11/5, táº¡i há»i trÆ°á»ng E, Há»i nghá» Sinh viÃªn cá»§a khoa Khoa há»c MÃ¡y tÃ­nh ÄÃ£ diá»n ra thÃ nh cÃ´ng tá»t Äáº¹p, vá»i sá»± gÃ³p máº·t cá»§a TS. Nguyá»n Táº¥n Tráº§n...</div>
+<div class="wrap-line"><div class="line"></div></div> </div>
+</div>
+<div class="attachment attachment-after">
+<div class="view view-panel-views view-id-panel_views view-display-id-attachment_10">
+<div class="view-content">
+<div class="item-list"> <ul> <li class="views-row views-row-1 views-row-odd views-row-first">
+<a href="https://www.uit.edu.vn/tong-ket-seminar-business-intelligence">Tá»ng káº¿t Seminar Business IntelligenceÂ </a>
+<span class="date">(14-05-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-2 views-row-even">
+<a href="https://www.uit.edu.vn/cup-2023-le-giai-bong-da-nam-khoa-he-thong-thong-tin-nam-2023">[IS CUP 2023 | Thá» lá» giáº£i bÃ³ng ÄÃ¡ nam khoa Há» thá»ng ThÃ´ng tin...</a>
+<span class="date">(14-05-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-3 views-row-odd">
+<a href="https://www.uit.edu.vn/m0lecon-ctf-thong-bao-giai-m0lecon-ctf-2023">[m0leCon CTF] ThÃ´ng bÃ¡o giáº£i m0leCon CTF 2023</a>
+<span class="date">(14-05-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+<li class="views-row views-row-4 views-row-even views-row-last">
+<a href="https://www.uit.edu.vn/seminar-doanh-nghiep-fpt-software-hcm"> Seminar doanh nghiá»p - FPT Software HCM</a>
+<span class="date">(13-05-2023)</span> <img src="/sites/vi/files/new.gif"/> </li>
+</ul></div> </div>
+<div class="more-link">
+<a href="https://www.uit.edu.vn/hoat-dong-sinh-vien">
+    Xem thÃªm  </a>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-khoi_thong_tin-bottom_right panels-flexible-region-last br-region">
+<div class="inside panels-flexible-region-inside panels-flexible-region-khoi_thong_tin-bottom_right-inside panels-flexible-region-inside-last">
+<div class="panel-pane pane-views pane-panel-views">
+<div class="pane-title">
+      ThÃ´ng tin - ThÃ´ng bÃ¡o    </div>
+<div class="pane-content">
+<div class="view view-panel-views view-id-panel_views view-display-id-block_2 top-item view-dom-id-06edd8d1eb79bad4a8faeed517fbd77b">
+<div class="view-content">
+<div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+<div class="teaser-img"><a href="https://www.uit.edu.vn/quy-vinif-thong-bao-chuong-trinh-hoc-bong-dao-tao-thac-si-tien-si-trong-nuoc-nam-2023"><img alt=" Quá»¹ VINIF thÃ´ng bÃ¡o ChÆ°Æ¡ng trÃ¬nh há»c bá»ng ÄÃ o táº¡o tháº¡c sÄ©, tiáº¿n sÄ© trong nÆ°á»c nÄm 2023Â " height="220" src="https://www.uit.edu.vn/sites/vi/files/styles/uit_thumb/public/uploads/images/thumbs/202305/344336319_808681567347551_8835906738040815332_n.jpg?itok=Q73apOaV" title=" Quá»¹ VINIF thÃ´ng bÃ¡o ChÆ°Æ¡ng trÃ¬nh há»c bá»ng ÄÃ o táº¡o tháº¡c sÄ©, tiáº¿n sÄ© trong nÆ°á»c nÄm 2023Â " typeof="foaf:Image" width="360"/></a>
+<div class="month">05.2023</div>
+<div class="day">13</div>
+</div>
+<div class="top-title"><a href="https://www.uit.edu.vn/quy-vinif-thong-bao-chuong-trinh-hoc-bong-dao-tao-thac-si-tien-si-trong-nuoc-nam-2023"> Quá»¹ VINIF thÃ´ng bÃ¡o ChÆ°Æ¡ng trÃ¬nh há»c bá»ng ÄÃ o táº¡o tháº¡c sÄ©, tiáº¿n...</a> <img src="/sites/vi/files/new.gif"/></div>
+<div class="desc">Quá»¹ VINIF thÃ´ng bÃ¡o ChÆ°Æ¡ng trÃ¬nh há»c bá»ng ÄÃ o táº¡o tháº¡c sÄ©, tiáº¿n sÄ© trong nÆ°á»c nÄm 2023 dÃ nh cho há»c viÃªn cao há»c, nghiÃªn cá»©u sinh thuá»c cÃ¡c chuyÃªn...</div>
+<div class="wrap-line"><div class="line"></div></div> </div>
+</div>
+<div class="attachment attachment-after">
+<div class="view view-panel-views view-id-panel_views view-display-id-attachment_6">
+<div class="view-content">
+<div class="item-list"> <ul> <li class="views-row views-row-1 views-row-odd views-row-first">
+<a href="https://www.uit.edu.vn/dang-ky-hoc-bong-tai-nang-stem"> ÄÄng kÃ½ há»c bá»ng TÃ i nÄng STEMÂ </a>
+<span class="date">(11-05-2023)</span> </li>
+<li class="views-row views-row-2 views-row-even">
+<a href="https://www.uit.edu.vn/thong-bao-lich-thi-tieng-anh-ky-thi-tuyen-sinh-trinh-do-thac-si-dot-1-nam-2023"> ThÃ´ng bÃ¡o Lá»ch thi tiáº¿ng Anh ká»³ thi tuyá»n sinh trÃ¬nh Äá» tháº¡c sÄ©...</a>
+<span class="date">(11-05-2023)</span> </li>
+<li class="views-row views-row-3 views-row-odd">
+<a href="https://www.uit.edu.vn/co-hoi-giao-luu-asean-nhat-ban"> CÆ¡ há»i giao lÆ°u ASEAN - Nháº­t Báº£n</a>
+<span class="date">(11-05-2023)</span> </li>
+<li class="views-row views-row-4 views-row-even views-row-last">
+<a href="https://www.uit.edu.vn/moi-sinh-vien-tham-gia-cuoc-thi-hue-ict-challenge-2023">Má»i sinh viÃªn tham gia cuá»c thi Hue-ICT Challenge 2023</a>
+<span class="date">(10-05-2023)</span> </li>
+</ul></div> </div>
+<div class="more-link">
+<a href="https://www.uit.edu.vn/thong-tin-thong-bao">
+    Xem thÃªm  </a>
+</div>
+</div> </div>
+</div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<!-- /.region -->
+</div>
+</div>
+<!-- /#content-wrap -->
+</div>
+<!-- /#content -->
+</div>
+</div>
+</div>
+<!-- /#main, /#main-wrapper -->
+<div class="clearfix site-footer" id="footer" role="footerinfo">
+<div class="container">
+<div class="row-fluid footer-content" id="footer-content"> <div class="region region-footer clearfix">
+<div class="clearfix block block-panels-mini" id="block-panels-mini-footer"> <div class="content"> <div class="panel-flexible panels-flexible-column_3_40_30_30 clearfix" id="mini-panel-footer">
+<div class="panel-flexible-inside panels-flexible-column_3_40_30_30-inside">
+<div class="panels-flexible-region panels-flexible-region-column_3_40_30_30-left_side panels-flexible-region-first">
+<div class="inside panels-flexible-region-inside panels-flexible-region-column_3_40_30_30-left_side-inside panels-flexible-region-inside-first">
+<div class="panel-pane pane-block pane-block-24 pane-block info-footer">
+<div class="pane-content">
+<p><img alt="TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin" height="104" src="/sites/vi/files/uploads/images/banner_footer.png" width="454"/></p>
+<p><strong>Sá»¨ Máº NG</strong></p>
+<p class="rtejustify">- TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin lÃ  má»t trung tÃ¢m ÄÃ o táº¡o Äáº¡i há»c, sau Äáº¡i há»c cung cáº¥p nguá»n nhÃ¢n lá»±c cháº¥t lÆ°á»£ng cao, nháº±m ÄÃ¡p á»©ng nhu cáº§u cá»§a thá» trÆ°á»ng lao Äá»ng vÃ  phá»¥c vá»¥ cá»ng Äá»ng.</p>
+<p class="rtejustify">- TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin lÃ  má»t trung tÃ¢m hÃ ng Äáº§u vá» nghiÃªn cá»©u khoa há»c vÃ  chuyá»n giao cÃ´ng nghá» vá» cÃ´ng nghá» thÃ´ng tin â truyá»n thÃ´ng vÃ  cÃ¡c lÄ©nh vá»±c liÃªn quan.</p>
+<p><strong>Táº¦M NHÃN</strong></p>
+<p class="rtejustify">TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin trá» thÃ nh trÆ°á»ng Äáº¡i há»c uy tÃ­n vá» cÃ´ng nghá» thÃ´ng tin â truyá»n thÃ´ng vÃ  cÃ¡c lÄ©nh vá»±c liÃªn quan trong khu vá»±c ChÃ¢u Ã.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-column_3_40_30_30-center_side">
+<div class="inside panels-flexible-region-inside panels-flexible-region-column_3_40_30_30-center_side-inside">
+<div class="panel-pane pane-block pane-block-25 pane-block links">
+<div class="pane-title">
+      LiÃªn káº¿t nhanh    </div>
+<div class="pane-content">
+<div class="line">Â </div>
+<ul>
+<li><a href="https://tuyensinh.uit.edu.vn/" rel="nofollow" target="_blank">Trang tuyá»n sinh</a></li>
+<li><a href="https://student.uit.edu.vn/" rel="nofollow" target="_blank">ÄÃ o táº¡o Äáº¡i há»c</a></li>
+<li><a href="https://sdh.uit.edu.vn/" rel="nofollow" target="_blank">ÄÃ o táº¡o Sau Äáº¡i há»c</a></li>
+<li><a href="https://oep.uit.edu.vn/" rel="nofollow" target="_blank">VÄn phÃ²ng CÃ¡c chÆ°Æ¡ng trÃ¬nh Äáº·c biá»t</a></li>
+<li><a href="https://ctsv.uit.edu.vn/" rel="nofollow" target="_blank">PhÃ²ng CÃ´ng tÃ¡c sinh viÃªn</a></li>
+<li><a href="http://thuvien.uit.edu.vn/" rel="nofollow" target="_blank">ThÆ° viá»n</a></li>
+<li><a href="https://forum.uit.edu.vn/" rel="nofollow" target="_blank">Forum</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="panels-flexible-region panels-flexible-region-column_3_40_30_30-right_side panels-flexible-region-last">
+<div class="inside panels-flexible-region-inside panels-flexible-region-column_3_40_30_30-right_side-inside panels-flexible-region-inside-last">
+<div class="panel-pane pane-block pane-block-26 pane-block address">
+<div class="pane-title">
+      LiÃªn há»    </div>
+<div class="pane-content">
+<div class="line">Â </div>
+<ul>
+<li><i class="fa fa-map-marker"><i>Â </i></i><strong>Äá»A CHá»</strong>Khu phá» 6, P.Linh Trung, Tp.Thá»§ Äá»©c, Tp.Há» ChÃ­ Minh.</li>
+<li><i class="fa fa-phone"><i>Â </i></i><strong>ÄIá»N THOáº I</strong>(028) 372 52002</li>
+<li><i class="fa fa-fax"><i>Â </i></i><strong>FAX</strong>(028) 372 52148</li>
+<li><i class="fa fa-envelope-o text-white"><i>Â </i></i><strong>EMAIL</strong><a href="mailto:info@uit.edu.vn">info@uit.edu.vn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.region -->
+</div>
+</div>
+</div>
+<!-- /#footer -->
+<!-- copyright -->
+<div class="clearfix site-copyright" id="copyright" role="copyright">
+<div class="container">
+<div class="row-fluid copyright-content" id="copyright-content"> <div class="region region-copyright clearfix">
+<div class="clearfix block block-block span8 text-copyright" id="block-block-27"> <div class="content"> <p>Â© Copyright TrÆ°á»ng Äáº¡i há»c CÃ´ng nghá» ThÃ´ng tin</p>
+</div>
+</div><div class="clearfix block block-block span4 social" id="block-block-28"> <div class="content"> <ul class="social-icon">
+<li><a class="fa fa-facebook fb-btn" href="https://www.facebook.com/UIT.Fanpage" target="_blank">Â </a></li>
+<!--<li><a class="fa fa-twitter tw-btn" href="#" target="_blank">&nbsp;</a></li>--><li><a class="fa fa-youtube yt-btn" href="https://www.youtube.com/c/UITtv" target="_blank">Â </a></li>
+<li><a class="fa fa-instagram is-btn" href="https://www.instagram.com/uituniversity/" target="_blank">Â </a></li>
+</ul>
+</div>
+</div></div>
+<!-- /.region -->
+</div>
+</div>
+</div>
+<!-- /#copyright -->
+<nav class="mmenu-nav clearfix" id="mmenu_left">
+<ul>
+<ul class="mmenu-mm-list-level-1"><li class="mmenu-mm-list-mlid-744 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Trang chá»§</span></a></li><li class="mmenu-mm-list-mlid-3803 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Äáº¡i há»c chÃ­nh quy</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2536 mmenu-mm-list-path-node-4243"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-toan-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">An toÃ n ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2532 mmenu-mm-list-path-node-4297"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-cong-nghe-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">CÃ´ng nghá» ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2534 mmenu-mm-list-path-node-3591"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-khoa-hoc-may-tinh"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa há»c MÃ¡y tÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-3801 mmenu-mm-list-path-node-6453"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-he-thong-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">Há» thá»ng ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2533 mmenu-mm-list-path-node-3600"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-ky-thuat-phan-mem"><i class="icon-list2"></i><span class="mmenu-block-title">Ká»¹ thuáº­t Pháº§n má»m</span></a></li><li class="mmenu-mm-list-mlid-2535 mmenu-mm-list-path-node-3603"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-ky-thuat-may-tinh"><i class="icon-list2"></i><span class="mmenu-block-title">Ká»¹ thuáº­t MÃ¡y tÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2537 mmenu-mm-list-path-node-3606"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-mang-may-tinh-va-truyen-thong-du-lieu"><i class="icon-list2"></i><span class="mmenu-block-title">MMT &amp; Truyá»n thÃ´ng Dá»¯ liá»u</span></a></li><li class="mmenu-mm-list-mlid-3802 mmenu-mm-list-path-node-6454"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-thuong-mai-dien-tu"><i class="icon-list2"></i><span class="mmenu-block-title">ThÆ°Æ¡ng máº¡i Äiá»n tá»­</span></a></li><li class="mmenu-mm-list-mlid-3800 mmenu-mm-list-path-node-6450"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-nganh-khoa-hoc-du-lieu"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa há»c Dá»¯ liá»u</span></a></li><li class="mmenu-mm-list-mlid-2560 mmenu-mm-list-path-node-3495"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/cu-nhan-tai-nang"><i class="icon-list2"></i><span class="mmenu-block-title">Cá»­ nhÃ¢n TÃ i nÄng</span></a></li><li class="mmenu-mm-list-mlid-2847 mmenu-mm-list-path-node-4581"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/chuong-trinh-chat-luong-cao"><i class="icon-list2"></i><span class="mmenu-block-title">ChÆ°Æ¡ng trÃ¬nh Cháº¥t lÆ°á»£ng cao</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2751 mmenu-mm-list-path-user mobile-link"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/user"><i class="icon-profile"></i><span class="mmenu-block-title">ÄÄng nháº­p</span></a></li><li class="mmenu-mm-list-mlid-2227 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Tin tá»©c</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2240 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">ThÃ´ng tin chung</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2228 mmenu-mm-list-path-taxonomy-term-83"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/thong-tin-thong-bao"><i class="icon-list2"></i><span class="mmenu-block-title">ThÃ´ng bÃ¡o chung</span></a></li><li class="mmenu-mm-list-mlid-2229 mmenu-mm-list-path-aggregator-sources-1"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/thong-tin-tuyen-sinh"><i class="icon-list2"></i><span class="mmenu-block-title">ThÃ´ng tin tuyá»n sinh</span></a></li><li class="mmenu-mm-list-mlid-2230 mmenu-mm-list-path-taxonomy-term-87"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tin-uit"><i class="icon-list2"></i><span class="mmenu-block-title">ThÃ´ng tin hoáº¡t Äá»ng</span></a></li><li class="mmenu-mm-list-mlid-2238 mmenu-mm-list-path-taxonomy-term-97"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tin-tuc-cntt"><i class="icon-list2"></i><span class="mmenu-block-title">Tin tá»©c CNTT</span></a></li><li class="mmenu-mm-list-mlid-2239 mmenu-mm-list-path-taxonomy-term-100"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tin-tuc-giao-duc"><i class="icon-list2"></i><span class="mmenu-block-title">Tin tá»©c giÃ¡o dá»¥c</span></a></li><li class="mmenu-mm-list-mlid-3871 mmenu-mm-list-path-taxonomy-term-205"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tin-xet-duyet-chuc-danh-gs-pgs"><i class="icon-list2"></i><span class="mmenu-block-title">Tin xÃ©t duyá»t chá»©c danh GS, PGS</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2241 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">RSS</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2242 mmenu-mm-list-path-taxonomy-term-83-feed"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/taxonomy/term/83/feed"><i class="icon-list2"></i><span class="mmenu-block-title">RSS - ThÃ´ng bÃ¡o chung</span></a></li><li class="mmenu-mm-list-mlid-2243 mmenu-mm-list-path-taxonomy-term-87-feed"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/taxonomy/term/87/feed"><i class="icon-list2"></i><span class="mmenu-block-title">RSS - Tin hoáº¡t Äá»ng</span></a></li><li class="mmenu-mm-list-mlid-2245 mmenu-mm-list-path-taxonomy-term-97-feed"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/taxonomy/term/97/feed"><i class="icon-list2"></i><span class="mmenu-block-title">RSS - Tin tá»©c CNTT</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-2320 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">ÄÃ o táº¡o quá»c táº¿</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2561 mmenu-mm-list-path-node-3494"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/chuong-trinh-tien-tien"><i class="icon-list2"></i><span class="mmenu-block-title">ChÆ°Æ¡ng trÃ¬nh TiÃªn tiáº¿n</span></a></li><li class="mmenu-mm-list-mlid-3789 mmenu-mm-list-path-node-5462"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-ve-chuong-trinh-lien-ket-bcu"><i class="icon-list2"></i><span class="mmenu-block-title">ChÆ°Æ¡ng trÃ¬nh liÃªn káº¿t BCU</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2231 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Giá»i thiá»u</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2521 mmenu-mm-list-path-node-3486"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tong-quan-ve-truong-dh-cong-nghe-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">Tá»ng quan</span></a></li><li class="mmenu-mm-list-mlid-2522 mmenu-mm-list-path-node-3489"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tam-nhin-su-mang-triet-ly-giao-duc"><i class="icon-list2"></i><span class="mmenu-block-title">Táº§m nhÃ¬n - Sá»© máº¡ng - Triáº¿t lÃ½ GD</span></a></li><li class="mmenu-mm-list-mlid-3829 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">CÆ¡ cáº¥u tá» chá»©c</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-3832 mmenu-mm-list-path-node-6847"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/ban-giam-hieu"><i class="icon-list2"></i><span class="mmenu-block-title">Ban giÃ¡m hiá»u</span></a></li><li class="mmenu-mm-list-mlid-2526 mmenu-mm-list-path-node-3487"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/co-cau-to-chuc"><i class="icon-list2"></i><span class="mmenu-block-title">SÆ¡ Äá» cÆ¡ cáº¥u tá» chá»©c</span></a></li><li class="mmenu-mm-list-mlid-3770 mmenu-mm-list-path-node-5181"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/hoi-dong-truong"><i class="icon-list2"></i><span class="mmenu-block-title">Há»i Äá»ng TrÆ°á»ng</span></a></li><li class="mmenu-mm-list-mlid-3058 mmenu-mm-list-path-node-4726"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/hoi-dong-khoa-hoc"><i class="icon-list2"></i><span class="mmenu-block-title">Há»i Äá»ng khoa há»c &amp; ÄÃ o táº¡o</span></a></li><li class="mmenu-mm-list-mlid-3831 mmenu-mm-list-path-node-6850"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/ban-chap-hanh-dang-bo"><i class="icon-list2"></i><span class="mmenu-block-title">Ban cháº¥p hÃ nh Äáº£ng bá»</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2523 mmenu-mm-list-path-node-3872"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/nhan-dien-thuong-hieu"><i class="icon-list2"></i><span class="mmenu-block-title">Nháº­n diá»n thÆ°Æ¡ng hiá»u</span></a></li><li class="mmenu-mm-list-mlid-2996 mmenu-mm-list-path-https:--www.uit.edu.vn-sites-vi-files-uploads-files-KeHoachChienLuoc_UIT_2021-2025.pdf?id=45632415"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/sites/vi/files/uploads/files/KeHoachChienLuoc_UIT_2021-2025.pdf?id=45632415"><i class="icon-list2"></i><span class="mmenu-block-title">Káº¿ hoáº¡ch - Chiáº¿n lÆ°á»£c</span></a></li><li class="mmenu-mm-list-mlid-2848 mmenu-mm-list-path-node-4588"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/thong-tin-quy-hoach-truong-dh-cntt-dhqg-hcm"><i class="icon-list2"></i><span class="mmenu-block-title">ThÃ´ng tin quy hoáº¡ch</span></a></li><li class="mmenu-mm-list-mlid-2524 mmenu-mm-list-path-node-3729"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/dam-bao-chat-luong"><i class="icon-list2"></i><span class="mmenu-block-title">Äáº£m báº£o cháº¥t lÆ°á»£ng</span></a></li><li class="mmenu-mm-list-mlid-3767 mmenu-mm-list-path-nolink"><a class="mmenu-mm-list mmenu-mm-subopen" href="javascript:void(0);"><i class="icon-plus"></i><span class="mmenu-block-title">Quy cháº¿ - Ná»i quy</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2754 mmenu-mm-list-path-https:--www.uit.edu.vn-sites-vi-files-uploads-files-202111-quichedanchu_dhcntt_2020.pdf"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/sites/vi/files/uploads/files/202111/quichedanchu_dhcntt_2020.pdf"><i class="icon-list2"></i><span class="mmenu-block-title">Quy cháº¿ dÃ¢n chá»§ cÆ¡ sá»</span></a></li><li class="mmenu-mm-list-mlid-2280 mmenu-mm-list-path-https:--www.uit.edu.vn-sites-vi-files-images-ThongTin-2012-NOI%20QUY%20CO%20QUAN%20DHCNTT-QD241.pdf"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/sites/vi/files/images/ThongTin/2012/NOI%20QUY%20CO%20QUAN%20DHCNTT-QD241.pdf"><i class="icon-list2"></i><span class="mmenu-block-title">Ná»i quy cÆ¡ quan</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2527 mmenu-mm-list-path-node-3491"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/lien-he"><i class="icon-list2"></i><span class="mmenu-block-title">LiÃªn há»</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2321 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Sau Äáº¡i há»c</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2912 mmenu-mm-list-path-taxonomy-term-148"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/danh-muc-huong-nghien-cuu"><i class="icon-list2"></i><span class="mmenu-block-title">CÃ¡c hÆ°á»ng nghiÃªn cá»©u cá»§a NCS</span></a></li><li class="mmenu-mm-list-mlid-2842 mmenu-mm-list-path-node-4576"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/dao-tao-thac-si-khoa-hoc-may-tinh"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o Tháº¡c sÄ© Khoa há»c MÃ¡y tÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2843 mmenu-mm-list-path-node-4577"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/dao-tao-tien-si-khoa-hoc-may-tinh"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o Tiáº¿n sÄ© Khoa há»c MÃ¡y tÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2844 mmenu-mm-list-path-node-4578"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/dao-tao-thac-si-cong-nghe-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o Tháº¡c sÄ© CÃ´ng nghá» ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2845 mmenu-mm-list-path-node-4579"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/dao-tao-tien-si-cong-nghe-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o Tiáº¿n sÄ© CÃ´ng nghá» ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-3769 mmenu-mm-list-path-node-5176"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/dao-tao-thac-si-he-thong-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o Tháº¡c sÄ© Há» thá»ng ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-3796 mmenu-mm-list-path-node-6181"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/dao-tao-thac-si-toan-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o Tháº¡c sÄ© An toÃ n ThÃ´ng tin</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2283 mmenu-mm-list-path-https:--tuyensinh.uit.edu.vn"><a class="mmenu-mm-list" href="https://tuyensinh.uit.edu.vn"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n sinh</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2290 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">ThÃ´ng tin</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2284 mmenu-mm-list-path-https:--tuyensinh.uit.edu.vn"><a class="mmenu-mm-list" href="https://tuyensinh.uit.edu.vn"><i class="icon-list2"></i><span class="mmenu-block-title">Giá»i thiá»u chung</span></a></li><li class="mmenu-mm-list-mlid-2285 mmenu-mm-list-path-https:--tuyensinh.uit.edu.vn-diem-chuan-cua-truong-dh-cong-nghe-thong-tin-qua-cac-nam"><a class="mmenu-mm-list" href="https://tuyensinh.uit.edu.vn/diem-chuan-cua-truong-dh-cong-nghe-thong-tin-qua-cac-nam"><i class="icon-list2"></i><span class="mmenu-block-title">Äiá»m chuáº©n hÃ ng nÄm</span></a></li><li class="mmenu-mm-list-mlid-2286 mmenu-mm-list-path-https:--forum.uit.edu.vn-node-53"><a class="mmenu-mm-list" href="https://forum.uit.edu.vn/node/53"><i class="icon-list2"></i><span class="mmenu-block-title">TÆ° váº¥n tuyá»n sinh</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2291 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Äáº¡i há»c</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2293 mmenu-mm-list-path-https:--tuyensinh.uit.edu.vn"><a class="mmenu-mm-list" href="https://tuyensinh.uit.edu.vn"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n sinh Äáº¡i há»c chÃ­nh quy</span></a></li><li class="mmenu-mm-list-mlid-2294 mmenu-mm-list-path-https:--www.citd.vn-chuyen-muc-tuyen-sinh"><a class="mmenu-mm-list" href="https://www.citd.vn/chuyen-muc/tuyen-sinh/"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n sinh Äáº¡i há»c tá»« xa</span></a></li><li class="mmenu-mm-list-mlid-3830 mmenu-mm-list-path-https:--oep.uit.edu.vn-vi-ts2021-thong-bao-tuyen-sinh-chuong-trinh-lien-ket-voi-dai-hoc-birmingham-city-vuong-quoc-anh-nam"><a class="mmenu-mm-list" href="https://oep.uit.edu.vn/vi/ts2021-thong-bao-tuyen-sinh-chuong-trinh-lien-ket-voi-dai-hoc-birmingham-city-vuong-quoc-anh-nam"><i class="icon-list2"></i><span class="mmenu-block-title">ChÆ°Æ¡ng trÃ¬nh liÃªn káº¿t BCU</span></a></li><li class="mmenu-mm-list-mlid-3781 mmenu-mm-list-path-https:--tuyensinh.uit.edu.vn-tuyen-sinh-van-bang-2"><a class="mmenu-mm-list" href="https://tuyensinh.uit.edu.vn/tuyen-sinh-van-bang-2"><i class="icon-list2"></i><span class="mmenu-block-title">TuyÃªÌn sinh VB2</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2292 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Sau Äáº¡i há»c</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2914 mmenu-mm-list-path-http:--sdh.uit.edu.vn-thong-tin-tuyen-sinh"><a class="mmenu-mm-list" href="http://sdh.uit.edu.vn/thong-tin-tuyen-sinh"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n sinh Tháº¡c sÄ©, Tiáº¿n sÄ©</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-2318 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">ÄÃ o táº¡o</span></a></li><li class="mmenu-mm-list-mlid-2299 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">NghiÃªn cá»©u</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2302 mmenu-mm-list-path-https:--khcn.uit.edu.vn-hoi-nghi-hoi-thao"><a class="mmenu-mm-list" href="https://khcn.uit.edu.vn/hoi-nghi-hoi-thao"><i class="icon-list2"></i><span class="mmenu-block-title">Há»i nghá» - Há»i tháº£o</span></a></li><li class="mmenu-mm-list-mlid-2565 mmenu-mm-list-path-node-3490"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/hop-tac-quoc-te"><i class="icon-list2"></i><span class="mmenu-block-title">Há»£p tÃ¡c quá»c táº¿</span></a></li><li class="mmenu-mm-list-mlid-2304 mmenu-mm-list-path-https:--khcn.uit.edu.vn"><a class="mmenu-mm-list" href="https://khcn.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa há»c cÃ´ng nghá»</span></a></li><li class="mmenu-mm-list-mlid-3919 mmenu-mm-list-path-taxonomy-term-206"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/danh-muc-cac-giai-phap-huu-ich-sang-che-kieu-dang-cong-nghiep"><i class="icon-list2"></i><span class="mmenu-block-title">Danh má»¥c cÃ¡c Giáº£i phÃ¡p há»¯u Ã­ch/ SÃ¡ng cháº¿/ Kiá»u dÃ¡ng cÃ´ng nghiá»p</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2305 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">CÃ¡c ÄÆ¡n vá»</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2306 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Khoa - Bá» mÃ´n</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2310 mmenu-mm-list-path-https:--se.uit.edu.vn"><a class="mmenu-mm-list" href="https://se.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa CÃ´ng nghá» Pháº§n má»m</span></a></li><li class="mmenu-mm-list-mlid-2311 mmenu-mm-list-path-https:--httt.uit.edu.vn"><a class="mmenu-mm-list" href="https://httt.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa Há» thá»ng ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2312 mmenu-mm-list-path-https:--fce.uit.edu.vn"><a class="mmenu-mm-list" href="https://fce.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa Ká»¹ thuáº­t MÃ¡y tÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2313 mmenu-mm-list-path-https:--nc.uit.edu.vn"><a class="mmenu-mm-list" href="https://nc.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa MMT &amp; Truyá»n thÃ´ng</span></a></li><li class="mmenu-mm-list-mlid-2314 mmenu-mm-list-path-https:--cs.uit.edu.vn"><a class="mmenu-mm-list" href="https://cs.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa Khoa há»c MÃ¡y tÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-3370 mmenu-mm-list-path-https:--fit.uit.edu.vn"><a class="mmenu-mm-list" href="https://fit.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Khoa Khoa hoÌ£c vaÌ KyÌ thuÃ¢Ì£t ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2567 mmenu-mm-list-path-node-3508"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/bo-mon-toan-ly"><i class="icon-list2"></i><span class="mmenu-block-title">Bá» mÃ´n ToÃ¡n LÃ½</span></a></li></ul></li><li class="mmenu-mm-list-mlid-3266 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">PhÃ²ng - Ban</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2569 mmenu-mm-list-path-node-3510"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-to-chuc-hanh-chinh"><i class="icon-list2"></i><span class="mmenu-block-title">Tá» chá»©c - HÃ nh chÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2570 mmenu-mm-list-path-node-3511"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-ke-hoach-tai-chinh"><i class="icon-list2"></i><span class="mmenu-block-title">Káº¿ hoáº¡ch - TÃ i chÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2571 mmenu-mm-list-path-node-3512"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-dao-tao-dai-hoc"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o Äáº¡i há»c</span></a></li><li class="mmenu-mm-list-mlid-2572 mmenu-mm-list-path-node-3513"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-dao-tao-sdh-khcn"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÃ o táº¡o SÄH &amp; KHCN</span></a></li><li class="mmenu-mm-list-mlid-2574 mmenu-mm-list-path-node-4348"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-quan-he-doi-ngoai"><i class="icon-list2"></i><span class="mmenu-block-title">Quan há» Äá»i ngoáº¡i</span></a></li><li class="mmenu-mm-list-mlid-2573 mmenu-mm-list-path-node-3514"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-quan-tri-thiet-bi"><i class="icon-list2"></i><span class="mmenu-block-title">Quáº£n trá» Thiáº¿t bá»</span></a></li><li class="mmenu-mm-list-mlid-2575 mmenu-mm-list-path-node-3515"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-cong-tac-sinh-vien"><i class="icon-list2"></i><span class="mmenu-block-title">CÃ´ng tÃ¡c Sinh viÃªn</span></a></li><li class="mmenu-mm-list-mlid-2576 mmenu-mm-list-path-node-3516"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-thanh-tra-phap-che-dbcl"><i class="icon-list2"></i><span class="mmenu-block-title">Thanh tra - PhÃ¡p cháº¿ - ÄBCL</span></a></li><li class="mmenu-mm-list-mlid-2577 mmenu-mm-list-path-node-3517"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/ban-quan-ly-co-so"><i class="icon-list2"></i><span class="mmenu-block-title">Quáº£n lÃ½ cÆ¡ sá»</span></a></li><li class="mmenu-mm-list-mlid-2578 mmenu-mm-list-path-node-3518"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/phong-du-lieu-cntt"><i class="icon-list2"></i><span class="mmenu-block-title">Dá»¯ liá»u &amp; CNTT</span></a></li><li class="mmenu-mm-list-mlid-2581 mmenu-mm-list-path-node-4366"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/van-phong-cac-chuong-trinh-dac-biet"><i class="icon-list2"></i><span class="mmenu-block-title">VÄn phÃ²ng cÃ¡c CTÄB</span></a></li><li class="mmenu-mm-list-mlid-2332 mmenu-mm-list-path-http:--thuvien.uit.edu.vn"><a class="mmenu-mm-list" href="http://thuvien.uit.edu.vn"><i class="icon-list2"></i><span class="mmenu-block-title">ThÆ° viá»n</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2308 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Trung tÃ¢m - PTN</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2333 mmenu-mm-list-path-http:--www.citd.edu.vn"><a class="mmenu-mm-list" href="http://www.citd.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">TT PhÃ¡t triá»n CNTT</span></a></li><li class="mmenu-mm-list-mlid-2580 mmenu-mm-list-path-node-3524"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/ptn-truyen-thong-da-phuong-tien"><i class="icon-list2"></i><span class="mmenu-block-title">PTN TT Äa phÆ°Æ¡ng tiá»n</span></a></li><li class="mmenu-mm-list-mlid-2579 mmenu-mm-list-path-node-3525"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/ptn-he-thong-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">PTN Há» thá»ng ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-3786 mmenu-mm-list-path-node-5388"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/ptn-an-toan-thong-tin"><i class="icon-list2"></i><span class="mmenu-block-title">PTN An toÃ n ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2855 mmenu-mm-list-path-http:--cnsc.uit.edu.vn"><a class="mmenu-mm-list" href="http://cnsc.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Trung tÃ¢m An ninh máº¡ng</span></a></li><li class="mmenu-mm-list-mlid-2336 mmenu-mm-list-path-http:--www.celuit.edu.vn"><a class="mmenu-mm-list" href="http://www.celuit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Trung tÃ¢m Ngoáº¡i ngá»¯</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2309 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">ÄoÃ n thá»</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2337 mmenu-mm-list-path-http:--dangbo.uit.edu.vn"><a class="mmenu-mm-list" href="http://dangbo.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Äáº£ng Uá»·</span></a></li><li class="mmenu-mm-list-mlid-2339 mmenu-mm-list-path-http:--cd.uit.edu.vn"><a class="mmenu-mm-list" href="http://cd.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">CÃ´ng ÄoÃ n</span></a></li><li class="mmenu-mm-list-mlid-2340 mmenu-mm-list-path-https:--tuoitre.uit.edu.vn"><a class="mmenu-mm-list" href="https://tuoitre.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">ÄoÃ n thanh niÃªn</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-2353 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Tra cá»©u</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-3363 mmenu-mm-list-path-node-5042"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/cong-bo-ba-cong-khai"><i class="icon-list2"></i><span class="mmenu-block-title">CÃ´ng bá» ba cÃ´ng khai</span></a></li><li class="mmenu-mm-list-mlid-3289 mmenu-mm-list-path-https:--tracuu.citd.vn"><a class="mmenu-mm-list" href="https://tracuu.citd.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Chá»©ng chá» CÃ´ng nghá» ThÃ´ng tin</span></a></li><li class="mmenu-mm-list-mlid-2356 mmenu-mm-list-path-tra-cuu-van-bang"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tra-cuu/van-bang"><i class="icon-list2"></i><span class="mmenu-block-title">VÄn báº±ng tá»t nghiá»p</span></a></li><li class="mmenu-mm-list-mlid-3790 mmenu-mm-list-path-bang-vang-sinh-vien"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/bang-vang-sinh-vien"><i class="icon-list2"></i><span class="mmenu-block-title">Báº£ng vÃ ng thÃ nh tÃ­ch</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2354 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">LiÃªn káº¿t</span></a><ul class="mmenu-mm-list-level-2"><li class="mmenu-mm-list-mlid-2357 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">Sinh viÃªn</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2360 mmenu-mm-list-path-http:--mail.gm.uit.edu.vn"><a class="mmenu-mm-list" href="http://mail.gm.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Webmail</span></a></li><li class="mmenu-mm-list-mlid-2648 mmenu-mm-list-path-http:--sdh.uit.edu.vn"><a class="mmenu-mm-list" href="http://sdh.uit.edu.vn"><i class="icon-list2"></i><span class="mmenu-block-title">Cá»ng thÃ´ng tin ÄÃ o táº¡o SÄH</span></a></li><li class="mmenu-mm-list-mlid-2361 mmenu-mm-list-path-http:--student.uit.edu.vn"><a class="mmenu-mm-list" href="http://student.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Cá»ng thÃ´ng tin ÄÃ o táº¡o ÄH</span></a></li><li class="mmenu-mm-list-mlid-2362 mmenu-mm-list-path-http:--ctsv.uit.edu.vn"><a class="mmenu-mm-list" href="http://ctsv.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">PhÃ²ng CÃ´ng tÃ¡c Sinh viÃªn</span></a></li><li class="mmenu-mm-list-mlid-2363 mmenu-mm-list-path-https:--www.citd.vn"><a class="mmenu-mm-list" href="https://www.citd.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Trung tÃ¢m PhÃ¡t triá»n CNTT</span></a></li><li class="mmenu-mm-list-mlid-2364 mmenu-mm-list-path-https:--tuoitre.uit.edu.vn"><a class="mmenu-mm-list" href="https://tuoitre.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">ÄoÃ n thanh niÃªn</span></a></li><li class="mmenu-mm-list-mlid-2365 mmenu-mm-list-path-https:--forum.uit.edu.vn"><a class="mmenu-mm-list" href="https://forum.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Diá»n ÄÃ n sinh viÃªn</span></a></li><li class="mmenu-mm-list-mlid-2846 mmenu-mm-list-path-http:--courses.uit.edu.vn-sdh"><a class="mmenu-mm-list" href="http://courses.uit.edu.vn/sdh"><i class="icon-list2"></i><span class="mmenu-block-title">Website mÃ´n há»c (SÄH)</span></a></li><li class="mmenu-mm-list-mlid-2366 mmenu-mm-list-path-http:--courses.uit.edu.vn"><a class="mmenu-mm-list" href="http://courses.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Website mÃ´n há»c (ÄH)</span></a></li><li class="mmenu-mm-list-mlid-2367 mmenu-mm-list-path-http:--dreamspark.uit.edu.vn"><a class="mmenu-mm-list" href="http://dreamspark.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Microsoft Azure</span></a></li><li class="mmenu-mm-list-mlid-2368 mmenu-mm-list-path-https:--chungthuc.uit.edu.vn"><a class="mmenu-mm-list" href="https://chungthuc.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">TÃ i khoáº£n chá»©ng thá»±c</span></a></li><li class="mmenu-mm-list-mlid-2369 mmenu-mm-list-path-http:--www.celuit.edu.vn"><a class="mmenu-mm-list" href="http://www.celuit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Trung tÃ¢m Ngoáº¡i ngá»¯</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2358 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">CB-GV</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2370 mmenu-mm-list-path-http:--mail.uit.edu.vn"><a class="mmenu-mm-list" href="http://mail.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Webmail</span></a></li><li class="mmenu-mm-list-mlid-2371 mmenu-mm-list-path-http:--cd.uit.edu.vn"><a class="mmenu-mm-list" href="http://cd.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">CÃ´ng ÄoÃ n</span></a></li><li class="mmenu-mm-list-mlid-2372 mmenu-mm-list-path-http:--tchc.uit.edu.vn"><a class="mmenu-mm-list" href="http://tchc.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">PhÃ²ng Tá» chá»©c - HÃ nh chÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2373 mmenu-mm-list-path-http:--khtc.uit.edu.vn"><a class="mmenu-mm-list" href="http://khtc.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">PhÃ²ng Káº¿ hoáº¡ch - TÃ i chÃ­nh</span></a></li><li class="mmenu-mm-list-mlid-2374 mmenu-mm-list-path-http:--qttb.uit.edu.vn"><a class="mmenu-mm-list" href="http://qttb.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">PhÃ²ng Quáº£n trá» Thiáº¿t bá»</span></a></li><li class="mmenu-mm-list-mlid-2375 mmenu-mm-list-path-http:--phongdl.uit.edu.vn"><a class="mmenu-mm-list" href="http://phongdl.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">PhÃ²ng Dá»¯ liá»u &amp; CNTT</span></a></li><li class="mmenu-mm-list-mlid-3785 mmenu-mm-list-path-https:--dbcl.uit.edu.vn-vi"><a class="mmenu-mm-list" href="https://dbcl.uit.edu.vn/vi"><i class="icon-list2"></i><span class="mmenu-block-title">PhÃ²ng TTPC-ÄBCL</span></a></li><li class="mmenu-mm-list-mlid-2376 mmenu-mm-list-path-http:--banqlcs.uit.edu.vn"><a class="mmenu-mm-list" href="http://banqlcs.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Ban Quáº£n lÃ½ cÆ¡ sá»</span></a></li><li class="mmenu-mm-list-mlid-2377 mmenu-mm-list-path-https:--azure.microsoft.com-en-us"><a class="mmenu-mm-list" href="https://azure.microsoft.com/en-us/"><i class="icon-list2"></i><span class="mmenu-block-title">Microsoft Azure</span></a></li><li class="mmenu-mm-list-mlid-2378 mmenu-mm-list-path-https:--auth.uit.edu.vn"><a class="mmenu-mm-list" href="https://auth.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">TÃ i khoáº£n chá»©ng thá»±c</span></a></li><li class="mmenu-mm-list-mlid-2379 mmenu-mm-list-path-http:--portal.uit.edu.vn"><a class="mmenu-mm-list" href="http://portal.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Cá»ng thÃ´ng tin CB-GV</span></a></li><li class="mmenu-mm-list-mlid-2380 mmenu-mm-list-path-http:--ctgt.uit.edu.vn"><a class="mmenu-mm-list" href="http://ctgt.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">CÃ´ng tÃ¡c giÃ¡o trÃ¬nh</span></a></li><li class="mmenu-mm-list-mlid-2649 mmenu-mm-list-path-http:--khcn.uit.edu.vn"><a class="mmenu-mm-list" href="http://khcn.uit.edu.vn"><i class="icon-list2"></i><span class="mmenu-block-title">Website Khoa há»c cÃ´ng nghá»</span></a></li><li class="mmenu-mm-list-mlid-2752 mmenu-mm-list-path-https:--docs.google.com-forms-d-1YLhOtRvScXX4uL2IJZ-QLn8_JYQ9MhPaKF8JItCJoPY-viewform"><a class="mmenu-mm-list" href="https://docs.google.com/forms/d/1YLhOtRvScXX4uL2IJZ-QLn8_JYQ9MhPaKF8JItCJoPY/viewform"><i class="icon-list2"></i><span class="mmenu-block-title">ÄÄng kÃ½ VPS trÃªn Cloud</span></a></li></ul></li><li class="mmenu-mm-list-mlid-2359 mmenu-mm-list-path-front"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/"><i class="icon-home"></i><span class="mmenu-block-title">KhÃ¡ch</span></a><ul class="mmenu-mm-list-level-3"><li class="mmenu-mm-list-mlid-2381 mmenu-mm-list-path-http:--tuyensinh.uit.edu.vn"><a class="mmenu-mm-list" href="http://tuyensinh.uit.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n sinh Äáº¡i há»c chÃ­nh quy</span></a></li><li class="mmenu-mm-list-mlid-2382 mmenu-mm-list-path-http:--www.citd.edu.vn"><a class="mmenu-mm-list" href="http://www.citd.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n sinh CN tá»« xa (á»¨ng dá»¥ng)</span></a></li><li class="mmenu-mm-list-mlid-2383 mmenu-mm-list-path-http:--www.citd.edu.vn"><a class="mmenu-mm-list" href="http://www.citd.edu.vn/"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n sinh CN tá»« xa (Máº¡ng)</span></a></li><li class="mmenu-mm-list-mlid-2740 mmenu-mm-list-path-http:--www.uit.edu.vn-sites-vi-files-uploads-files-201607-bctdg_dhcntt_2016.pdf"><a class="mmenu-mm-list" href="http://www.uit.edu.vn/sites/vi/files/uploads/files/201607/bctdg_dhcntt_2016.pdf"><i class="icon-list2"></i><span class="mmenu-block-title">BÃ¡o cÃ¡o tá»± ÄÃ¡nh giÃ¡</span></a></li><li class="mmenu-mm-list-mlid-3367 mmenu-mm-list-path-node-3491"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/lien-he"><i class="icon-list2"></i><span class="mmenu-block-title">ThÃ´ng tin liÃªn há»</span></a></li></ul></li></ul></li><li class="mmenu-mm-list-mlid-3241 mmenu-mm-list-path-tuyen-dung"><a class="mmenu-mm-list" href="https://www.uit.edu.vn/tuyen-dung"><i class="icon-list2"></i><span class="mmenu-block-title">Tuyá»n dá»¥ng</span></a></li></ul> </ul>
+</nav>
+</body>
+</html>
