@@ -34,6 +34,11 @@ Step 2: Truy cập repository https://github.com/Le-Ton-Nhan/WebPhishing
 Step 3: Bấm vào tab Pull requests
 Step 4: Bấm nút `New Pull Request`
 Step 5: Chọn `base:main` và `compare:feature/letonnhan/ui` để thực hiện tạo merge request từ `compare` vào `base`
+Step 6: Bấm nút `Create pull request`
+Step 7: Điền thông tin của PR và bấm `Create pull request`
+Step 7.1(Optional): Kiểm tra lại các file đã thay đổi ở tab `Files changed` để đảm bảo không bị sót file hoặc miss commit
+Step 8: Hoàn tất merge request bằng cách bấm `Merge pull request`
+
 
 
 
