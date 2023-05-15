@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<title>Dáº¡y Nhau Há»c</title>
+<meta content="NÆ¡i Äá» nháº­n giáº£i ÄÃ¡p cho má»i cÃ¢u há»i, nÆ¡i Äá» chia sáº» kiáº¿n thá»©c, nÆ¡i Äá» Äá»c, Äá» suy ngáº«m vÃ  Äá» vui" name="description"/>
+<meta content="Discourse 2.4.2 - https://github.com/discourse/discourse version 10e11fd5d8eb7df31094bb4665ad176a01798bdc" name="generator"/>
+<script src="/cdn-cgi/apps/head/mu-sJQboADabFMVZ5L8IP07n7mU.js"></script><link href="https://daynhauhoc.s3.dualstack.ap-southeast-1.amazonaws.com/original/3X/e/e/ee34de6c73f268424fceaef858c5428d8fb2a976.jpg" rel="icon" type="image/png"/>
+<link href="https://daynhauhoc.s3.dualstack.ap-southeast-1.amazonaws.com/optimized/3X/c/7/c7d6883b699649c2a1188f4cad18db9e14a43a80_2_180x180.png" rel="apple-touch-icon" type="image/png"/>
+<meta content="#ffffff" name="theme-color"/>
+<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover" name="viewport"/>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","url":"https://daynhauhoc.com","potentialAction":{"@type":"SearchAction","target":"https://daynhauhoc.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<link href="https://daynhauhoc.com/opensearch.xml" rel="search" title="Dáº¡y Nhau Há»c Search" type="application/opensearchdescription+xml"/>
+<link data-target="desktop" data-theme-id="7" href="/stylesheets/desktop_8d5ab7f90f1a884a466d788199894ecd2e25a080.css?__ws=daynhauhoc.com" media="all" rel="stylesheet">
+<link data-target="desktop_theme" data-theme-id="7" href="/stylesheets/desktop_theme_7_8db9df3282a70c440be774ad642dd823cfd9ed7b.css?__ws=daynhauhoc.com" media="all" rel="stylesheet">
+<meta content="skuxR9PDgAfvD3nfeMcID5kqELtIQKDIIgfYcrV4GxI" name="google-site-verification"/>
+<style>
+ul#top-navbar-links {
+    margin: 0;
+    padding: 0;
+    float: right
+}
+
+#top-navbar-links li {
+    list-style: none;
+    display: inline;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+#top-navbar-links li a {
+    font-size: 12px;
+    line-height: 40px;
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00adef;
+    display: inline-block;
+}
+
+#top-navbar-links li a:hover,
+#top-navbar-links li a:focus {
+    color: #006A9C
+}
+
+#top-navbar-links li a .fa {
+    font-size: 20px;
+    vertical-align: -2px;
+}
+</style>
+<meta data-auto-link-domains="" data-json='{"cookieDomain":"auto"}' data-tracking-code="UA-56246224-1" id="data-ga-universal-analytics"/>
+<link as="script" href="/assets/google-universal-analytics-f35b4da49411e6f5559073523aab983da483976a3954c79c756f8579f6fbd6ef.js" rel="preload"/>
+<script src="/assets/google-universal-analytics-f35b4da49411e6f5559073523aab983da483976a3954c79c756f8579f6fbd6ef.js"></script>
+<link href="/latest?no_definitions=true&amp;page=1" rel="next"/>
+<link href="https://daynhauhoc.com/posts.rss" rel="alternate" title="Latest posts" type="application/rss+xml">
+<link href="https://daynhauhoc.com/latest.rss" rel="alternate" title="Latest topics" type="application/rss+xml">
+<meta content="Dáº¡y Nhau Há»c" property="og:site_name">
+<meta content="summary" name="twitter:card">
+<meta content="https://daynhauhoc.s3.dualstack.ap-southeast-1.amazonaws.com/original/3X/3/a/3a2603c2e24143991b24f57fb2799d0bcd27f163.png" name="twitter:image">
+<meta content="https://daynhauhoc.s3.dualstack.ap-southeast-1.amazonaws.com/original/3X/3/a/3a2603c2e24143991b24f57fb2799d0bcd27f163.png" property="og:image">
+<meta content="https://daynhauhoc.com/" property="og:url">
+<meta content="https://daynhauhoc.com/" name="twitter:url">
+<meta content="Dáº¡y Nhau Há»c" property="og:title">
+<meta content="Dáº¡y Nhau Há»c" name="twitter:title"/>
+<meta content="NÆ¡i Äá» nháº­n giáº£i ÄÃ¡p cho má»i cÃ¢u há»i, nÆ¡i Äá» chia sáº» kiáº¿n thá»©c, nÆ¡i Äá» Äá»c, Äá» suy ngáº«m vÃ  Äá» vui" property="og:description"/>
+<meta content="NÆ¡i Äá» nháº­n giáº£i ÄÃ¡p cho má»i cÃ¢u há»i, nÆ¡i Äá» chia sáº» kiáº¿n thá»©c, nÆ¡i Äá» Äá»c, Äá» suy ngáº«m vÃ  Äá» vui" name="twitter:description"/>
+</meta></meta></meta></meta></meta></meta></meta></link></link></link></link></head>
+<body class="crawler">
+<div class="wrap" id="top-navbar">
+<ul id="top-navbar-links">
+<li><a href="https://discordapp.com/invite/jHwsRAN" target="_blank"><i class="fab fa-discord"></i> DayNhauHoc's Discord</a></li>
+<li><a href="https://cpp.daynhauhoc.com/" target="_blank"><i aria-hidden="true" class="fa fa-book"></i> Há»c C++ Free? Click</a></li>
+<li><a href="https://blog.daynhauhoc.com" target="_blank"><i class="fa fa-rss-square"></i> Blog</a></li>
+<li><a href="https://www.facebook.com/daynhauhoc" target="_blank"><i class="fa fa-facebook-square"></i> Dáº¡y Nhau Há»c</a></li>
+<li><a href="https://www.facebook.com/videotuhoclaptrinh" target="_blank"><i class="fa fa-facebook-square"></i> Tá»± Há»c Láº­p TrÃ¬nh</a></li>
+</ul>
+</div>
+<header>
+<a href="/">
+<img alt="Dáº¡y Nhau Há»c" id="site-logo" src="https://daynhauhoc.s3.dualstack.ap-southeast-1.amazonaws.com/original/3X/a/3/a39e5e08cb76d2e2057ccbdc85057acda604e261.png" style="max-width: 150px;"/>
+</a>
+</header>
+<div class="wrap" id="main-outlet">
+<div itemscope="" itemtype="http://schema.org/ItemList">
+<table class="topic-list">
+<thead>
+<tr>
+<th>Topic</th>
+<th>Replies</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<meta content="http://schema.org/ItemListOrderDescending" itemprop="itemListOrder"/>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="0" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/topic-hoi-dap-va-tu-van-nganh-nghe-va-chon-truong/85525" itemprop="url"/>
+<meta content="Topic há»i ÄÃ¡p vÃ  tÆ° váº¥n ngÃ nh nghá» vÃ  chá»n trÆ°á»ng" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/topic-hoi-dap-va-tu-van-nganh-nghe-va-chon-truong/85525">
+<span>Topic há»i ÄÃ¡p vÃ  tÆ° váº¥n ngÃ nh nghá» vÃ  chá»n trÆ°á»ng</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+<p class="excerpt">
+                Topic chung giÃºp cÃ¡c báº¡n tÆ° váº¥n chá»n trÆ°á»ng. Má»i topic khÃ¡c liÃªn quan sáº½ bá» khoÃ¡ vÃ  dá»i sang ÄÃ¢y nhÃ© :blush:
+
+Láº¡i sáº¯p tá»i má»t mÃ¹a tuyá»n sinh. CÃ¡c cÃ¢u há»i tháº¯c máº¯c vá» tÆ°Æ¡ng lai nhÆ° tháº¿ nÃ o, ngÃ nh nghá» ra sao láº¡i ÄÆ°á»£c má»i …
+              </p>
+</td>
+<td>
+<span class="posts" title="posts">614</span>
+</td>
+<td>
+            May 4, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="1" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/khong-hoc-dai-hoc-chi-di-hoc-o-trung-tam-khi-co-chung-chi-it-co-xin-duoc-viec-khong/129698" itemprop="url"/>
+<meta content="KhÃ´ng há»c Äáº¡i há»c chá» Äi há»c á» trung tÃ¢m khi cÃ³ chá»©ng chá» IT, cÃ³ xin ÄÆ°á»£c viá»c khÃ´ng?" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/khong-hoc-dai-hoc-chi-di-hoc-o-trung-tam-khi-co-chung-chi-it-co-xin-duoc-viec-khong/129698">
+<span>KhÃ´ng há»c Äáº¡i há»c chá» Äi há»c á» trung tÃ¢m khi cÃ³ chá»©ng chá» IT, cÃ³ xin ÄÆ°á»£c viá»c khÃ´ng?</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">12</span>
+</td>
+<td>
+            May 15, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="2" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/hoc-xong-2-nam-fpt-aptech-roi-di-hoc-o-nuoc-anh-vao-nam-2024-co-hop-ly-khong/129704" itemprop="url"/>
+<meta content="Há»c xong 2 nÄm Fpt Aptech rá»i Äi há»c á» nÆ°á»c Anh vÃ o nÄm 2024 cÃ³ há»£p lÃ½ khÃ´ng?" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/hoc-xong-2-nam-fpt-aptech-roi-di-hoc-o-nuoc-anh-vao-nam-2024-co-hop-ly-khong/129704">
+<span>Há»c xong 2 nÄm Fpt Aptech rá»i Äi há»c á» nÆ°á»c Anh vÃ o nÄm 2024 cÃ³ há»£p lÃ½ khÃ´ng?</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">8</span>
+</td>
+<td>
+            May 15, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="3" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/kinh-nghiem-xin-viec-cho-sinh-vien-moi-ra-truong/129711" itemprop="url"/>
+<meta content="Kinh nghiá»m xin viá»c cho sinh viÃªn má»i ra trÆ°á»ng" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/kinh-nghiem-xin-viec-cho-sinh-vien-moi-ra-truong/129711">
+<span>Kinh nghiá»m xin viá»c cho sinh viÃªn má»i ra trÆ°á»ng</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">3</span>
+</td>
+<td>
+            May 15, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="4" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/khong-thay-server-name-trong-sql-server/97797" itemprop="url"/>
+<meta content="KhÃ´ng tháº¥y server name trong SQL Server" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/khong-thay-server-name-trong-sql-server/97797">
+<span>KhÃ´ng tháº¥y server name trong SQL Server</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">8</span>
+</td>
+<td>
+            May 15, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="5" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/dhcp-co-cap-ip-cho-may-ngoai-mang-lan-thong-qua-vpn-khong/129715" itemprop="url"/>
+<meta content="DHCP cÃ³ cáº¥p IP cho mÃ¡y ngoÃ i máº¡ng LAN thÃ´ng qua VPN khÃ´ng" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/dhcp-co-cap-ip-cho-may-ngoai-mang-lan-thong-qua-vpn-khong/129715">
+<span>DHCP cÃ³ cáº¥p IP cho mÃ¡y ngoÃ i máº¡ng LAN thÃ´ng qua VPN khÃ´ng</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">7</span>
+</td>
+<td>
+            May 14, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="6" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/tim-hieu-cach-su-dung-new-class-va-new-class/129716" itemprop="url"/>
+<meta content="TÃ¬m hiá»u cÃ¡ch sá»­ dá»¥ng new Class() vÃ  new Class[]()" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/tim-hieu-cach-su-dung-new-class-va-new-class/129716">
+<span>TÃ¬m hiá»u cÃ¡ch sá»­ dá»¥ng new Class() vÃ  new Class[]()</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">3</span>
+</td>
+<td>
+            May 14, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="7" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/hoc-c-hay-java/129714" itemprop="url"/>
+<meta content="Há»c C# hay Java" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/hoc-c-hay-java/129714">
+<span>Há»c C# hay Java</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">3</span>
+</td>
+<td>
+            May 14, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="8" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/loi-khi-cai-x64dbg/129707" itemprop="url"/>
+<meta content="Lá»i khi cÃ i x64dbg" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/loi-khi-cai-x64dbg/129707">
+<span>Lá»i khi cÃ i x64dbg</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">3</span>
+</td>
+<td>
+            May 13, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="9" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/xai-gpt4-for-free/129676" itemprop="url"/>
+<meta content="XÃ i gpt4 for free" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/xai-gpt4-for-free/129676">
+<span>XÃ i gpt4 for free</span>
+</a>
+<div>
+<a href="/c/hacker-news"><span class="category-name">hacker news</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">13</span>
+</td>
+<td>
+            May 13, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="10" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/topic-ama-ask-me-anything-dat-daynhauhoc-founder-ex-meta-ex-sea-garena-shopee-ex-tum-lum/129628" itemprop="url"/>
+<meta content="Topic AMA (Ask me anything) Dat - DayNhauHoc Founder / Ex-Meta / Ex-Sea (Garena/Shopee) / Ex - tÃ¹m lum" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/topic-ama-ask-me-anything-dat-daynhauhoc-founder-ex-meta-ex-sea-garena-shopee-ex-tum-lum/129628">
+<span>Topic AMA (Ask me anything) Dat - DayNhauHoc Founder / Ex-Meta / Ex-Sea (Garena/Shopee) / Ex - tÃ¹m lum</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">26</span>
+</td>
+<td>
+            May 13, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="11" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/thac-mac-ve-cac-luu-y-trong-lap-trinh-timer-0-cua-pic16f887/129713" itemprop="url"/>
+<meta content="Tháº¯c máº¯c vá» cÃ¡c lÆ°u Ã½ trong láº­p trÃ¬nh TIMER 0 cá»§a Pic16f887" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/thac-mac-ve-cac-luu-y-trong-lap-trinh-timer-0-cua-pic16f887/129713">
+<span>Tháº¯c máº¯c vá» cÃ¡c lÆ°u Ã½ trong láº­p trÃ¬nh TIMER 0 cá»§a Pic16f887</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">2</span>
+</td>
+<td>
+            May 13, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="12" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/microsoft-azure-charge-phi-khi-khong-su-dung/129710" itemprop="url"/>
+<meta content="Microsoft Azure charge phÃ­ khi khÃ´ng sá»­ dá»¥ng" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/microsoft-azure-charge-phi-khi-khong-su-dung/129710">
+<span>Microsoft Azure charge phÃ­ khi khÃ´ng sá»­ dá»¥ng</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">5</span>
+</td>
+<td>
+            May 12, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="13" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/can-dinh-huong-ve-lo-trinh-hoc-lap-trinh-nhung/129712" itemprop="url"/>
+<meta content="Cáº§n Äá»nh hÆ°á»ng vá» lá» trÃ¬nh há»c láº­p trÃ¬nh nhÃºng" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/can-dinh-huong-ve-lo-trinh-hoc-lap-trinh-nhung/129712">
+<span>Cáº§n Äá»nh hÆ°á»ng vá» lá» trÃ¬nh há»c láº­p trÃ¬nh nhÃºng</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">1</span>
+</td>
+<td>
+            May 12, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="14" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/bi-hacker-scan-database-thi-phai-lam-sao/129696" itemprop="url"/>
+<meta content="Bá» hacker scan database thÃ¬ pháº£i lÃ m sao?" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/bi-hacker-scan-database-thi-phai-lam-sao/129696">
+<span>Bá» hacker scan database thÃ¬ pháº£i lÃ m sao?</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">7</span>
+</td>
+<td>
+            May 12, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="15" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/loi-nhap-chu-t-ra-chu-t5-y-ra-chu-y6-ra-chu/95827" itemprop="url"/>
+<meta content='Lá»i nháº­p chá»¯ "t" ra chá»¯ "t5", "y" ra chá»¯ "y6",] ra chá»¯ ]=' itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/loi-nhap-chu-t-ra-chu-t5-y-ra-chu-y6-ra-chu/95827">
+<span>Lá»i nháº­p chá»¯ "t" ra chá»¯ "t5", "y" ra chá»¯ "y6",] ra chá»¯ ]=</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">3</span>
+</td>
+<td>
+            May 12, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="16" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/sua-loi-undefined-reference-to/129703" itemprop="url"/>
+<meta content="Sá»­a lá»i Undefined reference to" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/sua-loi-undefined-reference-to/129703">
+<span>Sá»­a lá»i Undefined reference to</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">5</span>
+</td>
+<td>
+            May 12, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="17" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/lop-11-hoc-ki-1-hanh-kiem-tot-hoc-ki-2-trung-binh-thi-co-duoc-xet-tuyen-dai-hoc-bang-hinh-thuc-thi-dai-hoc-khong/129708" itemprop="url"/>
+<meta content="Lá»p 11 há»c kÃ¬ 1 háº¡nh kiá»m tá»t, há»c kÃ¬ 2 trung bÃ¬nh thÃ¬ cÃ³ ÄÆ°á»£c xÃ©t tuyá»n Äáº¡i há»c báº±ng hÃ¬nh thá»©c thi Äáº¡i há»c khÃ´ng?" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/lop-11-hoc-ki-1-hanh-kiem-tot-hoc-ki-2-trung-binh-thi-co-duoc-xet-tuyen-dai-hoc-bang-hinh-thuc-thi-dai-hoc-khong/129708">
+<span>Lá»p 11 há»c kÃ¬ 1 háº¡nh kiá»m tá»t, há»c kÃ¬ 2 trung bÃ¬nh thÃ¬ cÃ³ ÄÆ°á»£c xÃ©t tuyá»n Äáº¡i há»c báº±ng hÃ¬nh thá»©c thi Äáº¡i há»c khÃ´ng?</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">3</span>
+</td>
+<td>
+            May 12, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="18" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/cach-nhap-xuat-vector-2-chieu-bang-co-che-at/38767" itemprop="url"/>
+<meta content="CÃ¡ch nháº­p/xuáº¥t vector 2 chiá»u báº±ng cÆ¡ cháº¿ .at()" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/cach-nhap-xuat-vector-2-chieu-bang-co-che-at/38767">
+<span>CÃ¡ch nháº­p/xuáº¥t vector 2 chiá»u báº±ng cÆ¡ cháº¿ .at()</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">7</span>
+</td>
+<td>
+            May 11, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="19" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/loi-khi-su-dung-scanner-trong-java-nosuchelementexception/90162" itemprop="url"/>
+<meta content="Lá»i khi sá»­ dá»¥ng scanner trong java: NoSuchElementException" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/loi-khi-su-dung-scanner-trong-java-nosuchelementexception/90162">
+<span>Lá»i khi sá»­ dá»¥ng scanner trong java: NoSuchElementException</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">6</span>
+</td>
+<td>
+            May 11, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="20" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/loi-khi-cai-dat-chocolatey/129706" itemprop="url"/>
+<meta content="Lá»i khi cÃ i Äáº·t chocolatey" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/loi-khi-cai-dat-chocolatey/129706">
+<span>Lá»i khi cÃ i Äáº·t chocolatey</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">2</span>
+</td>
+<td>
+            May 11, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="21" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/chat-vui-voi-anh-tai/129705" itemprop="url"/>
+<meta content="Chat vui vá»i anh TÃ i" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/chat-vui-voi-anh-tai/129705">
+<span>Chat vui vá»i anh TÃ i</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">1</span>
+</td>
+<td>
+            May 11, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="22" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/chon-ngon-ngu-dau-tien-java-hay-javascript/129695" itemprop="url"/>
+<meta content="Chá»n ngÃ´n ngá»¯ Äáº§u tiÃªn: Java hay Javascript?" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/chon-ngon-ngu-dau-tien-java-hay-javascript/129695">
+<span>Chá»n ngÃ´n ngá»¯ Äáº§u tiÃªn: Java hay Javascript?</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">25</span>
+</td>
+<td>
+            May 11, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="23" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/code-php-khong-dung-duoc-tren-hosting/129702" itemprop="url"/>
+<meta content="Code PHP khÃ´ng dÃ¹ng ÄÆ°á»£c trÃªn Hosting" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/code-php-khong-dung-duoc-tren-hosting/129702">
+<span>Code PHP khÃ´ng dÃ¹ng ÄÆ°á»£c trÃªn Hosting</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">4</span>
+</td>
+<td>
+            May 10, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="24" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/netbeans-khong-chay-duoc/129694" itemprop="url"/>
+<meta content="Netbeans khÃ´ng cháº¡y ÄÆ°á»£c" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/netbeans-khong-chay-duoc/129694">
+<span>Netbeans khÃ´ng cháº¡y ÄÆ°á»£c</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">2</span>
+</td>
+<td>
+            May 10, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="25" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/kali-linux-gap-loi-khi-dung-lenh-apt-get-install-ten-chuong-trinh/29101" itemprop="url"/>
+<meta content="Kali Linux gáº·p lá»i khi dÃ¹ng lá»nh apt-get install [tÃªn chÆ°Æ¡ng trÃ¬nh]" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/kali-linux-gap-loi-khi-dung-lenh-apt-get-install-ten-chuong-trinh/29101">
+<span>Kali Linux gáº·p lá»i khi dÃ¹ng lá»nh apt-get install [tÃªn chÆ°Æ¡ng trÃ¬nh]</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">7</span>
+</td>
+<td>
+            May 9, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="26" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/lenh-xoa-man-hinh-trong-onlinegdb/129697" itemprop="url"/>
+<meta content="Lá»nh xÃ³a mÃ n hÃ¬nh trong onlinegdb" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/lenh-xoa-man-hinh-trong-onlinegdb/129697">
+<span>Lá»nh xÃ³a mÃ n hÃ¬nh trong onlinegdb</span>
+</a>
+<div>
+<a href="/c/programming"><span class="category-name">programming</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">2</span>
+</td>
+<td>
+            May 9, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="27" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/khong-bam-duoc-nut-debug/129672" itemprop="url"/>
+<meta content="KhÃ´ng báº¥m ÄÆ°á»£c nÃºt debug" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/khong-bam-duoc-nut-debug/129672">
+<span>KhÃ´ng báº¥m ÄÆ°á»£c nÃºt debug</span>
+</a>
+<div>
+<a href="/c/randomq"><span class="category-name">randomq</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">4</span>
+</td>
+<td>
+            May 9, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="28" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/danh-gia-ve-mot-so-trung-tam-dao-tao-it-truc-tuyen-de-chuyen-ngang-nghe-it/129693" itemprop="url"/>
+<meta content="ÄÃ¡nh giÃ¡ vá» má»t sá» trung tÃ¢m ÄÃ o táº¡o IT trá»±c tuyáº¿n Äá» chuyá»n ngang nghá» IT" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/danh-gia-ve-mot-so-trung-tam-dao-tao-it-truc-tuyen-de-chuyen-ngang-nghe-it/129693">
+<span>ÄÃ¡nh giÃ¡ vá» má»t sá» trung tÃ¢m ÄÃ o táº¡o IT trá»±c tuyáº¿n Äá» chuyá»n ngang nghá» IT</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">10</span>
+</td>
+<td>
+            May 9, 2023
+          </td>
+</tr>
+<tr>
+<td itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+<meta content="29" itemprop="position"/>
+<meta content="https://daynhauhoc.com/t/chien-thuat-cua-cac-ban-khi-phai-hoc-nhung-thu-moi/129692" itemprop="url"/>
+<meta content="Chiáº¿n thuáº­t cá»§a cÃ¡c báº¡n khi pháº£i há»c nhá»¯ng thá»© má»i" itemprop="name"/>
+<a class="title raw-link raw-topic-link" href="https://daynhauhoc.com/t/chien-thuat-cua-cac-ban-khi-phai-hoc-nhung-thu-moi/129692">
+<span>Chiáº¿n thuáº­t cá»§a cÃ¡c báº¡n khi pháº£i há»c nhá»¯ng thá»© má»i</span>
+</a>
+<div>
+<a href="/c/dev-chat"><span class="category-name">dev chat</span></a>
+</div>
+</td>
+<td>
+<span class="posts" title="posts">2</span>
+</td>
+<td>
+            May 8, 2023
+          </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+<span itemprop="name"><b><a href="/latest?no_definitions=true&amp;page=1" itemprop="url" rel="next">next page â</a></b></span>
+</div>
+<!-- include_crawler_content? -->
+</div>
+<footer class="container wrap">
+<nav class="crawler-nav" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+<ul>
+<li itemprop="name"><a href="/" itemprop="url">Home </a></li>
+<li itemprop="name"><a href="/categories" itemprop="url">Categories </a></li>
+<li itemprop="name"><a href="/guidelines" itemprop="url">FAQ/Guidelines </a></li>
+<li itemprop="name"><a href="/tos" itemprop="url">Terms of Service </a></li>
+<li itemprop="name"><a href="/privacy" itemprop="url">Privacy Policy </a></li>
+</ul>
+</nav>
+<p class="powered-by-link">Powered by <a href="https://www.discourse.org">Discourse</a>, best viewed with JavaScript enabled</p>
+</footer>
+<div align="center">
+<img alt="" src="https://daynhauhoc.s3-ap-southeast-1.amazonaws.com/original/2X/4/42663b03d1ca512a6444f5b5becdc7faed454208.gif" style="width: 47px; height: 11px;"/>
+<strong>83% thÃ nh viÃªn diá»n ÄÃ n khÃ´ng há»i bÃ i táº­p, cÃ²n báº¡n thÃ¬ sao?</strong>
+</div>
+<script src="/theme-javascripts/e4666a11037e613e974ac07360398a3dbc5ec815.js?__ws=daynhauhoc.com"></script>
+</body>
+</html>
