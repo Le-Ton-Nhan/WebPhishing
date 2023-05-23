@@ -9,8 +9,8 @@ Chứa các đoạn code mới nhất và hoạt động ổn định.
 ## Các nhánh dùng để dev
 
 ```shell
-# Tạo nhánh mới từ main (giả sử tên nhánh là: feature/lamthanhngan/pedia)
-git checkout -b feature/lamthanhngan/pedia
+# Tạo nhánh mới từ main (giả sử tên nhánh là: feature/letonnhan/ui)
+git checkout -b feature/letonnhan/ui
 ```
 
 ### Trong quá trình code
@@ -22,10 +22,10 @@ git add . # đưa toàn bộ file đang ở folder hiện tại (os.pwd()) vào 
 git commit -m "Example commands" # thêm command để nhận biết
 ```
 
-Sau khi đã hoàn tất các chức năng cần thiết trong nhánh. Thực hiện lệnh `git push` để đưa code lên remote (github repository) tương ứng với tên nhánh đang thực hiện `feature/lamthanhngan/pedia`
+Sau khi đã hoàn tất các chức năng cần thiết trong nhánh. Thực hiện lệnh `git push` để đưa code lên remote (github repository) tương ứng với tên nhánh đang thực hiện `feature/letonnhan/ui`
 
 ```shell
-git push -u origin feature/lamthanhngan/pedia
+git push -u origin feature/letonnhan/ui
 ```
 
 ### Thực hiện tạo PR trên Github console

@@ -1,39 +1,44 @@
-# Source initialization 
+# Website 
+## Cài đặt môi trường
+- Mở teminal trên vscode
+- Thực hiện lệnh `python -m venv venv` 
+- Thực thi file: /venv/Scripts/activate.bat để vào môi trường
+- Cài đặt một số gói yêu cầu để sử dụng django:
+    - pip install -U wheel 
+    - pip install django 
+## Các lệnh cần thiết để tạo project 
+- Tạo 1 project mới
+> django-admin startproject MyProject
+- Tạo 1 app mới
+> python manage.py startapp MainApp
+- Kiểm tra thay đổi trong cơ sở dữ liệu lưu vào bộ nhớ tạm
+> python manage.py makemigrations
+- Lưu database
+> python manage.py migrate
+- Run server
+> python manage.py runserver
+- Cài đặt superuser (admin/admin)
+> python manage.py createsuperuser 
+## Một số gói cài thêm 
+> pip install icecream
+> pip install django-ckeditor
+> pip install django-mathfilters
 
-| One time initialization 
+## Mô tả
+- Đây là một web bán quần áo
+### User admin để quản lý:
+- Username: admin
+- Pass: admin
+### User thông thường:
+- Username: nhanlee
+- Pass: Nhanle1234@
 
-## Init project django-admin
-```bash 
-django-admin startproject detect_phishing_link
-cd detect_phishing_link
-django-admin startapp phishing
-```
+## Chúc năng
 
-## Create user
-```bash
-py manage.py createsuperuser 
-```
+-	Đăng nhập, đăng ký:   Thực hiện escape các đầu vào, đối với username sử dụng regex để kiểm tra chỉ bao gồm các ký tự từ a-z, A-Z, 0-9, kiểm tra email có hợp lệ không sử dụng function validate_email được hỗ trợ bởi django
+-	Phân quyền user (hỗ trợ bởi django):	Admin sẽ có quyền xóa url xóa user ..., còn user chỉ có quyền xem và check url phishing
+-	form:   Sử dụng csrf_token được hỗ trợ bởi django để tránh csrf attack
 
-| username | password | 
-|----------|----------|
-| admin    | admin    |
+## Cấu trúc CSDL
 
-# Runtime
-
-## Active Virtual Environment
-```bash 
-python -m venv venv
-venv/Scripts/activate
-```
-
-## Install requirements
-```bash
-python.exe -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-## Start project
-```bash
-python manage.py runserver
-```
 
