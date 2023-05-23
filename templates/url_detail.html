@@ -1,0 +1,27 @@
+{% extends 'base/navbar.html' %}
+
+{% block title_extend %}Url details{% endblock %}
+
+{% block head_extend %}
+{% endblock %}
+
+{% block content %}
+        <div class="container mt-5">
+            <section id="header">
+                <h1 class="text-dark pl-5">Url Info <i class="fas fa-shopping-cart"></i></h1>
+                <hr class="my-4 border-light">
+            </section>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="card pd-info">
+                        <div class="card-body">
+                            <h1 class="card-title font-weight-bold">{{url.url}}</h5>
+                            <p class="card-text">Prediction: {{url.prediction}}</p>
+                            <p class="card-text">Conf_score: {{url.conf_score}}</p>
+                            <p class="card-text">Status: {{url.status}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

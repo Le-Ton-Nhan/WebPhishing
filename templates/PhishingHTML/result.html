@@ -1,0 +1,47 @@
+{% extends "base.html" %} 
+{% block title %} Home {% endblock %}
+{% block url%}
+    <div class="row pl-3 pr-3">
+		<h4 class="border-bottom text-dark mt-3 pb-2 col-12" style='text-shadow: 2px 2px 5px red;'>Thông tin predictions</h4>
+		<table class="table table-borderless">
+		
+		<tbody>
+			<tr>
+				<th style="white-space:nowrap" scope="row">Error</th>
+				<td>{{ error }}</td>
+			</tr>
+			<tr>
+				<th style="white-space:nowrap" scope="row">Status</th>
+				<td>{{ message }}</td>
+			</tr>
+			<tr>
+				<th style="white-space:nowrap" scope="row">Predict</th>
+				<td>{{ url.prediction }}</td>
+			</tr>
+			<tr>
+				<th style="white-space:nowrap" scope="row">Confidence Score</th>
+				<td>{{ url.conf_score }}</td>
+			</tr>
+			
+		</tbody>
+		</table>
+	</div>
+	{% comment %} {% endif%} {% endcomment %}
+	{% comment %} {% if not comment.all %}
+		<h2> No comment yet !!! </h2>
+	{% else %} {% endcomment %}
+	{% for cmt in url %}
+		<div class="row">
+			<div class="col-md-6 col-12">
+				<div class="card" style="margin-bottom: 1rem;  background-color: dark">
+					<div class="ms-2 me-auto" style="font-size: 16px; padding: 10px;">
+						<div class="fw-bold" style="font-size: 16px;"><b style="font-size: 20px;">
+						</b>{{cmt.time}}
+						</div>
+						{{cmt.url}}
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+{% endblock url%}
