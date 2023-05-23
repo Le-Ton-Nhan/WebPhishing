@@ -9,8 +9,8 @@ Chứa các đoạn code mới nhất và hoạt động ổn định.
 ## Các nhánh dùng để dev
 
 ```shell
-# Tạo nhánh mới từ main (giả sử tên nhánh là: feature/letonnhan/ui)
-git checkout -b feature/letonnhan/ui
+# Tạo nhánh mới từ main (giả sử tên nhánh là: feature/lamthanhngan/pedia)
+git checkout -b feature/lamthanhngan/pedia
 ```
 
 ### Trong quá trình code
@@ -22,10 +22,10 @@ git add . # đưa toàn bộ file đang ở folder hiện tại (os.pwd()) vào 
 git commit -m "Example commands" # thêm command để nhận biết
 ```
 
-Sau khi đã hoàn tất các chức năng cần thiết trong nhánh. Thực hiện lệnh `git push` để đưa code lên remote (github repository) tương ứng với tên nhánh đang thực hiện `feature/letonnhan/ui`
+Sau khi đã hoàn tất các chức năng cần thiết trong nhánh. Thực hiện lệnh `git push` để đưa code lên remote (github repository) tương ứng với tên nhánh đang thực hiện `feature/lamthanhngan/pedia`
 
 ```shell
-git push -u origin feature/letonnhan/ui
+git push -u origin feature/lamthanhngan/pedia
 ```
 
 ### Thực hiện tạo PR trên Github console
@@ -38,7 +38,7 @@ Step 3: Bấm vào tab Pull requests
 
 Step 4: Bấm nút `New Pull Request`
 
-Step 5: Chọn `base:main` và `compare:feature/letonnhan/ui` để thực hiện tạo merge request từ `compare` vào `base`
+Step 5: Chọn `base:main` và `compare:feature/lamthanhngan/pedia` để thực hiện tạo merge request từ `compare` vào `base`
 
 Step 6: Bấm nút `Create pull request`
 
