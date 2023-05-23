@@ -1,0 +1,67 @@
+{% extends 'base/navbar.html' %}
+
+{% block title_extend %}Urls{% endblock %}
+
+{% block head_extend %}
+{% endblock %}
+
+{% block content %}
+
+        <div class="container-fluid mt-5 pt-3">
+            <section id="header">
+                <h1 class="text-black pl-5">Urls <i class="fas fa-store-alt"></i></h1>
+                <hr class="my-4 border-dark">
+            </section>
+            {% if user.is_authenticated %}
+            <div class="row">
+                <div class="cmt col-md-6 col-12 " style="background-color: dark; margin-top: 1rem;">
+                    <h4 style="padding-top: 1rem;">URLs 
+                    </h4>
+                    <form method='POST'>
+                        {% csrf_token %}
+                        <div class="form-group">
+                            {{form.url}}
+                        </div>
+                        <button type="submit" class="btn btn-outline-dark active" style="margin-bottom: 1rem;">Submit</button>
+                    </form>
+                </div>
+                <hr class="light-contact" />
+            </div>
+            {% endif%}
+            </div>
+            <section id="products_list">
+                {% if count %}
+                    <div class="row ml-5">
+                        <h5 class="text-dark rounded rounded-lg"> Showing <span class="text-dark">{{count}}</span> url</h4>
+                    </div>
+                {% else %}
+                    <div class="row justify-content-center my-5">
+                        <h3 class="text-light">No result<h5>
+                    </div>
+                    <div class="row justify-content-center my-5">
+                        <img src="https://i.imgur.com/l8lNhIC.jpg" class="img-thumbnail" alt="...">
+                    </div>
+                {% endif %}
+                
+                <div class="row justify-content-center">
+                    {% for urls in url %}
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
+                        <div class="card">
+                            <div class="card-body bg-dark">
+                                <h5 class="card-title text-light font-weight-bold">{{urls.url}}</h5>
+                                <p class="card-text text-light">Confidence Score: <span class="text-info">{{urls.conf_score}}</span></p>
+                                <p class="card-text text-light">Prediction: <span class="text-info">{{urls.prediction}}</span></p>
+                                <p class="card-text text-light">Status: <span class="text-info">{{urls.status}}</span></p>
+                                <a href="/products/viewurl/{{urls.url_id}}" class="btn btn-info">View detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+
+{% endblock %}
+
+{% block script_extend %}
+{% endblock %}

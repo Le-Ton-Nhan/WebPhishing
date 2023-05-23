@@ -1,0 +1,24 @@
+<html>
+<head><title>COL Assurance Speedtest</title></head>
+<body background="AssPcBg2.jpg">
+<ul>
+<img alt="Logo de CenturyLink" src="CTLLogo4CINT2.jpg"/>
+<h1>Colombia</h1>
+<h2>Assurance Speedtest</h2>
+<hr/>
+<br/>
+<br/>
+<h2>TrÃ¡fico</h2>
+<br/>
+<li>
+<a href="cacti/">Cacti</a>
+</li>
+<br/>
+<br/>
+<h2>Reportes</h2>
+<br/>
+<br/>
+<h4>Â®CenturyLink 2019</h4>
+</ul>
+</body>
+</html>

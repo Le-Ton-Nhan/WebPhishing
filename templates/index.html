@@ -1,0 +1,25 @@
+{% extends 'base/navbar.html' %}
+
+{% block title_extend %}HomePage{% endblock %}
+
+{% block head_extend %}{% endblock %}
+
+{% block content %}
+        <div class="container" style="background-color: none;">
+            <div class="jumbotron rounded-lg rounded mt-3" style="background-color: none">
+                <h1 class="display-4 text-dark text-center">Welcome <span class="text-dark">{{user.username}}!</span></h1>
+                <p class="lead text-dark text-center">Enjoy!</p>
+                <hr class="my-4" style="background-color: #083972" >
+            </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid p-3">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <marquee style="font-size: 25px;">NhanLee - NganLaam !!!</marquee>
+                    </div>
+                </div>
+            </div>
+        </footer>
+{% endblock %}

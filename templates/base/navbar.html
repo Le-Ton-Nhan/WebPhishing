@@ -1,0 +1,70 @@
+{% extends 'base/template.html' %}
+
+{% block head %}
+    {% block head_extend %}{% endblock %}
+{% endblock %}
+
+{% block title %}
+    {% block title_extend %}Untitled Page{% endblock %}
+{% endblock %}
+
+{% block body %}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Detect Phishing Link</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+
+                {% if user.is_authenticated %}
+                    <li class="text-primary nav-item">
+                        <a class="nav-link" href="/products">Detect</a>
+                    </li>
+                    <li class="text-primary nav-item">
+                        <a class="nav-link" href="/accounts/information">InformationUser</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Welcome, <span class="text-info">{{user.username}}</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/accounts/logout?next=/"><i class="fas fa-sign-out-alt fa-fw"></i> Logout</a>
+                            <a class="dropdown-item" href="/products/myurl"><i class="fas fa-shopping-cart fa-fw"></i> View url</a>
+                            {% comment %} <a class="dropdown-item" href="/products/orders"><i class="fas fa-scroll fa-fw"></i> View orders</a> {% endcomment %}
+                        </div>
+                    
+                    </li>
+                    {% comment %} {% if user.is_superuser %}
+                        <a href="/adminmanage/products/add" class="btn btn-info"> Add Product</a>
+                    {% endif %} {% endcomment %}
+                {% else %}
+                <li class="text-primary nav-item">
+                    <a class="nav-link" href="/products">Detect</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-primary" href="/accounts/register?next={{request.path}}"><i class="fas fa-user-plus fa-fw"></i> Register</a>
+                        <a class="dropdown-item text-info" href="/accounts/login?next={{request.path}}"><i class="fas fa-sign-in-alt fa-fw"></i> Login</a>
+                    </div>
+                </li>
+                {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        {% block content %}{% endblock %}
+        {% block script_body %}{% endblock%}
+{% endblock %}
+
+{% block script %}
+    {% block script_extend %}{% endblock %}
+{% endblock %}
