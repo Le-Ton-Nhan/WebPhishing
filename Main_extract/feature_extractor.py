@@ -55,13 +55,12 @@ driver = webdriver.Chrome(options=chrome_options)
 
 dir = os.getcwd()
 base_dir = dir + r'\Main_extract'
-cache_file_dir = base_dir + r'\data\cache.csv'
+# cache_file_dir = base_dir + r'\data\cache.csv'
 results_file_dir = base_dir + r'\results\results_data_final.csv'
 # data_file_dir = base_dir + r'\data\data_final.csv'
 
 
 def take_screenshot(url):
-    print("\n**************************URL: " + url)
     folder_result_name = ""
     #get hostname
     hostname, domain, path = get_domain(url)
@@ -943,10 +942,6 @@ def main_forScreenshot():
 
 def generate_external_dataset(lst_url = "", header = headers):
     
-    
-    
-
-
     try:
         os.mkdir(base_dir + r"\results")
     except FileExistsError:
@@ -954,25 +949,25 @@ def generate_external_dataset(lst_url = "", header = headers):
     lst_url = lst_url.strip()
     lst_url = lst_url.split("\r\n")
 
-    print("LIST URL:\n", lst_url)
+    print("List url submited:\n", lst_url)
 
 
-    if not os.path.isfile(cache_file_dir) :
-        with open(cache_file_dir, 'w', newline="") as csvfile :
-            writer = csv.writer(csvfile)
-            writer.writerow(['url'])
-            csvfile.close()
-    else:
-        os.remove(cache_file_dir)
-        with open(cache_file_dir, 'w', newline="") as csvfile :
-            writer = csv.writer(csvfile)
-            writer.writerow(['url'])
-            csvfile.close()
+    # if not os.path.isfile(cache_file_dir) :
+    #     with open(cache_file_dir, 'w', newline="") as csvfile :
+    #         writer = csv.writer(csvfile)
+    #         writer.writerow(['url'])
+    #         csvfile.close()
+    # else:
+    #     os.remove(cache_file_dir)
+    #     with open(cache_file_dir, 'w', newline="") as csvfile :
+    #         writer = csv.writer(csvfile)
+    #         writer.writerow(['url'])
+    #         csvfile.close()
 
     # read cache
-    db = pd.read_csv(cache_file_dir, on_bad_lines='skip')
-    cache = list(db['url'])
-    cache = list(set(cache))
+    # db = pd.read_csv(cache_file_dir, on_bad_lines='skip')
+    # cache = list(db['url'])
+    # cache = list(set(cache))
 
     
     lst = lst_url
@@ -996,10 +991,10 @@ def generate_external_dataset(lst_url = "", header = headers):
         
 
     for row in lst:
-        #url = 'https://'+row['domain']
+        
         url = row
         print("\nExtract feature for ", url)
-        status = "phishing"
+        status = "static"
         #status = "normal"
         if url not in cache:
             take_screenshot(url)
@@ -1040,10 +1035,10 @@ def generate_external_dataset(lst_url = "", header = headers):
             else:
                 state = 'Er'
 
-            with open(cache_file_dir, 'a', newline="") as cachefile :
-                writer = csv.writer(cachefile)
-                writer.writerow(url)
-                cachefile.close()
+            # with open(cache_file_dir, 'a', newline="") as cachefile :
+            #     writer = csv.writer(cachefile)
+            #     writer.writerow(url)
+            #     cachefile.close()
         else:
            state = 'Cached' 
         i+=1
