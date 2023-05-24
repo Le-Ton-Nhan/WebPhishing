@@ -1,4 +1,6 @@
-echo "1. ACTIVATE CONDA VIRTUAL ENVIROMENT WITH PYTHON 3.7..."
+ENV_NAME="myenv"
+
+echo "1. MAKE SURE YOU HAVE THE RIGHT ENVIRONMENT WITH PYTHON 3.7"
 python --version
 nvidia-smi
 nvcc --version
@@ -22,7 +24,7 @@ pip install -e detectron2-windows
 echo "4. INSTALL GIT-LFS "
 
 echo "5. INSTALL CLONE REPO PHISHPEDIA"
-git clone https://github.com/lindsey98/Phishpedia.git
+git clone https://github.com/LamThanhNgan/Phishpedia.git
 
 echo "6. REPAIRING RESOURCE FOR PHISHPEDIA ..."
 pip install gdown

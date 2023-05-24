@@ -53,7 +53,7 @@ def home(request):
             predict_results = predict(features)
             url_submit.prediction = predict_results["prediction"]
             url_submit.conf_score = predict_results["conf_score"]
-            if predict_results["conf_score"] >= 50:
+            if predict_results["prediction"] == 1:
                 url_submit.status = 'Phishing'
             else:
                 url_submit.status = 'Normal'
