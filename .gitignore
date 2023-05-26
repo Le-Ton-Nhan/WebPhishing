@@ -3,6 +3,5 @@ venv/
 **/__pycache__/**
 phishpedia_models/
 Phishpedia/
-Main_extract/results/*
 detectron2-windows/
-Main_extract/results/*
+Main_extract/results/
