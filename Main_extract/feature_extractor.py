@@ -52,7 +52,7 @@ chrome_options.add_argument("--start-fullscreen")
 chrome_options.add_argument("--window-size=1920,1040")
 
 driver = webdriver.Chrome(options=chrome_options)
-
+driver.set_window_size(1920,1080 )
 dir = os.getcwd()
 base_dir = dir + r'\Main_extract'
 # cache_file_dir = base_dir + r'\data\cache.csv'
@@ -91,11 +91,10 @@ def take_screenshot(url):
         
     else:
         removeFolder(folder_result_name)
-        with open("results/erro.txt", "a+") as f:
-            f.write(url + "\n")
+        
         return False
     
-    return True
+    return folder_result_name
 
     
 
@@ -986,7 +985,7 @@ def generate_external_dataset(lst_url = "", header = headers):
             writer = csv.writer(csvfile)
             writer.writerow(['url']+header+['tag'])
             csvfile.close()
-        nb = len(cache)
+        # nb = len(cache)
         i = nb
         
 
@@ -996,54 +995,54 @@ def generate_external_dataset(lst_url = "", header = headers):
         print("\nExtract feature for ", url)
         status = "static"
         #status = "normal"
-        if url not in cache:
-            take_screenshot(url)
-            try:
-                res = extract_features(url, status)
-                ft = ctnfe_new.ContentFeatures(url).run()
-                hfe = htfe.HostFeatures(url).run()
-                lfe = lxfe.LexicalURLFeature(url).run()
-            except Exception as e: 
-                print("Res Error: ", e)
-                res = None
-                ft = None
-                hfe = None
-                lfe = None
+        # if url not in cache:
+        folder_result_name = take_screenshot(url)
+        try:
+            res = extract_features(url, status)
+            ft = ctnfe_new.ContentFeatures(url).run()
+            hfe = htfe.HostFeatures(url).run()
+            lfe = lxfe.LexicalURLFeature(url).run()
+        except Exception as e: 
+            print("Res Error: ", e)
+            res = None
+            ft = None
+            hfe = None
+            lfe = None
 
-                
-                pass
-            # print("RRES: ", res)
-            if res and ft and hfe and lfe:
-                url = url.split(" ")
+            
+            pass
+        # print("RRES: ", res)
+        if res and ft and hfe and lfe:
+            url = url.split(" ")
 
-                ft = list(ft.values())
-                ft = url + ft
+            ft = list(ft.values())
+            ft = url + ft
 
-                hfe = list(hfe.values())
+            hfe = list(hfe.values())
 
-                lfe = list(lfe.values())
+            lfe = list(lfe.values())
 
-                with open(results_file_dir, 'a', newline="") as csvfile :
-                    writer = csv.writer(csvfile)
-                    writer.writerow(ft + hfe + lfe + res)
-                    csvfile.close()
-                
-                
-                state = 'OK'
-                
-                nb +=1 
-            else:
-                state = 'Er'
-
-            # with open(cache_file_dir, 'a', newline="") as cachefile :
-            #     writer = csv.writer(cachefile)
-            #     writer.writerow(url)
-            #     cachefile.close()
+            with open(results_file_dir, 'a', newline="") as csvfile :
+                writer = csv.writer(csvfile)
+                writer.writerow(ft + hfe + lfe + res)
+                csvfile.close()
+            
+            
+            state = 'OK'
+            
+            nb +=1 
         else:
-           state = 'Cached' 
+            state = 'Er'
+            return False
+
+        # with open(cache_file_dir, 'a', newline="") as cachefile :
+        #     writer = csv.writer(cachefile)
+        #     writer.writerow(url)
+        #     cachefile.close()
         i+=1
         print('[',state,']',nb,'succeded from:', i)
         print("----------------------------------------------------------------\n")
+        return folder_result_name
 
     
 
