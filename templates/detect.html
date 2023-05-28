@@ -7,79 +7,98 @@
 {% endblock %}
 
 {% block content %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css"
+    href="{% static 'product/css/detect.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 
-        <div class="container-fluid mt-5 pt-3">
-            <section id="header">
-                <h1 class="text-black pl-5">Urls <i class="fas fa-store-alt"></i></h1>
-                <hr class="my-4 border-dark">
-            </section>
+<div class="wrapper">
+    <div class="container-fluid mt-5 pt-3">
+        <section id="header" class="title">
+            <h1>PHISHDETECT</h1>
+            <p class="text">Using intelligent algorithms, PhishDetect
+                scrutinizes URLs, swiftly identifying and flagging suspicious
+                elements associated with phishing attempts, empowering users to
+                stay protected in the digital landscape.</p>
+            <hr>
+        </section>
+
+        <div class="searchContain row">
+            <img src="{% static 'product/img/www.png' %}" class="col-2" />
             {% if user.is_authenticated %}
-            <div class="row">
+            <form method='POST' class="col-10">
+                {% csrf_token %}
+                <div class="form-group" style="margin: 0; flex: 1;">{{form.url}}</div>
+                <button type="submit" class="btn active btn_custome">Submit</button>
+            </form>
+            {% else %}
+            <form method='GET' class="col-10">
+                <div class="form-group" style="margin: 0; flex: 1;"><input
+                        type="url" class="form-control" placeholder="Search"></div>
+                <a href="/accounts/login?next={{request.path}}"
+                    class="btn btn_custome">Submit</a>
+            </form>
+            {% endif%}
+        </div>
+    </div>
+
+    <!-- <div class="row">
                 <div class="cmt col-md-6 col-12 " style="background-color: dark; margin-top: 1rem;">
-                    <h4 style="padding-top: 1rem;">URLs 
-                    </h4>
-                    <form method='POST'>
-                        {% csrf_token %}
-                        <div class="form-group">
-                            {{form.url}}
-                        </div>
-                        <button type="submit" class="btn btn-outline-dark active" style="margin-bottom: 1rem;">Submit</button>
-
-                    </form>
-                    {% ifequal process True %}          
-                        <div class="alert_success">
-                            <span class="closebtn">&times;</span>  
-                            <strong>Success!</strong> The process of identifying the phishing url is completed.
-                            
-                        </div>
-                    {% endifequal %}
-
-
-                    {% ifequal process False %}
+        
+                   
+                {% ifequal process True %}          
+                    <div class="alert_success">
+                        <span class="closebtn">&times;</span>  
+                        <strong>Success!</strong> The process of identifying the phishing url is completed.
+                        
+                    </div>
+                {% endifequal %}
+                {% ifequal process False %}
                     <div class="alert">
                         <span class="closebtn">&times;</span>  
                         <strong>Unfinished!</strong> The process of determining the phishing url has been interrupted. Try again!
                     </div>
-                    {% endifequal %}
+                {% endifequal %}
+
                 </div>
                 <hr class="light-contact" />
-            </div>
-            {% endif%}
-            </div>
-            <section id="products_list">
-                {% if count %}
-                    <div class="row ml-5">
-                        <h5 class="text-dark rounded rounded-lg"> Showing <span class="text-dark">{{count}}</span> url</h4>
-                    </div>
-                
-                {% else %}
-                    <div class="row justify-content-center my-5">
-                        <h3 class="text-light">No result<h5>
-                    </div>
-                    <div class="row justify-content-center my-5">
-                        <img src="https://i.imgur.com/l8lNhIC.jpg" class="img-thumbnail" alt="...">
-                    </div>
-                {% endif %}
-                
-                <div class="row justify-content-center">
-                    {% for urls in url %}
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 my-3">
-                        <div class="card">
-                            <div class="card-body bg-dark">
-                                <h5 class="card-title text-light font-weight-bold">{{urls.url}}</h5>
-                                <p class="card-text text-light">Confidence Score: <span class="text-info">{{urls.conf_score}}</span></p>
-                                <p class="card-text text-light">Prediction: <span class="text-info">{{urls.prediction}}</span></p>
-                                <p class="card-text text-light">Status: <span class="text-info">{{urls.status}}</span></p>
-                                <a href="/products/viewurl/{{urls.url_id}}" class="btn btn-info">View detail</a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </section>
-        </div>
+            </div> -->
 
+    
+
+    <div>
+        <h4 style="margin-bottom: 10px;">Recently Detected URLs</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-wrap">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Url</th>
+                                    <th>Confidence score</th>
+                                    <th>State</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for urls in url %}
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>{{urls.url}}</td>
+                                    <td>{{urls.conf_score}}</td>
+                                    <td>{{urls.status}}</td>
+                                </tr>
+                                {% endfor %}
+        
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    
+
+</div>
 {% endblock %}
 
 {% block script_extend %}

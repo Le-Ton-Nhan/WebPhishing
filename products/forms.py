@@ -19,5 +19,5 @@ class URLForm(forms.ModelForm):
         model = final_result
         fields = ['url']
         widgets = {
-            'url': forms.Textarea(attrs={'class': 'form-control', 'rows': '3'}),
+            'url': forms.TextInput(attrs={'class': 'form-control', 'rows': '3', 'placeholder': 'Search' }),
         }
