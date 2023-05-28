@@ -122,13 +122,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_URL is the URL location of static files located in STATIC_ROOT
+# STATICFILES_DIRS tells Django where to look for static files in a Django project, such as a top-level static folder
+# STATIC_ROOT is the folder location of static files when collectstatic is run
+# STATICFILES_STORAGE is the file storage engine used when collecting static files with the collectstatic command.
+
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]  
+MEDIA_URL = '/media/'
+if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

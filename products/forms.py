@@ -1,4 +1,4 @@
-from .models import URL
+from .models import *
 from django import forms
 from django.contrib.auth.models import User
 
@@ -16,8 +16,8 @@ class URLForm(forms.ModelForm):
         url = super().save(commit)
         return url.url
     class Meta:
-        model = URL
+        model = final_result
         fields = ['url']
         widgets = {
-            'url': forms.Textarea(attrs={'class': 'form-control', 'rows': '3'}),
+            'url': forms.TextInput(attrs={'class': 'form-control', 'rows': '3', 'placeholder': 'Search' }),
         }

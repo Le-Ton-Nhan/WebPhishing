@@ -1,25 +1,58 @@
 {% extends 'base/navbar.html' %}
 
-{% block title_extend %}HomePage{% endblock %}
+<!-- {% block title_extend %}HomePage{% endblock %}
 
-{% block head_extend %}{% endblock %}
+{% block head_extend %}{% endblock %} -->
+{% load static %}
 
 {% block content %}
-        <div class="container" style="background-color: none;">
-            <div class="jumbotron rounded-lg rounded mt-3" style="background-color: none">
-                <h1 class="display-4 text-dark text-center">Welcome <span class="text-dark">{{user.username}}!</span></h1>
-                <p class="lead text-dark text-center">Enjoy!</p>
-                <hr class="my-4" style="background-color: #083972" >
-            </div>
-        </div>
-        <!--Footer-->
-        <footer>
-            <div class="container-fluid p-3">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <marquee style="font-size: 25px;">NhanLee - NganLaam !!!</marquee>
-                    </div>
+<link rel="stylesheet" type="text/css" href="{% static 'product/css/homepage.css' %}">
+        <div class="hero">
+            <div class="title">
+                <h1>
+                    Protecting Your Online Experience
+                </h1>
+                <div class="back-text" id="back-text">
+                    <span>P</span>
+                    <span>H</span>
+                    <span>I</span>
+                    <span>S</span>
+                    <span>H</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>C</span>
+                    <span>T</span>
                 </div>
             </div>
-        </footer>
-{% endblock %}
+
+            
+        </div>
+
+        <div>
+            <p class="text">Safeguarding Your Online Presence and Preserving Data Integrity: PhishDetect's Cutting-Edge Machine Learning Technology for Proactive Phishing URL Detection and Prevention</p>
+
+        </div>
+        {% if user.is_authenticated %}
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <a href="/products/"> <button type="submit" class="btn active btn_custome hov" >Get Started</button> </a>
+        </div>
+        {% else %}
+        <div style="display: flex; justify-content: center; margin-top: 20px; gap: 15px;">
+            <a class="nav-link" href="/accounts/register?next={{request.path}}"><button type="submit" class="btn active btn_custome" >Sign Up For Free</button></a>
+            <a class="nav-link" href="/accounts/register?next={{request.path}}"> <button type="submit" class="btn active" style="border-color: #333; padding: 10px;">Why PhishDetect?</button></a>
+        </div>
+        {% endif %}
+        
+{% endblock content %}
+    <!--Footer-->
+    <!-- <footer>
+        <div class="container-fluid p-3">
+            <div class="row text-center">
+                <div class="col-12">
+                    <marquee style="font-size: 25px;">NhanLee - NganLaam !!!</marquee>
+                </div>
+            </div>
+        </div>
+    </footer> -->
