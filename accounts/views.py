@@ -80,19 +80,19 @@ def information(request):
         if form.is_valid:
             # get information user
             user = User.objects.get(id=request.user.id)
-            # if request.FILES and request.FILES['Avatar']:
-            #     # Cập nhập avatar nếu có
-            #     f = request.FILES.get('Avatar')
-            #     filename = user.username+os.path.splitext(f.name)[1]
-            #     try:
-            #         os.remove(os.path.join(
-            #             settings.MEDIA_ROOT, 'avatar/'+filename))
-            #     except:
-            #         pass
-            #     fs = FileSystemStorage()
-            #     filename = fs.save('avatar/'+filename, f)
-            #     # Lưu lại thông tin của đường dẫn ảnh
-            #     user.last_name = fs.url(filename)
+            if request.FILES and request.FILES['Avatar']:
+                # Cập nhập avatar nếu có
+                f = request.FILES.get('Avatar')
+                filename = user.username+os.path.splitext(f.name)[1]
+                try:
+                    os.remove(os.path.join(
+                        settings.MEDIA_ROOT, 'avatar/'+filename))
+                except:
+                    pass
+                fs = FileSystemStorage()
+                filename = fs.save('avatar/'+filename, f)
+                # Lưu lại thông tin của đường dẫn ảnh
+                user.last_name = fs.url(filename)
             # update information user
             user.email = request.POST['Email']
             user.save()
@@ -109,6 +109,6 @@ def information(request):
         'information.html',
         {
             "form": form,
-            "data": InformationUser.objects.get_or_create(User=request.user),
+            "data": InformationUser.objects.get(User=request.user),
         }
     )

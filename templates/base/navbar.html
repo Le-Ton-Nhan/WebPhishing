@@ -10,6 +10,7 @@
 
 {% block body %}
 {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'product/css/navbar.css' %}">
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
             <div>
                 <img src="{% static 'product/img/fish.png' %}" style="max-width: 40px; max-height: fit-content;"/>
@@ -48,14 +49,9 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="/accounts/logout?next=/"><i class="fas fa-sign-out-alt fa-fw"></i> Logout</a>
-                                <a class="dropdown-item" href="/products/myurl"><i class="fas fa-shopping-cart fa-fw"></i> View url</a>
-                                {% comment %} <a class="dropdown-item" href="/products/orders"><i class="fas fa-scroll fa-fw"></i> View orders</a> {% endcomment %}
                             </div>
                         
                         </li>
-                        {% comment %} {% if user.is_superuser %}
-                            <a href="/adminmanage/products/add" class="btn btn-info"> Add Product</a>
-                        {% endif %} {% endcomment %}
                     {% else %}
                     
                         <li class="text-primary nav-item">
@@ -68,8 +64,40 @@
                 </ul>
             </div>
         </nav>
-
         {% block content %}{% endblock %}
+        <footer class="footer">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        
+            </ul>
+            <p>&copy;2023 NhanLee NganLaam | All Rights Reserved</p>
+          </footer>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         {% block script_body %}{% endblock%}
 {% endblock %}
 

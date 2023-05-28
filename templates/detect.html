@@ -1,7 +1,7 @@
 {% extends 'base/navbar.html' %}
 {% load static %}
 
-{% block title_extend %}Urls{% endblock %}
+{% block title_extend %}PhishDetect{% endblock %}
 
 {% block head_extend %}
 {% endblock %}
@@ -11,7 +11,7 @@
     href="{% static 'product/css/detect.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 
-<div class="wrapper">
+<div class="wrapper"  style="margin-bottom: 10rem;">
     <div class="container-fluid mt-5 pt-3">
         <section id="header" class="title">
             <h1>PHISHDETECT</h1>
@@ -66,7 +66,7 @@
     
 
     <div>
-        <h4 style="margin-bottom: 10px;">Recently Detected URLs</h3>
+        <h4 style="margin-bottom: 10px; ">Recently Detected URLs</h3>
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-wrap">

@@ -17,8 +17,8 @@ from Main_extract.feature_extractor import *
 from django.urls import reverse
 from django.http.response import Http404
 from django.shortcuts import redirect, render, get_object_or_404
-from Phishpedia.phishpedia.phishpedia_main import *
-from Phishpedia.phishpedia.phishpedia_config import load_config
+#from Phishpedia.phishpedia.phishpedia_main import *
+#from Phishpedia.phishpedia.phishpedia_config import load_config
 from PIL import Image as im
 
 
@@ -31,10 +31,6 @@ predict_results = {"model_path": 0, "classifier": 0, "prediction": 0, "conf_scor
 drop_list = ["url", 'host', 'script_to_body_ratio', 'capitalizations', 'num_hidden_tags', 'num_iframes', 'num_embeds', 'num_objects', 'num_double_documents', 'num_eval_functions', 'num_suspicious_functions', 'num_subdomains', 'registration_date', 'expiration_date', 'last_updates_dates', 'age', 'intended_life_span', 'life_remaining', 'registrar', 'reg_country', 'open_ports', 'num_open_ports', 'is_live', 'isp', 'connection_speed', 'avg_update_days', 'total_updates', 'ttl', 'tld', 'host_is_ip', 'has_port_in_string', 'fragments', 'is_encoded',  'alexa_dis_similarity',  'has_client', 'has_login', 'has_admin', 'has_server', 'length_url', 'ip', 'nb_at', 'nb_qm',  'nb_or',  'nb_underscore', 'nb_tilde', 'nb_percent', 'nb_star', 'nb_colon', 'nb_comma', 'nb_semicolumn', 'nb_dollar', 'nb_space', 'nb_www', 'nb_com', 'nb_dslash', 'ratio_digits_url', 'ratio_digits_host', 'punycode', 'port', 'tld_in_path', 'tld_in_subdomain', 'abnormal_subdomain', 'prefix_suffix', 'shortening_service', 'path_extension', 'nb_redirection', 'nb_external_redirection', 'char_repeat', 'avg_word_host',  'phish_hints', 'domain_in_brand', 'brand_in_subdomain', 'brand_in_path', 'suspecious_tld', 'statistical_report', 'login_form', 'external_favicon', 'links_in_tags', 'submit_email', 'ratio_intMedia', 'sfh', 'iframe', 'popup_window', 'safe_anchor', 'onmouseover', 'right_clic', 'empty_title', 'domain_in_title', 'domain_with_copyright', 'whois_registered_domain', 'dns_record', 'tag']
 
 # Create your views here.
-
-def MyUrl(request):
-    url = static_result.objects.filter(user=request.user).order_by('time')
-    return render(request, 'MyUrl.html', { 'count': url.count(), 'url': url})
 
 def url_details(request, pid):
     url = final_result.objects.get(url_id = pid)
@@ -67,11 +63,11 @@ def dynamic_predictions(folder_result_name):
 
     cfg_path = None # None means use default config.yaml
     reload_targetlist = False
-    ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH = load_config(cfg_path, reload_targetlist)
+    #ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH = load_config(cfg_path, reload_targetlist)
     # phish_category, pred_target, plotvis, siamese_conf, pred_boxes = test(url_path, screenshot_path,
     #                                                                   ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH)
-    phish_category, phish_target, siamese_conf, vt_result, img_path = runit( folder_result_name, result_folder_dir + "/test.txt", ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH )
-    return {"prediction": phish_category, "brand_name": phish_target, "conf_score": siamese_conf, "virustotal": vt_result,"image_result": img_path}
+    #phish_category, phish_target, siamese_conf, vt_result, img_path = runit( folder_result_name, result_folder_dir + "/test.txt", ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH )
+    #return {"prediction": phish_category, "brand_name": phish_target, "conf_score": siamese_conf, "virustotal": vt_result,"image_result": img_path}
 # Trang thông báo lỗi
 def error404(request, *args, **kwargs):
     return render(
