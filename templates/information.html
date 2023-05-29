@@ -17,47 +17,20 @@
         border: none;
         border-radius: 4px;
         outline: none;
-
-            {
-            % comment %
-        }
-
         padding: 0.5em 0.8em;
-
-            {
-            % endcomment %
-        }
-
-            {
-            % comment %
-        }
-
         margin-right: 15px;
-
-            {
-            % endcomment %
-        }
-
         font-size: 1em;
         font-weight: bold;
         cursor: pointer;
     }
 
     .file-upload__button:active {
-            {
-            % comment %
-        }
-
         background: #00745d;
-
-            {
-            % endcomment %
-        }
     }
 </style>
 {% endblock %}
 
-{% block title_extend %}Information{% endblock %}
+{% block title_extend %}Information {{ data.User.username }}{% endblock %}
 {% block content %}
 {% if messages %}
 <div class="modal" tabindex="-1" id="notify">
@@ -84,7 +57,7 @@
     </div>
 </div>
 {% endif %}
-<div class="row col-12 list-subject justify-content-center" style="margin-bottom: 30px">
+<div class="row col-12 list-subject justify-content-center" style="margin-bottom: 10rem; margin-top: 3rem;">
     <div class="col-10 row justify-content-center" style="padding-top: 30px;">
         <form class="col-12 row" method="post" enctype="multipart/form-data">
             {% csrf_token %}
@@ -123,7 +96,7 @@
             </div>
             <div class="col-3" style="font-size: 30px;">
                 <div class="avatar" id="profile-avatar" style="
-                    background-image: url('{{ user.last_name }}');
+                    background-image: url('{{ data.User.last_name }}');
                     width:200px;
                     height:200px;
                     background-position: center; 

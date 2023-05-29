@@ -1,4 +1,5 @@
 {% extends 'base/navbar.html' %}
+{% load static %}
 
 {% block title_extend %}Url details{% endblock %}
 
@@ -6,22 +7,151 @@
 {% endblock %}
 
 {% block content %}
-        <div class="container mt-5">
-            <section id="header">
-                <h1 class="text-dark pl-5">Url Info <i class="fas fa-shopping-cart"></i></h1>
-                <hr class="my-4 border-light">
-            </section>
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <div class="card pd-info">
-                        <div class="card-body">
-                            <h1 class="card-title font-weight-bold">{{url.url}}</h5>
-                            <p class="card-text">Prediction: {{url.prediction}}</p>
-                            <p class="card-text">Conf_score: {{url.conf_score}}</p>
-                            <p class="card-text">Status: {{url.status}}</p>
+<link rel="stylesheet" type="text/css" href="{% static 'product/css/url_detail.css' %}">
+<div class="mt-5" style="margin-left: 2rem; margin-right: 2rem;">
+    <div class="row">
+        <div class="col-md-2 col-2">
+            <div class="box">
+                <div class="content"><img src="https://abdelrahman345.netlify.app/images/me.jpg"/>
+                  <h2>Clean</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-10" style="margin-top:2rem;">
+            <div class="card pd-info">
+                <div class="card-header">
+                    <span style="color: green;">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M16.993 8.842a.6.6 0 0 0-.986-.684l-4.464 6.423-3.628-3.482a.6.6 0 1 0-.83.866l4.135 3.968a.6.6 0 0 0 .908-.09l4.865-7Z">
+                                </path>
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-1.2 0a8.8 8.8 0 1 1-17.6 0 8.8 8.8 0 0 1 17.6 0Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </i>
+                        No security vendors flagged this URL as malicious
+                    </span>
+                </div>
+                <div class="card-body">
+                    <!-- <h1 class="card-title font-weight-bold">{{url.url}}</h1> -->
+                    <div class="row">
+                        <div class="col-md-6 col-6">
+                            <p class="card-text">{{url.url}}</p>
+                        </div>
+                        <div class="col-md-2 col-2" style="text-align: center;">
+                            Status
+                            <p class="card-text">{{url.status}} 200</p>
+                        </div>
+                        <div class="col-md-2 col-2" style="text-align: center;">
+                            Prediction
+                            <p class="card-text">{{url.prediction}} 0</p>
+                        </div>
+                        <div class="col-md-2 col-2" style="text-align: center;">
+                            Score
+                            <p class="card-text">{{url.conf_score}} 50</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row" style="margin-top: 1rem;">
+        <div class="col-md-5 col-5" style="margin-left: 1rem;">
+            <h2>Image Detect</h2>
+            <div class="polaroid">
+                <img src="{% static 'product/img/result.png' %}" alt="5 Terre" style="width:100%">
+                <div class="brand">
+                    <p>Intel</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-5" style="margin-left: 1rem; margin-bottom: 6rem;">
+            <h2 style="font-weight: 700;">Details</h2>
+            <div id="wrapper">
+                <hr>
+                <div id="section-header" style="font-size: 20px; font-weight: 600;">
+                    <span>
+                        Categories
+                    </span>
+                </div>
+                <hr>
+                <div id="detail">
+                    <div class="row" style="margin-left: 1rem;">
+                        <span class="col-md-4 col-4">
+                            Forcepoint ThreatSeeker
+                        </span>
+                        <span class="col-md-8 col-8">
+                            computer security
+                        </span>
+                    </div>
+                    <div class="row" style="margin-left: 1rem;">
+                        <span class="col-md-4 col-4">
+                            Sophos
+                        </span>
+                        <span class="col-md-8 col-8">
+                            information technology
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper">
+                <hr>
+                <div id="section-header" style="font-size: 20px; font-weight: 600;">
+                    <span>
+                        History
+                    </span>
+                </div>
+                <hr>
+                <div id="detail">
+                    <div class="row" style="margin-left: 1rem;">
+                        <span class="col-md-4 col-4">
+                            First Submission
+                        </span>
+                        <span class="col-md-8 col-8">
+                            2019-01-29 05:04:55 UTC
+                        </span>
+                    </div>
+                    <div class="row" style="margin-left: 1rem;">
+                        <span class="col-md-4 col-4">
+                            Last Submission
+                        </span>
+                        <span class="col-md-8 col-8">
+                            2023-05-28 11:21:54 UTC
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper">
+                <hr>
+                <div id="section-header" style="font-size: 20px; font-weight: 600;">
+                    <span>
+                        History
+                    </span>
+                </div>
+                <hr>
+                <div id="detail">
+                    <div class="row" style="margin-left: 1rem;">
+                        <span class="col-md-4 col-4">
+                            First Submission
+                        </span>
+                        <span class="col-md-8 col-8">
+                            2019-01-29 05:04:55 UTC
+                        </span>
+                    </div>
+                    <div class="row" style="margin-left: 1rem;">
+                        <span class="col-md-4 col-4">
+                            Last Submission
+                        </span>
+                        <span class="col-md-8 col-8">
+                            2023-05-28 11:21:54 UTC
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

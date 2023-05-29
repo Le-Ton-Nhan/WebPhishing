@@ -15,7 +15,8 @@
         <title>{% block title %}Untitled Page{% endblock %}</title>
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        {% endblock %}
 
         <!-- Optional JavaScript -->
         <script src="https://kit.fontawesome.com/9439a40bb1.js" crossorigin="anonymous"></script>
@@ -29,25 +30,7 @@
                 $('[data-toggle="popover"]').popover({
                     sanitize: false,
                 })
-            })
-
-            {% comment %} // Persistent name field after submit
-            if (localStorage.getItem("name") != null)
-            {
-                $('#pname').val(localStorage.getItem("name"));
-            }
-
-            $('#pname').change(function()
-                {
-                    localStorage.setItem("name", $('#pname').val());
-                })
-
-            $('#name').change(function()
-                {
-                    localStorage.clear();
-                    localStorage.setItem("name", $('#name').val());
-                }); {% endcomment %}
-    
+            })  
             {% block script %}{% endblock %}
         </script>
     </body>
