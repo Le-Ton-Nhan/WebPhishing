@@ -7,7 +7,7 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'product/css/homepage.css' %}">
-        <div class="hero">
+        <div class="hero" >
             <div class="title">
                 <h1>
                     Protecting Your Online Experience
@@ -35,7 +35,7 @@
 
         </div>
         {% if user.is_authenticated %}
-        <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 10rem;">
             <a href="/products/"> <button type="submit" class="btn active btn_custome hov" >Get Started</button> </a>
         </div>
         {% else %}

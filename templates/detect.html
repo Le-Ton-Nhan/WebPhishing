@@ -1,7 +1,8 @@
 {% extends 'base/navbar.html' %}
+
 {% load static %}
 
-{% block title_extend %}Urls{% endblock %}
+{% block title_extend %}PhishDetect{% endblock %}
 
 {% block head_extend %}
 {% endblock %}
@@ -11,7 +12,7 @@
     href="{% static 'product/css/detect.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 
-<div class="wrapper">
+<div class="wrapper"  style="margin-bottom: 10rem;">
     <div class="container-fluid mt-5 pt-3">
         <section id="header" class="title">
             <h1>PHISHDETECT</h1>
@@ -28,8 +29,9 @@
             <form method='POST' class="col-10">
                 {% csrf_token %}
                 <div class="form-group" style="margin: 0; flex: 1;">{{form.url}}</div>
-                <button type="submit" class="btn active btn_custome">Submit</button>
+                <button type="submit" class="btn active btn_custome" onmouseover="activeLoadingEffect()"> Submit</button>
             </form>
+            
             {% else %}
             <form method='GET' class="col-10">
                 <div class="form-group" style="margin: 0; flex: 1;"><input
@@ -38,6 +40,27 @@
                     class="btn btn_custome">Submit</a>
             </form>
             {% endif%}
+            
+        </div>
+        
+        <script>
+            function activeLoadingEffect() {
+                var element = document.getElementById("loading-container");
+                element.classList.add("active");
+                
+                setTimeout(function() {
+                    element.classList.remove("active");
+                },1000)
+            }
+        </script>
+        <div id="loading-container" class="active">
+            <div class="spinner-grow loading-spinner" role="status" style="color: #86aaf9;"></div>
+            <div class="spinner-grow loading-spinner" role="status" style="color: #6e99f8;"></div>
+            <div class="spinner-grow loading-spinner" role="status" style="color: #5588f6;" ></div>
+            <div class="spinner-grow loading-spinner" role="status" style="color: #3d77f5;"></div>
+            <div class="spinner-grow loading-spinner" role="status" style="color: #2566f4;"></div>
+            <div class="spinner-grow loading-spinner" role="status" style="color: #0d55f3;"></div>
+            <div class="spinner-grow loading-spinner" role="status" style="color: #0b4dda;"></div>
         </div>
     </div>
 
@@ -66,14 +89,14 @@
     
 
     <div>
-        <h4 style="margin-bottom: 10px;">Recently Detected URLs</h3>
+        <h4 style="margin-bottom: 10px; ">Recently Detected URLs</h3>
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-wrap">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th><img src="{% static 'product/img/testing.png' %}" style="width: 30px; max-height: fit-content;"/></th>
                                     <th>Url</th>
                                     <th>Confidence score</th>
                                     <th>State</th>
@@ -82,7 +105,16 @@
                             <tbody>
                                 {% for urls in url %}
                                 <tr>
-                                    <th scope="row">1</th>
+                                    
+                                    {% ifequal urls.status "normal" %}
+                                        <th scope="row" ><img src="{% static 'product/img/check.png' %}" style="width: 15px; max-height: fit-content;"/></th>
+                        
+                                    {% endifequal %}
+                                    
+                                    {% ifequal urls.status "phishing" %}
+                                    <th scope="row"><img src="{% static 'product/img/crossed.png' %}" style="width: 15px; max-height: fit-content;"/></th>
+                                    
+                                    {% endifequal %}
                                     <td>{{urls.url}}</td>
                                     <td>{{urls.conf_score}}</td>
                                     <td>{{urls.status}}</td>
@@ -96,10 +128,9 @@
             </div>
     </div>
 
-    
 
 </div>
 {% endblock %}
-
+<script src="https://kit.fontawesome.com/9439a40bb1.js" crossorigin="anonymous"></script>
 {% block script_extend %}
 {% endblock %}
