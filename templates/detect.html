@@ -29,7 +29,7 @@
             <form method='POST' class="col-10">
                 {% csrf_token %}
                 <div class="form-group" style="margin: 0; flex: 1;">{{form.url}}</div>
-                <button type="submit" class="btn active btn_custome" onmouseover="activeLoadingEffect()"> Submit</button>
+                <button type="submit" class="btn active btn_custome" onclick="activeLoadingEffect()"> Submit</button>
             </form>
             
             {% else %}
@@ -42,18 +42,21 @@
             {% endif%}
             
         </div>
+                {% ifequal process False %}
+                        <strong>Unfinished!</strong> The process of determining the phishing url has been interrupted. Try again!
+                {% endifequal %}
         
         <script>
             function activeLoadingEffect() {
                 var element = document.getElementById("loading-container");
                 element.classList.add("active");
                 
-                setTimeout(function() {
-                    element.classList.remove("active");
-                },1000)
+                // setTimeout(function() {
+                //     element.classList.remove("active");
+                // },1000)
             }
         </script>
-        <div id="loading-container" class="active">
+        <div id="loading-container">
             <div class="spinner-grow loading-spinner" role="status" style="color: #86aaf9;"></div>
             <div class="spinner-grow loading-spinner" role="status" style="color: #6e99f8;"></div>
             <div class="spinner-grow loading-spinner" role="status" style="color: #5588f6;" ></div>
@@ -75,12 +78,7 @@
                         
                     </div>
                 {% endifequal %}
-                {% ifequal process False %}
-                    <div class="alert">
-                        <span class="closebtn">&times;</span>  
-                        <strong>Unfinished!</strong> The process of determining the phishing url has been interrupted. Try again!
-                    </div>
-                {% endifequal %}
+                
 
                 </div>
                 <hr class="light-contact" />
@@ -98,7 +96,7 @@
                                 <tr>
                                     <th><img src="{% static 'product/img/testing.png' %}" style="width: 30px; max-height: fit-content;"/></th>
                                     <th>Url</th>
-                                    <th>Confidence score</th>
+                                    
                                     <th>State</th>
                                 </tr>
                             </thead>
@@ -115,8 +113,12 @@
                                     <th scope="row"><img src="{% static 'product/img/crossed.png' %}" style="width: 15px; max-height: fit-content;"/></th>
                                     
                                     {% endifequal %}
-                                    <td>{{urls.url}}</td>
-                                    <td>{{urls.conf_score}}</td>
+                                    {% ifequal urls.status "warning" %}
+                                    <th scope="row"><img src="{% static 'product/img/warning.png' %}" style="width: 20px; max-height: fit-content;"/></th>
+                                    
+                                    {% endifequal %}
+                                    <td><a href="/products/viewurl/{{urls.url_id}}" class="link-underline-light" style="color: #333;">{{urls.url}}</a></td>
+                                    
                                     <td>{{urls.status}}</td>
                                 </tr>
                                 {% endfor %}

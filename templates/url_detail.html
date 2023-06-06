@@ -1,6 +1,7 @@
 {% extends 'base/navbar.html' %}
 {% load static %}
 
+
 {% block title_extend %}Url details{% endblock %}
 
 {% block head_extend %}
@@ -8,150 +9,333 @@
 
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'product/css/url_detail.css' %}">
-<div class="mt-5" style="margin-left: 2rem; margin-right: 2rem;">
-    <div class="row">
-        <div class="col-md-2 col-2">
-            <div class="box">
-                <div class="content"><img src="https://abdelrahman345.netlify.app/images/me.jpg"/>
-                  <h2>Clean</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-10 col-10" style="margin-top:2rem;">
-            <div class="card pd-info">
-                <div class="card-header">
-                    <span style="color: green;">
-                        <i>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M16.993 8.842a.6.6 0 0 0-.986-.684l-4.464 6.423-3.628-3.482a.6.6 0 1 0-.83.866l4.135 3.968a.6.6 0 0 0 .908-.09l4.865-7Z">
-                                </path>
-                                <path fill-rule="evenodd"
-                                    d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-1.2 0a8.8 8.8 0 1 1-17.6 0 8.8 8.8 0 0 1 17.6 0Z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </i>
-                        No security vendors flagged this URL as malicious
-                    </span>
-                </div>
-                <div class="card-body">
-                    <!-- <h1 class="card-title font-weight-bold">{{url.url}}</h1> -->
-                    <div class="row">
-                        <div class="col-md-6 col-6">
-                            <p class="card-text">{{url.url}}</p>
+<div class="wrapper" style="margin-bottom: 10rem;">
+    <div class="container-fluid mt-5 pt-3">
+        <section class="title">
+            <h1>PHISHDETECT</h1>
+            <p style="
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+            padding-top: 30px;
+            font-size: 13px;">Explore the PhishDetect Results: Check the URL's Phishing Status and dive into <b>Detailed Information below</b> for a Comprehensive Analysis.</p>
+            <hr>
+        </section>
+    
+        
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-2 col-2">
+                    {%ifequal Result.status "phishing" %}
+                        <div class="box-alert">
+                            <div class="content"><img src="https://abdelrahman345.netlify.app/images/me.jpg"/>
+                            <h2>{{ Result.status }}</h2>
+                            </div>
                         </div>
-                        <div class="col-md-2 col-2" style="text-align: center;">
-                            Status
-                            <p class="card-text">{{url.status}} 200</p>
+                    {% endifequal %}
+                    
+                    {%ifequal Result.status "warning" %}
+                        <div class="box-warning">
+                            <div class="content"><img src="https://abdelrahman345.netlify.app/images/me.jpg"/>
+                                <h2>{{ Result.status }}</h2>
+                            </div>
                         </div>
-                        <div class="col-md-2 col-2" style="text-align: center;">
-                            Prediction
-                            <p class="card-text">{{url.prediction}} 0</p>
+                    {% endifequal %}
+
+                    {%ifequal Result.status "normal" %}
+                        <div class="box">
+                            <div class="content"><img src="https://abdelrahman345.netlify.app/images/me.jpg"/>
+                            <h2>{{ Result.status }}</h2>
+                            </div>
                         </div>
-                        <div class="col-md-2 col-2" style="text-align: center;">
-                            Score
-                            <p class="card-text">{{url.conf_score}} 50</p>
+                    {% endifequal %}
+
+                    
+
+                </div>
+                <div class="col-md-10 col-10" style="margin-top:2rem; padding-left: 3rem;">
+                    <div class="card pd-info">
+                        <div class="card-header">
+                            {%ifequal Result.status "normal" %}
+                            <span class="card-normal">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M16.993 8.842a.6.6 0 0 0-.986-.684l-4.464 6.423-3.628-3.482a.6.6 0 1 0-.83.866l4.135 3.968a.6.6 0 0 0 .908-.09l4.865-7Z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-1.2 0a8.8 8.8 0 1 1-17.6 0 8.8 8.8 0 0 1 17.6 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </i>
+                                This url is supposed to be a {{Result.status}} url.
+                            </span>
+                    {% endifequal %} 
+                    {%ifequal Result.status "phishing" %}
+                            <span class="card-alert">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M16.993 8.842a.6.6 0 0 0-.986-.684l-4.464 6.423-3.628-3.482a.6.6 0 1 0-.83.866l4.135 3.968a.6.6 0 0 0 .908-.09l4.865-7Z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-1.2 0a8.8 8.8 0 1 1-17.6 0 8.8 8.8 0 0 1 17.6 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </i>
+                                This url is supposed to be a {{Result.status}} url.
+                            </span>
+                    {% endifequal %} 
+                    {%ifequal Result.status "warning" %}
+                            <span class="card-warning">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M16.993 8.842a.6.6 0 0 0-.986-.684l-4.464 6.423-3.628-3.482a.6.6 0 1 0-.83.866l4.135 3.968a.6.6 0 0 0 .908-.09l4.865-7Z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-1.2 0a8.8 8.8 0 1 1-17.6 0 8.8 8.8 0 0 1 17.6 0Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </i>
+                                This url is supposed to be a {{Result.status}} url.
+                            </span>
+                    {% endifequal %} 
+
+                            
+                        </div>
+                        <div class="card-body">
+                            
+                            <div class="row">
+                                <div class="col-md-7 col-7">
+                                    <b>URL</b>
+                                    <p class="card-text">{{Result.url}}</p>
+                                </div>
+                                <div class="col-md-2 col-2" style="text-align: center;">
+                                    <b>Status</b>
+                                    {% if Result.is_live %}
+                                        <p class="card-text">Alive</p>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-2 col-2" style="text-align: center;">
+                                    <b>Brand name</b>
+                                    <p class="card-text">{{Result.brand_name}}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 1rem;">
-        <div class="col-md-5 col-5" style="margin-left: 1rem;">
-            <h2>Image Detect</h2>
-            <div class="polaroid">
-                <img src="{% static 'product/img/result.png' %}" alt="5 Terre" style="width:100%">
-                <div class="brand">
-                    <p>Intel</p>
+        
+            <h3 style="
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+            padding-top: 30px; padding-bottom: 30px;" >PHISHING URL REPORT</h3>
+            <div class="row" style="margin-top: 1rem; justify-content: center ">
+                
+                <div class="col-md-8 col-8">
+                    
+                    <!-- Investigation findings -->
+                    <div class="table-wrap">
+                        <p><b><u>Investigation findings</u></b></p>
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>IP Address</th>
+                                    <td>{{Result.host}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Asn</th>
+                                    <td>{{Result.get_asn}}</td>
+                                </tr>
+                                <tr>
+                                    <th>OS</th>
+                                    <td>{{Result.get_os}}</td>
+                                </tr>
+                                
+                                <tr>
+                                    <th>Country</th>
+                                    <td>{{Result.host_country}}</td>
+                                </tr>
+                               
+                                <tr>
+                                    <th>Open ports</th>
+                                    <td>{{Result.open_ports}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Subdomains</th>
+                                    <td>{{Result.subdomains}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Hostnames</th>
+                                    <td style="white-space: pre-line;">{{Result.hostnames}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Name server</th>
+                                    <td style="white-space: pre-line; ">{{Result.nameServerwhois}}</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Isp</th>
+                                    <td>{{Result.isp}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Is encoded</th>
+                                    <td>{{Result.is_encoded}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Connection speed</th>
+                                    <td>{{Result.connection_speed}}</td>
+                                </tr>
+                                <tr>
+                                    <th>VirusTotal scan</th>
+                                    <td>{{Result.vt_score}}</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="col-md-8 col-8">
+                        <!-- HTTP Response -->
+                        <div class="table-wrap">
+                            <p><b><u>HTTP Response</u></b></p>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th>Final url</th>
+                                        <td>{{Result.url}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Status code</th>
+                                        <td>{{Result.status_code}}</td>
+                                    </tr>
+    
+                                    <tr>
+                                        <th>Scheme</th>
+                                        <td>{{Result.scheme}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tld</th>
+                                        <td>{{Result.tld}}</td>
+                                    </tr>
+    
+                                    <tr>
+                                        <th>Suspecious tld</th>
+                                        <td>{{Result.suspecious_tld}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Abnormal subdomain</th>
+                                        <td>{{Result.abnormal_subdomain}}</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th>Header response</th>
+                                        <td style="white-space: pre-line;">{{Result.headers}}</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-4">
+                    <div class="polaroid" style="width: 100%;">
+                        <div class="brand" >
+                            <b>PhishDetect Logo Identification</b> 
+                            <a href="/products/img/{{Result.url_id}}">
+                                <img src="{% static 'product/img/expand.png' %}" style="width: 25px; max-height: fit-content;" alt="">
+                            </a>
+                        </div>
+                        <img src="{{ Result.img_path.url }}" alt="PhishDetect Logo Identification" style="width:100%">
+                    </div>
+
+                    <div class="polaroid" style="width: 100%;">
+                        <div class="brand" >
+                            <b>Location</b>
+                            <a href="/products/location/{{Result.url_id}}">
+                                <img src="{% static 'product/img/expand.png' %}" style="width: 25px; max-height: fit-content;" alt="">
+                            </a>
+                        </div>
+                        <img src="{{ Result.loc_path.url }}" alt="5 Terre" style="width:100%">
+                    </div>
+
+                    <!-- Website Access -->
+                    <div class="table-wrap">
+                        <p><b><u>Website Access</u></b></p>
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>has_login</th>
+                                    <td>{{Result.has_login}}</td>
+                                </tr>
+                                <tr>
+                                    <th>has_admin</th>
+                                    <td>{{Result.has_admin}}</td>
+                                </tr>
+                                <tr>
+                                    <th>login_form</th>
+                                    <td>{{Result.login_form}}</td>
+                                </tr>
+                                <tr>
+                                    <th>submit_email</th>
+                                    <td>{{Result.submit_email}}</td>
+                                </tr>
+                                <tr>
+                                    <th>has_port_in_string</th>
+                                    <td>{{Result.has_port_in_string}}</td>
+                                </tr>
+                                <tr>
+                                    <th>ip</th>
+                                    <td>{{Result.ip}}</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Lifecycle Information -->
+                    <div class="table-wrap">
+                        <p><b><u>Lifecycle Information</u></b></p>
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>Registration date</th>
+                                    <td>{{Result.registration_date}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Expiration date</th>
+                                    <td>{{Result.expiration_date}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Last updates dates</th>
+                                    <td>{{Result.last_updates_dates}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Intended life span</th>
+                                    <td>{{Result.intended_life_span}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Life remaining</th>
+                                    <td>{{Result.life_remaining}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Time to live</th>
+                                    <td>{{Result.ttl}}</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-5 col-5" style="margin-left: 1rem; margin-bottom: 6rem;">
-            <h2 style="font-weight: 700;">Details</h2>
-            <div id="wrapper">
-                <hr>
-                <div id="section-header" style="font-size: 20px; font-weight: 600;">
-                    <span>
-                        Categories
-                    </span>
-                </div>
-                <hr>
-                <div id="detail">
-                    <div class="row" style="margin-left: 1rem;">
-                        <span class="col-md-4 col-4">
-                            Forcepoint ThreatSeeker
-                        </span>
-                        <span class="col-md-8 col-8">
-                            computer security
-                        </span>
-                    </div>
-                    <div class="row" style="margin-left: 1rem;">
-                        <span class="col-md-4 col-4">
-                            Sophos
-                        </span>
-                        <span class="col-md-8 col-8">
-                            information technology
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div id="wrapper">
-                <hr>
-                <div id="section-header" style="font-size: 20px; font-weight: 600;">
-                    <span>
-                        History
-                    </span>
-                </div>
-                <hr>
-                <div id="detail">
-                    <div class="row" style="margin-left: 1rem;">
-                        <span class="col-md-4 col-4">
-                            First Submission
-                        </span>
-                        <span class="col-md-8 col-8">
-                            2019-01-29 05:04:55 UTC
-                        </span>
-                    </div>
-                    <div class="row" style="margin-left: 1rem;">
-                        <span class="col-md-4 col-4">
-                            Last Submission
-                        </span>
-                        <span class="col-md-8 col-8">
-                            2023-05-28 11:21:54 UTC
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div id="wrapper">
-                <hr>
-                <div id="section-header" style="font-size: 20px; font-weight: 600;">
-                    <span>
-                        History
-                    </span>
-                </div>
-                <hr>
-                <div id="detail">
-                    <div class="row" style="margin-left: 1rem;">
-                        <span class="col-md-4 col-4">
-                            First Submission
-                        </span>
-                        <span class="col-md-8 col-8">
-                            2019-01-29 05:04:55 UTC
-                        </span>
-                    </div>
-                    <div class="row" style="margin-left: 1rem;">
-                        <span class="col-md-4 col-4">
-                            Last Submission
-                        </span>
-                        <span class="col-md-8 col-8">
-                            2023-05-28 11:21:54 UTC
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    
+    
 </div>
 {% endblock %}
