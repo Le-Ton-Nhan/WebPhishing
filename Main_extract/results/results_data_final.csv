@@ -1,17 +1,25 @@
 url,host,page_entropy,num_script_tags,html_length,page_tokens,num_sentences,num_punctuations,distinct_tokens,avg_tokens_per_sentence,num_html_tags,num_hidden_tags,hyperlinks,num_whitespaces,num_included_elemets,num_suspicious_elements,avg_script_length,avg_script_entropy,get_os,subdomains,get_asn,latitude,longitude,hostnames,registration_date,expiration_date,last_updates_dates,intended_life_span,life_remaining,host_country,open_ports,num_open_ports,is_live,isp,connection_speed,ttl,tld,scheme,url_length,path_length,host_length,has_port_in_string,num_digits,parameters,fragments,is_encoded,string_entropy,alexa_dis_similarity,subdirectories,periods,has_login,has_admin,num_encoded_chars,length_hostname,ip,nb_dots,nb_hyphens,nb_and,nb_eq,nb_slash,http_in_path,https_token,ratio_digits_url,punycode,port,abnormal_subdomain,nb_subdomains,prefix_suffix,shortening_service,path_extension,length_words_raw,char_repeat,shortest_words_raw,shortest_word_host,shortest_word_path,longest_words_raw,longest_word_host,longest_word_path,avg_words_raw,avg_word_host,avg_word_path,phish_hints,domain_in_brand,brand_in_subdomain,brand_in_path,suspecious_tld,statistical_report,login_form,external_favicon,links_in_tags,submit_email,ratio_intMedia,ratio_extMedia,sfh,iframe,popup_window,safe_anchor,domain_in_title,whois_registered_domain,domain_registration_length,nameServerwhois,page_rank,status_code,header,tag
-http://formacioncis.com,217.160.0.28,5.20226938464809,17,253145,8568,6693,47471,3632,1.9654863290004483,459,0,36,8126,8,459,676.0,2.495469966195196,,"['arpape.com', 'ui-r.com']",AS8560,49.00937,8.40444,"arpape.com
-217-160-0-28.elastic-ssl.ui-r.com
-",2015-06-10 13:18:59,2023-06-10 13:18:59,2022-06-11 07:18:10,2922,4,Germany,"[80, 81, 443]",3,True,IONOS SE,2.009072,2917,com,http,23,0,16,False,0,0,0,False,3.762267390651494,0,1,1,False,False,0,16,0,1,0,0,0,2,0,1,0.0,0,0,0,1,0,0,0,1,0,12,12,0,12,12,0,12.0,12.0,0,0,0,0,0,0,0,0,1,0.0,0,0,0,0,0,0,0.0,1,0,194,"NS1024.UI-DNS.BIZ
-NS1069.UI-DNS.ORG
-NS1068.UI-DNS.COM
-NS1050.UI-DNS.DE
-",-1,200,"Content-Type: text/html; charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Keep-Alive: timeout=15
-Date: Tue, 06 Jun 2023 03:53:55 GMT
-Server: Apache
-X-Powered-By: PHP/7.4.33
-Link: <https://formacioncis.com/wp-json/>; rel=""https://api.w.org/"", <https://formacioncis.com/wp-json/wp/v2/pages/42>; rel=""alternate""; type=""application/json"", <https://formacioncis.com/>; rel=shortlink
-Content-Encoding: gzip
+https://applecompany.pk,198.38.86.94,5.265176584457496,71,163115,8905,2536,25437,3132,4.2519716088328074,798,0,72,7524,46,798,227.6338028169014,1.687985416209828,,"['buyonline411.com', 'mochahost.com', 'mochahosted.com', 'healthdirectory.us']",AS23352,41.85003,-87.65005,"healthdirectory.buyonline411.com
+mocha3036-web2.mochahosted.com
+mocha3036.mochahost.com
+healthdirectory.us
+www.healthdirectory.buyonline411.com
+www.mocha3036.mochahost.com
+mail.mocha3036.mochahost.com
+",2020-08-19 14:29:11,2023-08-19 14:29:11,2023-03-13 17:00:13,1095,74,United States,"[2082, 995, 2087, 4747, 2095, 80, 465, 2083, 53, 22, 8888, 8889, 2525, 443, 2077, 2079]",16,True,Server Central Network,1.001526,1020,pk,https,23,0,15,False,0,0,0,False,3.7579254136901956,0,1,1,False,False,0,15,0,1,0,0,0,2,0,0,0.0,0,0,0,1,0,0,0,1,1,12,12,0,12,12,0,12.0,12.0,0,0,0,0,0,0,0,0,1,90.0,0,0,0,0,0,0,84.61538461538461,1,1,0,,-1,200,"Connection: Keep-Alive
+Keep-Alive: timeout=5, max=100
+content-type: text/html
+last-modified: Sat, 03 Jun 2023 12:17:49 GMT
+accept-ranges: bytes
+content-encoding: br
+vary: Accept-Encoding
+content-length: 26234
+date: Tue, 06 Jun 2023 04:34:50 GMT
+server: LiteSpeed
+x-endurance-cache-level: 2
+x-nginx-cache: WordPress
+cache-control: max-age=0, no-cache, no-store, must-revalidate
+pragma: no-cache
+expires: Mon, 29 Oct 1923 20:30:00 GMT
+alt-svc: h3="":443""; ma=2592000, h3-29="":443""; ma=2592000, h3-Q050="":443""; ma=2592000, h3-Q046="":443""; ma=2592000, h3-Q043="":443""; ma=2592000, quic="":443""; ma=2592000; v=""43,46""
 ",static
