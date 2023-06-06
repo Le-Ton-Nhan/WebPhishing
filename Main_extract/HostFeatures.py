@@ -96,6 +96,23 @@ class HostFeatures:
         ln2 = self.shodan.get('domains', None)
         ln = ln1 or ln2
         return len(ln) if ln else 0
+    def subdomains(self):
+        print("Subdomains ++ ")
+        ln1 = self.whois.get('nets', None)
+        ln2 = self.shodan.get('domains', None)
+        ln = ln1 or ln2
+        return ln if ln else 0
+    
+    def hostnames(self):
+        ln = self.shodan.get('hostnames', None)
+        if ln!=None:
+            ln = list(set(ln))
+            r = ""
+            for i in ln:
+                r += '{0}\n'.format(i)
+
+            print("HOSTNAMES: " , r)
+        return r if ln else 0
 
     def url_creation_date(self):
         d = self.__parse_whois_date('creation_date')
@@ -140,6 +157,15 @@ class HostFeatures:
     def url_host_country(self):
         c = self.shodan.get('country_name', 0)
         return c
+    
+    def get_latitude(self):
+        print('latitude')
+        c = self.shodan.get('latitude', 0)
+        return c
+    def get_longitude(self):
+        print('longitude')
+        c = self.shodan.get('longitude', 0)
+        return c
 
     def url_open_ports(self):
         ports = self.shodan.get('ports', '')
@@ -153,7 +179,7 @@ class HostFeatures:
     def url_is_live(self):
         url = '{}://{}'.format(self.urlparse.scheme, self.urlparse.netloc)
         try:
-            return get(url).status_code == 200
+            return get(url).status_code < 400
         except:
             return False
 
@@ -169,7 +195,13 @@ class HostFeatures:
 
 
     def get_os(self):
+        print("os")
         oss = self.shodan.get('os', 0)
+        return oss
+    
+    def get_asn(self):
+        print("asn")
+        oss = self.shodan.get('asn', 0)
         return oss
     
     def first_seen(self):
@@ -218,15 +250,21 @@ class HostFeatures:
             try:
                 fv = {
                     # "host": self.host,
-                    "num_subdomains": self.number_of_subdomains(),
+                    # "num_subdomains": self.number_of_subdomains(),
+                    "get_os": self.get_os(),
+                    "subdomains": self.subdomains(),
+                    "get_asn": self.get_asn(),
+                    "latitude": self.get_latitude(), 
+                    "longitude": self.get_longitude(),
+                    "hostnames": self.hostnames(),
                     "registration_date": str(self.url_creation_date()),
                     "expiration_date": str(self.url_expiration_date()),
                     "last_updates_dates": str(self.url_last_updated()),
-                    "age": self.url_age(),
+                    # "age": self.url_age(),
                     "intended_life_span": self.url_intended_life_span(),
                     "life_remaining": self.url_life_remaining(),
-                    "registrar": self.url_registrar(),
-                    "reg_country": self.url_registration_country(),
+                    # "registrar": self.url_registrar(),
+                    # "reg_country": self.url_registration_country(),
                     "host_country": self.url_host_country(),
                     "open_ports": self.url_open_ports(),
                     "num_open_ports": self.url_num_open_ports(),
@@ -237,15 +275,15 @@ class HostFeatures:
                     #"last_seen": str(self.last_seen()),
                     #"days_since_last_seen": self.days_since_last_seen(),
                     #"days_since_first_seen": self.days_since_first_seen(),
-                    "avg_update_days": self.average_update_frequency(),
-                    "total_updates": self.number_of_updates(),
+                    # "avg_update_days": self.average_update_frequency(),
+                    # "total_updates": self.number_of_updates(),
                     "ttl": self.ttl_from_registration()
                 }
                 cache.append(self.url)
                 return fv
             except Exception as e:
                 print('Op',e)
-                pass
+                return None
         else:
             print('Seen URL')
             return None

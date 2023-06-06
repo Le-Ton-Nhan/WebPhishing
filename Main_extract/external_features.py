@@ -34,36 +34,45 @@ def domain_registration_length(domain):
         print('ERROR: ' + str(e))
         return -1
 
-def domain_registration_length1(domain):
-    v1 = -1
-    v2 = -1
+def domain_whois(domain):
     try:
         host = whois.whois(domain)
-        hostname = host.domain_name
+        hostname = host.domain
+        hosts = []
         expiration_date = host.expiration_date
         today = time.strftime('%Y-%m-%d')
         today = datetime.strptime(today, '%Y-%m-%d')
         if type(hostname) == list:
             for host in hostname:
                 if re.search(host.lower(), domain):
-                    v1 = 0
-            v1= 1
+                    hosts.append(host)
         else:
             if re.search(hostname.lower(), domain):
-                v1 = 0
-            else:
-                v1= 1  
+                hosts.append(hostname) 
         if expiration_date:
             if type(expiration_date) == list:
                 expiration_date = min(expiration_date)
             return abs((expiration_date - today).days)
-        else:
-            v2= 0
     except:
-        v1 = 1
-        v2 = -1
-        return v1, v2
-    return v1, v2
+        return hosts
+    return hosts
+
+def nameServerwhois(domain):
+    print("DOMAIN: -------------------->: ", domain)
+    r = ""
+    try:
+        res = whois.whois(domain)
+        name_servers = res.name_servers
+        
+        _name_servers = list(set(name_servers))
+        print("Name server: -------------------->: ", _name_servers)
+
+        for n in _name_servers:
+            r += "{0}\n".format(str(n))
+        return r
+    except Exception as e:
+        print('ERROR:--> ' + str(e))
+        return None
 
 #################################################################################################################################
 #               Domain recognized by WHOIS

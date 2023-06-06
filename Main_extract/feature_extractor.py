@@ -118,11 +118,10 @@ def deadline(timeout, *args):
 
 # @deadline(5)
 def is_URL_accessible(url):
-    iurl = url
     parsed = urlparse(url)
     url = parsed.scheme+'://'+parsed.netloc
     page = None
-    # print("Url = ", url)
+    
     try:
         page = requests.get(url, timeout=1000)   
         print("Page: ", page.status_code)
@@ -157,7 +156,7 @@ def is_URL_accessible(url):
         #         #             pass
         #         pass 
     # if page and page.content not in ["b''", "b' '"]:
-    if page == None:
+    if page == None or page.status_code>400:
         print("Cannot get content from this URL.")
         return False, url, page
     return True, url, page
@@ -403,7 +402,14 @@ def extract_data_from_URL(hostname, content, domain, Href, Link, Anchor, Media, 
             IFrame['invisible'].append(i_frame)
         else:
             IFrame['visible'].append(i_frame)
-          
+
+
+    metas = soup.find_all('meta') #Get Meta Description
+    print("META: " , metas)
+    for m in metas:
+        if m.get ('name') == 'description':
+            desc = m.get('content')
+            print(desc)
     # get page title
     try:
         Title = soup.title.string
@@ -423,7 +429,7 @@ def extract_data_from_URL(hostname, content, domain, Href, Link, Anchor, Media, 
 #################################################################################################################################
 
 
-def extract_features(url,status):
+def extract_features(url,status, state,page):
     
     
     def words_raw_extraction(domain, subdomain, path):
@@ -447,10 +453,6 @@ def extract_features(url,status):
     Title =''
     Text= ''
 
-    try: 
-        state, iurl, page = is_URL_accessible(url) 
-    except Exception as e:
-        print("url status error: " + str(e))
     if state:
         content = page.content
         hostname, domain, path = get_domain(url)
@@ -469,42 +471,47 @@ def extract_features(url,status):
             Href, Link, Anchor, Media, Form, CSS, Favicon, IFrame, Title, Text , rawText= extract_data_from_URL(hostname, content, domain, Href, Link, Anchor, Media, Form, CSS, Favicon, IFrame, Title, Text)
         except Exception as e:
             print('e = ', e)
-        
+        header = json.dumps(dict(page.headers))
+        header = json.loads(header)
+        h = ""
+        for key, value in header.items():
+            h += key + ': ' + value + '\n'
+        print(h)
         row = [
                # url-based features
-               urlfe.url_length(url),
+               # urlfe.url_length(url),
                urlfe.url_length(hostname),
                urlfe.having_ip_address(url),
                urlfe.count_dots(url),
                urlfe.count_hyphens(url),
-               urlfe.count_at(url),
-               urlfe.count_exclamation(url),
+               # urlfe.count_at(url),
+               # urlfe.count_exclamation(url),
                urlfe.count_and(url),
-               urlfe.count_or(url),
+               # urlfe.count_or(url),
                urlfe.count_equal(url),
-               urlfe.count_underscore(url),
-               urlfe.count_tilde(url),
-               urlfe.count_percentage(url),
+               # urlfe.count_underscore(url),
+               # urlfe.count_tilde(url),
+               # urlfe.count_percentage(url),
                urlfe.count_slash(url),
-               urlfe.count_star(url),
-               urlfe.count_colon(url),
-               urlfe.count_comma(url),
-               urlfe.count_semicolumn(url),
-               urlfe.count_dollar(url),
-               urlfe.count_space(url),
+               # urlfe.count_star(url),
+               # urlfe.count_colon(url),
+               # urlfe.count_comma(url),
+               # urlfe.count_semicolumn(url),
+               # urlfe.count_dollar(url),
+               # urlfe.count_space(url),
                
-               urlfe.check_www(words_raw),
-               urlfe.check_com(words_raw),
-               urlfe.count_double_slash(url),
+               # urlfe.check_www(words_raw),
+               # urlfe.check_com(words_raw),
+               # urlfe.count_double_slash(url),
                urlfe.count_http_token(path),
                urlfe.https_token(scheme),
                
                urlfe.ratio_digits(url),
-               urlfe.ratio_digits(hostname),
+               # urlfe.ratio_digits(hostname),
                urlfe.punycode(url),
                urlfe.port(url),
-               urlfe.tld_in_path(tld, path),
-               urlfe.tld_in_subdomain(tld, subdomain),
+               # urlfe.tld_in_path(tld, path),
+               # urlfe.tld_in_subdomain(tld, subdomain),
                urlfe.abnormal_subdomain(url),
                urlfe.count_subdomain(url),
                urlfe.prefix_suffix(url),
@@ -513,8 +520,8 @@ def extract_features(url,status):
                
                
                urlfe.path_extension(path),
-               urlfe.count_redirection(page),
-               urlfe.count_external_redirection(page, domain),
+               # urlfe.count_redirection(page),
+               # urlfe.count_external_redirection(page, domain),
                urlfe.length_word_raw(words_raw),
                urlfe.char_repeat(words_raw),
                urlfe.shortest_word_length(words_raw),
@@ -554,20 +561,23 @@ def extract_features(url,status):
                 ctnfe.iframe(IFrame),
                 ctnfe.popup_window(Text),
                 ctnfe.safe_anchor(Anchor),
-                ctnfe.onmouseover(Text),
-                ctnfe.right_clic(Text),
-                ctnfe.empty_title(Title),
+                # ctnfe.onmouseover(Text),
+                # ctnfe.right_clic(Text),
+                # ctnfe.empty_title(Title),
                 ctnfe.domain_in_title(extracted_domain.domain, Title),
-                ctnfe.domain_with_copyright(extracted_domain.domain, Text),
+                # ctnfe.domain_with_copyright(extracted_domain.domain, Text),
                  
             #     # # # thirs-party-based features
                 trdfe.whois_registered_domain(domain), 
                 trdfe.domain_registration_length(domain),
                 # trdfe.domain_age(domain),
                 # trdfe.web_traffic(url),
-                trdfe.dns_record(domain),
+                # trdfe.dns_record(domain),
                 # trdfe.google_index(url),
+                trdfe.nameServerwhois(domain),
                 trdfe.page_rank(key,domain),
+                page.status_code,
+                h, 
                status]
         # print("Row: ", row)
         return row
@@ -609,11 +619,11 @@ ctn_headers = [
                    'iframe',
                    'popup_window',
                    'safe_anchor', 
-                   'onmouseover',
-                   'right_clic',
-                   'empty_title', 
+                   # 'onmouseover',
+                   # 'right_clic',
+                   # 'empty_title', 
                    'domain_in_title',
-                   'domain_with_copyright',
+                   # 'domain_with_copyright',
                                        
                 ]
 
@@ -640,47 +650,47 @@ ctn_abnormalness_headers = [
                    'iframe',
                    'popup_window',
                    'safe_anchor', 
-                   'onmouseover',
-                   'right_clic',
-                   'empty_title', 
+                   # 'onmouseover',
+                   # 'right_clic',
+                   # 'empty_title', 
                    'domain_in_title',
-                   'domain_with_copyright'
+                   # 'domain_with_copyright'
                                        
                 ]
 
 
     
-url_headers = [    'length_url',                                  
+url_headers = [    # 'length_url',                                  
                    'length_hostname',
                    'ip',
                    'nb_dots',
                    'nb_hyphens',
-                   'nb_at',
-                   'nb_qm',
+                   # 'nb_at',
+                   # 'nb_qm',
                    'nb_and',
-                   'nb_or',
+                   # 'nb_or',
                    'nb_eq',                  
-                   'nb_underscore',
-                   'nb_tilde',
-                   'nb_percent',
+                   # 'nb_underscore',
+                   # 'nb_tilde',
+                   # 'nb_percent',
                    'nb_slash',
-                   'nb_star',
-                   'nb_colon',
-                   'nb_comma',
-                   'nb_semicolumn',
-                   'nb_dollar',
-                   'nb_space',
-                   'nb_www',
-                   'nb_com',
-                   'nb_dslash',
+                   # 'nb_star',
+                   # 'nb_colon',
+                   # 'nb_comma',
+                   # 'nb_semicolumn',
+                   # 'nb_dollar',
+                   # 'nb_space',
+                   # 'nb_www',
+                   # 'nb_com',
+                   # 'nb_dslash',
                    'http_in_path',
                    'https_token',
                    'ratio_digits_url',
-                   'ratio_digits_host',
+                   # 'ratio_digits_host',
                    'punycode',
                    'port',
-                   'tld_in_path',
-                   'tld_in_subdomain',
+                   # 'tld_in_path',
+                   # 'tld_in_subdomain',
                    'abnormal_subdomain',
                    'nb_subdomains',
                    'prefix_suffix',
@@ -688,8 +698,8 @@ url_headers = [    'length_url',
                    'shortening_service',
                    'path_extension',
                    
-                   'nb_redirection',
-                   'nb_external_redirection',
+                   # 'nb_redirection',
+                   # 'nb_external_redirection',
                    'length_words_raw',
                    'char_repeat',
                    'shortest_words_raw',
@@ -715,8 +725,8 @@ url_struct_headers = [
                    'https_token',
                    'punycode',
                    'port',
-                   'tld_in_path',
-                   'tld_in_subdomain',
+                   # 'tld_in_path',
+                   # 'tld_in_subdomain',
                    'abnormal_subdomain',
                    'prefix_suffix',
                    'random_domain',
@@ -733,36 +743,36 @@ url_struct_headers = [
 
 
 url_stat_headers = [    
-                    'length_url',                                  
+                     # 'length_url',                                  
                    'length_hostname',
                    'nb_dots',
                    'nb_hyphens',
-                   'nb_at',
-                   'nb_qm',
+                   # 'nb_at',
+                   # 'nb_qm',
                    'nb_and',
-                   'nb_or',
+                   # 'nb_or',
                    'nb_eq',                  
-                   'nb_underscore',
-                   'nb_tilde',
-                   'nb_percent',
+                   # 'nb_underscore',
+                   # 'nb_tilde',
+                   # 'nb_percent',
                    'nb_slash',
-                   'nb_star',
-                   'nb_colon',
-                   'nb_comma',
-                   'nb_semicolumn',
-                   'nb_dollar',
-                   'nb_space',
-                   'nb_www',
-                   'nb_com',
-                   'nb_dslash',
+                   # 'nb_star',
+                   # 'nb_colon',
+                   # 'nb_comma',
+                   # 'nb_semicolumn',
+                   # 'nb_dollar',
+                   # 'nb_space',
+                   # 'nb_www',
+                   # 'nb_com',
+                   # 'nb_dslash',
                    'http_in_path',
                    'ratio_digits_url',
-                   'ratio_digits_host',
+                   # 'ratio_digits_host',
                    'nb_subdomains',
                    
                    
-                   'nb_redirection',
-                   'nb_external_redirection',
+                   # 'nb_redirection',
+                   # 'nb_external_redirection',
                    'length_words_raw',
                    'char_repeat',
                    'shortest_words_raw',
@@ -784,9 +794,12 @@ tpt_headers = [
                    'domain_registration_length',
                    # 'domain_age', 
                    # 'web_traffic',
-                   'dns_record',
-                   # 'google_index',
-                   'page_rank'
+                   # 'dns_record',
+                   # 'google_index',\
+                   'nameServerwhois',
+                   'page_rank', 
+                   'status_code',
+                   'header'
                    # 'domain_in_brand',
                    # 'brand_in_path',
                    # 'suspecious_tld',
@@ -796,40 +809,46 @@ ctn_new_headers = [
                     'host', 
                     'page_entropy', 
                     'num_script_tags', 
-                    'script_to_body_ratio', 
+                    # 'script_to_body_ratio', 
                     'html_length', 
                     'page_tokens', 
                     'num_sentences', 
                     'num_punctuations', 
                     'distinct_tokens', 
-                    'capitalizations', 
+                    # 'capitalizations', 
                     'avg_tokens_per_sentence', 
                     'num_html_tags', 
                     'num_hidden_tags',
-                    'num_iframes', 
-                    'num_embeds', 
-                    'num_objects', 
+                    # 'num_iframes', 
+                    # 'num_embeds', 
+                    # 'num_objects', 
                     'hyperlinks', 
                     'num_whitespaces', 
                     'num_included_elemets',
-                    'num_double_documents', 
+                    # 'num_double_documents', 
                     'num_suspicious_elements', 
-                    'num_eval_functions', 
+                    # 'num_eval_functions', 
                     'avg_script_length', 
                     'avg_script_entropy', 
-                    'num_suspicious_functions'
+                    # 'num_suspicious_functions'
 ]
 
 hsfe_headers = [
-                    "num_subdomains", 
+                    # "num_subdomains", 
+                    "get_os",
+                    "subdomains",
+                    "get_asn",
+                    "latitude", 
+                    "longitude",
+                    "hostnames",
                     "registration_date",
                     "expiration_date",
                     "last_updates_dates",
-                    "age",
+                    # "age",
                     "intended_life_span",
                     "life_remaining",
-                    "registrar",
-                    "reg_country",
+                    # "registrar",
+                    # "reg_country",
                     "host_country",
                     "open_ports",
                     "num_open_ports",
@@ -840,8 +859,8 @@ hsfe_headers = [
                     #"last_seen",
                     #"days_since_last_seen",
                     #"days_since_first_seen",
-                    "avg_update_days",
-                    "total_updates",
+                    # "avg_update_days",
+                    # "total_updates",
                     "ttl"
 ]
 
@@ -851,7 +870,7 @@ lxfe_headers = [
                 'url_length',
                 'path_length',
                 'host_length',
-                'host_is_ip',
+                # 'host_is_ip',
                 'has_port_in_string',
                 'num_digits',
                 'parameters',
@@ -861,10 +880,10 @@ lxfe_headers = [
                 'alexa_dis_similarity',
                 'subdirectories',
                 'periods',
-                'has_client',
+                # 'has_client',
                 'has_login',
                 'has_admin',
-                'has_server',
+                # 'has_server',
                 'num_encoded_chars'
 ]
 
@@ -891,51 +910,51 @@ def removeFolder(folderName):
     except OSError as e:
         print("Error: %s - %s." % (e.filename, e.strerror))
 
-def main_forScreenshot():
-    try:
-        os.mkdir("results")
-    except FileExistsError:
-        print("WAR: Directory already exists")
-    # read cache
-    db = pd.read_csv('data/cache.csv', on_bad_lines='skip')
-    cache = list(db['url'])
-    cache = list(set(cache))
+# def main_forScreenshot():
+#     try:
+#         os.mkdir("results")
+#     except FileExistsError:
+#         print("WAR: Directory already exists")
+#     # read cache
+#     db = pd.read_csv('data/cache.csv', on_bad_lines='skip')
+#     cache = list(db['url'])
+#     cache = list(set(cache))
 
-    dataset = pd.read_csv('data/data_final.csv')
-    lst = list(dataset['url'])
-    lst = list(set(lst))
+#     dataset = pd.read_csv('data/data_final.csv')
+#     lst = list(dataset['url'])
+#     lst = list(set(lst))
     
 
 
-    i = 0 
-    nb = 0
+#     i = 0 
+#     nb = 0
     
-    nb = len(cache)
-    i = nb
+#     nb = len(cache)
+#     i = nb
     
-    for row in lst:
-        #url = 'https://'+row['domain']
-        url = row
-        print("\nTake screenshot for ", url)
+#     for row in lst:
+#         #url = 'https://'+row['domain']
+#         url = row
+#         print("\nTake screenshot for ", url)
         
-        if url not in cache:
-            if take_screenshot(url):
-                state = 'OK'
-                nb +=1 
-            else:
-                state = 'Er'
+#         if url not in cache:
+#             if take_screenshot(url):
+#                 state = 'OK'
+#                 nb +=1 
+#             else:
+#                 state = 'Er'
 
-            with open('data/cache.csv', 'a', newline="") as cachefile :
-                print("Saved to cache file ", url)
-                writer = csv.writer(cachefile)
-                writer.writerow([url])
-                cachefile.close()
-        else:
-           state = 'Cached' 
-           i -=1
-        i+=1
-        print('[',state,']',nb,'succeded from:', i)
-        print("----------------------------------------------------------------\n")
+#             with open('data/cache.csv', 'a', newline="") as cachefile :
+#                 print("Saved to cache file ", url)
+#                 writer = csv.writer(cachefile)
+#                 writer.writerow([url])
+#                 cachefile.close()
+#         else:
+#            state = 'Cached' 
+#            i -=1
+#         i+=1
+#         print('[',state,']',nb,'succeded from:', i)
+#         print("----------------------------------------------------------------\n")
 
 
 
@@ -949,24 +968,6 @@ def generate_external_dataset(lst_url = "", header = headers):
     lst_url = lst_url.split("\r\n")
 
     print("List url submited:\n", lst_url)
-
-
-    # if not os.path.isfile(cache_file_dir) :
-    #     with open(cache_file_dir, 'w', newline="") as csvfile :
-    #         writer = csv.writer(csvfile)
-    #         writer.writerow(['url'])
-    #         csvfile.close()
-    # else:
-    #     os.remove(cache_file_dir)
-    #     with open(cache_file_dir, 'w', newline="") as csvfile :
-    #         writer = csv.writer(csvfile)
-    #         writer.writerow(['url'])
-    #         csvfile.close()
-
-    # read cache
-    # db = pd.read_csv(cache_file_dir, on_bad_lines='skip')
-    # cache = list(db['url'])
-    # cache = list(set(cache))
 
     
     lst = lst_url
@@ -994,24 +995,27 @@ def generate_external_dataset(lst_url = "", header = headers):
         url = row
         print("\nExtract feature for ", url)
         status = "static"
-        #status = "normal"
-        # if url not in cache:
-        folder_result_name = take_screenshot(url)
         try:
-            res = extract_features(url, status)
-            ft = ctnfe_new.ContentFeatures(url).run()
-            hfe = htfe.HostFeatures(url).run()
-            lfe = lxfe.LexicalURLFeature(url).run()
-        except Exception as e: 
+            stat, url, page = is_URL_accessible(url)
+            if stat:
+                folder_result_name = take_screenshot(url)
+                res = extract_features(url, status, stat, page)
+                ft = ctnfe_new.ContentFeatures(url).run()
+                hfe = htfe.HostFeatures(url).run()
+                lfe = lxfe.LexicalURLFeature(url).run()
+            else:
+                res = ft = hfe = lfe = None
+                return False, None
+
+        except Exception as e:
             print("Res Error: ", e)
             res = None
             ft = None
             hfe = None
             lfe = None
+            return False, None
 
-            
-            pass
-        # print("RRES: ", res)
+        
         if res and ft and hfe and lfe:
             url = url.split(" ")
 
@@ -1033,16 +1037,12 @@ def generate_external_dataset(lst_url = "", header = headers):
             nb +=1 
         else:
             state = 'Er'
-            return False
+            return False, None
 
-        # with open(cache_file_dir, 'a', newline="") as cachefile :
-        #     writer = csv.writer(cachefile)
-        #     writer.writerow(url)
-        #     cachefile.close()
         i+=1
         print('[',state,']',nb,'succeded from:', i)
         print("----------------------------------------------------------------\n")
-        return folder_result_name
+        return folder_result_name, results_file_dir
 
     
 

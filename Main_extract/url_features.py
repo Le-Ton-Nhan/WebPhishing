@@ -9,7 +9,7 @@ import os
 HINTS = ['wp', 'login', 'includes', 'admin', 'content', 'site', 'images', 'js', 'alibaba', 'css', 'myaccount', 'dropbox', 'themes', 'plugins', 'signin', 'view']
 
 dir = os.getcwd()
-allbrand_txt = open(dir + r'\Main_extract\data\allbrands.txt', "r")
+allbrand_txt = open(dir + r'\Main_extract\allbrands.txt', "r")
 
 def __txt_to_list(txt_object):
     list = []
@@ -33,7 +33,7 @@ def having_ip_address(url):
         '(?:[a-fA-F0-9]{1,4}:){7}[a-fA-F0-9]{1,4}|'
         '[0-9a-fA-F]{7}', url)  # Ipv6
     if match:
-        return 1
+        return match
     else:
         return 0
 
@@ -287,8 +287,9 @@ def tld_in_bad_position(tld, subdomain, path):
 #################################################################################################################################
 
 def abnormal_subdomain(url):
-    if re.search('(http[s]?://(w[w]?|\d))([w]?(\d|-))',url):
-        return 1
+    match = re.search('(http[s]?://(w[w]?|\d))([w]?(\d|-))',url)
+    if match :
+        return match
     return 0
     
 
@@ -350,7 +351,7 @@ def punycode(url):
 #################################################################################################################################
 
 def domain_in_brand(domain):
-        
+    print("DOMAIN: ", domain)
     if domain in allbrand:
         return 1
     else:
