@@ -187,7 +187,7 @@ class LexicalURLFeature:
                   'url_length': self.url_length(),
                   'path_length': self.url_path_length(),
                   'host_length': self.url_host_length(),
-                  'host_is_ip': self.url_host_is_ip(),
+                  # 'host_is_ip': self.url_host_is_ip(),
                   'has_port_in_string': self.url_has_port_in_string(),
                   'num_digits': self.number_of_digits(),
                   'parameters': self.number_of_parameters(),
@@ -197,10 +197,10 @@ class LexicalURLFeature:
                   'alexa_dis_similarity': self.average_alexa_50_similarity(),
                   'subdirectories': self.number_of_subdirectories(),
                   'periods': self.number_of_periods(),
-                  'has_client': self.has_client_in_string(),
+                  # 'has_client': self.has_client_in_string(),
                   'has_login': self.has_login_in_string(),
                   'has_admin': self.has_admin_in_string(),
-                  'has_server': self.has_server_in_string(),
+                  # 'has_server': self.has_server_in_string(),
                   'num_encoded_chars': self.num_encoded_char()
                      }
             return fv
