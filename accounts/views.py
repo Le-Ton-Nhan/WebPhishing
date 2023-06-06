@@ -104,11 +104,13 @@ def information(request):
             messages.add_message(request, messages.INFO,
                                  'Update information success')
     form = Information()
+    InformationUser.objects.get_or_create(User=request.user)
+    data = InformationUser.objects.get(User=request.user)
     return render(
         request,
         'information.html',
         {
             "form": form,
-            "data": InformationUser.objects.get(User=request.user),
+            "data": data
         }
     )
