@@ -16,6 +16,8 @@ from . import external_features as trdfe
 from . import ContentFeatures_new as ctnfe_new
 from . import HostFeatures as htfe
 from . import LexicalFeatures as lxfe
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -51,7 +53,7 @@ chrome_options.add_argument("--start-maximized")
 chrome_options.add_argument("--start-fullscreen")
 chrome_options.add_argument("--window-size=1920,1040")
 
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 driver.set_window_size(1920,1080 )
 dir = os.getcwd()
 base_dir = dir + r'\Main_extract'
