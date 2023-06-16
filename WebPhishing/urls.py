@@ -25,9 +25,13 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainpage.urls')),
+    path('phishpedia/', include('mainpage.urls')),
     path('adminmanage/', include('adminmanage.urls')),
     path('accounts/', include('accounts.urls')),
     path('products/', include('products.urls')),
+    path('about/', include('about.urls')), 
+    path('contact/', include('contact.urls')),
+    
     url(r'^media/(?P<path>.*)$', serve,
         {'document_root': settings.MEDIA_ROOT}),
     
