@@ -18,3 +18,5 @@ plotly
 gdown
 kaleido
 webdriver-manager
+django-redis
+django-debug-toolbar
