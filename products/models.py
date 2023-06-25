@@ -39,8 +39,10 @@ class dynamic_result(models.Model):
 
 class final_result(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
     url_id = models.AutoField(primary_key=True)
     url = models.TextField() 
+    finalurl = models.TextField(blank=True)
     time = models.DateTimeField(auto_now_add=True)
     status = models.TextField()
     prediction_final = models.TextField()
@@ -53,6 +55,7 @@ class final_result(models.Model):
     num_open_ports = models.TextField(blank=True)
     open_ports = models.TextField(blank=True)
     nameServerwhois = models.TextField(blank=True)
+    HTMLinfo = models.TextField(blank=True)
     connection_speed = models.TextField(blank=True)
     isp = models.TextField(blank=True)
     registration_date = models.TextField(blank=True)
@@ -64,7 +67,7 @@ class final_result(models.Model):
     brand_name = models.TextField(blank=True)
     scheme = models.TextField(blank=True)
     subdomains = models.TextField(blank=True)
-    get_os = models.TextField(blank=True)
+    
     get_asn = models.TextField(blank=True)
     headers = models.TextField(blank=True)
     status_code = models.TextField(blank=True)
@@ -72,13 +75,9 @@ class final_result(models.Model):
     ttl = models.TextField(blank=True)
     tld = models.TextField(blank=True)
     suspecious_tld = models.TextField(blank=True)
-    abnormal_subdomain = models.TextField(blank=True)
-    is_encoded = models.TextField(blank=True)
-
+    get_all_urls_from_wayback = models.TextField(blank=True)
     has_login = models.TextField(blank=True)
     has_admin = models.TextField(blank=True)
-    login_form = models.TextField(blank=True)
-    submit_email = models.TextField(blank=True)
     has_port_in_string = models.TextField(blank=True)
     ip = models.TextField(blank=True)
 
