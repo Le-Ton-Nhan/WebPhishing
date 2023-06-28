@@ -58,14 +58,14 @@ def domain_whois(domain):
     return hosts
 
 def nameServerwhois(domain):
-    print("DOMAIN: -------------------->: ", domain)
+    # print("DOMAIN: -------------------->: ", domain)
     r = ""
     try:
         res = whois.whois(domain)
         name_servers = res.name_servers
         
         _name_servers = list(set(name_servers))
-        print("Name server: -------------------->: ", _name_servers)
+
 
         for n in _name_servers:
             r += "{0}\n".format(str(n))
@@ -216,5 +216,11 @@ def page_rank(key, domain):
             return 0
     except:
         return -1
+    
+def HTMLinfo(Metas):
+    res = ""
+    for k, v in Metas.items():
+        res += '{}: {}\n'.format(k, v)
+    return res if res != "" else False
 
 

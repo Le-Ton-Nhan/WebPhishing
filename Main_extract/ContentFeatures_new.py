@@ -22,9 +22,19 @@ cache = []
 #     print("OK\n", items)
 #     tags = [i.text().lower() for i in items.items()]
 #     return tags
-
-def __get_suspicious_functions(url='https://gist.githubusercontent.com/eneyi/5c0b33129bcbfa366eb9fe79e96c1996/raw/96217aa7ea6698b17151f866f891ba701cbd7537/mal_script_functions.txt'):
-    content = get(url).text.split('\n')
+import os, sys
+def __txt_to_list(txt_object):
+    list = []
+    for line in txt_object:
+        list.append(line.strip())
+    txt_object.close()
+    return list
+def __get_suspicious_functions():
+    txt = open(os.path.join(os.path.dirname(__file__), 'mal_script_functions.txt'), "r")
+    content = []
+    for line in txt:
+        content.append(line.strip())
+    txt.close()
     return content
 
 # vd = __get_valid_html_tags()
@@ -195,41 +205,48 @@ class ContentFeatures:
         return sum(susf)
 
     def run(self):
+        print("=================CONTENT FEATURES================\n")
         data = {}
-        if self.url not in cache:
-            try:
-                if self.html and self.pq:
-                    data['host'] = self.host
-                    data['page_entropy'] = self.url_page_entropy()
-                    data['num_script_tags'] = self.number_of_script_tags()
-                    # data['script_to_body_ratio'] = self.script_to_body_ratio()
-                    data['html_length'] = self.length_of_html()
-                    data['page_tokens'] = self.number_of_page_tokens()
-                    data['num_sentences'] = self.number_of_sentences()
-                    data['num_punctuations'] = self.number_of_punctuations()
-                    data['distinct_tokens'] = self.number_of_distinct_tokens()
-                    # data['capitalizations'] = self.number_of_capitalizations()
-                    data['avg_tokens_per_sentence'] = self.average_number_of_tokens_in_sentence()
-                    data['num_html_tags'] = self.number_of_html_tags()
-                    data['num_hidden_tags'] = self.number_of_hidden_tags()
-                    # data['num_iframes'] = self.number_iframes()
-                    # data['num_embeds'] = self.number_embeds()
-                    
-                    # data['num_objects'] = self.number_objects()
-                    data['hyperlinks'] = self.number_of_hyperlinks()
-                    data['num_whitespaces'] = self.number_of_whitespace()
-                    data['num_included_elemets'] = self.number_of_included_elements()
-                    # data['num_double_documents'] = self.number_of_double_documents()
-                    data['num_suspicious_elements'] = self.number_of_suspicious_elements()
-                    # data['num_eval_functions'] = self.number_of_eval_functions()
-                    data['avg_script_length'] = self.average_script_length()
-                    data['avg_script_entropy'] = self.average_script_entropy()
-                    # data['num_suspicious_functions'] = self.number_of_suspicious_functions()
-                    cache.append(self.url)
-                else:
-                    pass
-            except:
-                print('OOPS ERROR')
-        else:
-            print('seen url')
+        try:
+            if self.html and self.pq:
+                data['host'] = self.host
+                data['page_entropy'] = self.url_page_entropy()
+                data['num_script_tags'] = self.number_of_script_tags()
+                # data['script_to_body_ratio'] = self.script_to_body_ratio()
+                data['html_length'] = self.length_of_html()
+                data['page_tokens'] = self.number_of_page_tokens()
+                data['num_sentences'] = self.number_of_sentences()
+                data['num_punctuations'] = self.number_of_punctuations()
+                data['distinct_tokens'] = self.number_of_distinct_tokens()
+                # data['capitalizations'] = self.number_of_capitalizations()
+                data['avg_tokens_per_sentence'] = self.average_number_of_tokens_in_sentence()
+                data['num_html_tags'] = self.number_of_html_tags()
+                # data['num_hidden_tags'] = self.number_of_hidden_tags()
+                # data['num_iframes'] = self.number_iframes()
+                # data['num_embeds'] = self.number_embeds()
+                
+                # data['num_objects'] = self.number_objects()
+                data['hyperlinks'] = self.number_of_hyperlinks()
+                data['num_whitespaces'] = self.number_of_whitespace()
+                data['num_included_elemets'] = self.number_of_included_elements()
+                # data['num_double_documents'] = self.number_of_double_documents()
+                data['num_suspicious_elements'] = self.number_of_suspicious_elements()
+                # data['num_eval_functions'] = self.number_of_eval_functions()
+                data['avg_script_length'] = self.average_script_length()
+                data['avg_script_entropy'] = self.average_script_entropy()
+                # data['num_suspicious_functions'] = self.number_of_suspicious_functions()
+                cache.append(self.url)
+            else:
+                pass
+        except Exception as e:
+            exception_type, _, exception_traceback = sys.exc_info()
+            filename = exception_traceback.tb_frame.f_code.co_filename
+            line_number = exception_traceback.tb_lineno
+
+            print("Exception type: ", exception_type)
+            print("File name: ", filename)
+            print("Line number: ", line_number)
+            print("e = ", e)
+            data = {}
+        
         return data
