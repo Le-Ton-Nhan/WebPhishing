@@ -75,9 +75,6 @@ class final_result(models.Model):
     ttl = models.TextField(blank=True)
     tld = models.TextField(blank=True)
     suspecious_tld = models.TextField(blank=True)
-    get_all_urls_from_wayback = models.TextField(blank=True)
-    has_login = models.TextField(blank=True)
-    has_admin = models.TextField(blank=True)
     has_port_in_string = models.TextField(blank=True)
     ip = models.TextField(blank=True)
 

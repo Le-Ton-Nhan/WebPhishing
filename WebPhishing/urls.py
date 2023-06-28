@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.static import serve
 from django.conf.urls import url
+import debug_toolbar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,6 +32,8 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('about/', include('about.urls')), 
     path('contact/', include('contact.urls')),
+    path("__debug__/", include("debug_toolbar.urls")),
+
     
     url(r'^media/(?P<path>.*)$', serve,
         {'document_root': settings.MEDIA_ROOT}),
