@@ -2,13 +2,14 @@ from os import linesep
 from math import log
 from re import compile
 from urllib.parse import urlparse
-from sklearn.feature_extraction.text import TfidfVectorizer
+
 from socket import gethostbyname
 from pyquery import PyQuery
 from requests import get
-from json import dump
+
 from string import ascii_lowercase
 from numpy import array
+import sys
 
 cache = []
 
@@ -179,6 +180,7 @@ class LexicalURLFeature:
         return self.urlparse.netloc.split('.')[-1].split(':')[0]
 
     def run(self):
+        print("=================LEXICAL FEATURES================\n")
         try:
             fv = {
                   # 'host': self.host,
@@ -191,21 +193,29 @@ class LexicalURLFeature:
                   'has_port_in_string': self.url_has_port_in_string(),
                   'num_digits': self.number_of_digits(),
                   'parameters': self.number_of_parameters(),
-                  'fragments': self.number_of_fragments(),
-                  'is_encoded': self.is_encoded(),
+                  # 'fragments': self.number_of_fragments(),
+                  # 'is_encoded': self.is_encoded(),
                   'string_entropy': self.url_string_entropy(),
-                  'alexa_dis_similarity': self.average_alexa_50_similarity(),
+                  # 'alexa_dis_similarity': self.average_alexa_50_similarity(),
                   'subdirectories': self.number_of_subdirectories(),
                   'periods': self.number_of_periods(),
                   # 'has_client': self.has_client_in_string(),
-                  'has_login': self.has_login_in_string(),
-                  'has_admin': self.has_admin_in_string(),
+                  ## 'has_login': self.has_login_in_string(),
+                  # 'has_admin': self.has_admin_in_string(),
                   # 'has_server': self.has_server_in_string(),
                   'num_encoded_chars': self.num_encoded_char()
                      }
             return fv
-        except:
-            pass
+        except Exception as e:
+            exception_type, _, exception_traceback = sys.exc_info()
+            filename = exception_traceback.tb_frame.f_code.co_filename
+            line_number = exception_traceback.tb_lineno
+
+            print("Exception type: ", exception_type)
+            print("File name: ", filename)
+            print("Line number: ", line_number)
+            print("e = ", e)
+            return {}
 #ob = LexicalURLFeature("http://1337x.to/torrent/1048648/American-Sniper-2014-MD-iTALiAN-DVDSCR-X264-BST-MT/")
 #ob.run()
 

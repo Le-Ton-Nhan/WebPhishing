@@ -8,8 +8,7 @@ import os
 #LOCALHOST_PATH = "/var/www/html/"
 HINTS = ['wp', 'login', 'includes', 'admin', 'content', 'site', 'images', 'js', 'alibaba', 'css', 'myaccount', 'dropbox', 'themes', 'plugins', 'signin', 'view']
 
-dir = os.getcwd()
-allbrand_txt = open(dir + r'\Main_extract\allbrands.txt', "r")
+allbrand_txt = open(os.path.join(os.path.dirname(__file__), 'allbrands.txt'), "r")
 
 def __txt_to_list(txt_object):
     list = []
@@ -33,9 +32,9 @@ def having_ip_address(url):
         '(?:[a-fA-F0-9]{1,4}:){7}[a-fA-F0-9]{1,4}|'
         '[0-9a-fA-F]{7}', url)  # Ipv6
     if match:
-        return match
+        return "Detect {} in url".format(match)
     else:
-        return 0
+        return "Don't have Ip in url"
 
 #################################################################################################################################
 #               URL hostname length 
@@ -60,7 +59,7 @@ def shortening_service(full_url):
                       'tr\.im|link\.zip\.net',
                       full_url)
     if match:
-        return 1
+        return match
     else:
         return 0
 
@@ -351,7 +350,7 @@ def punycode(url):
 #################################################################################################################################
 
 def domain_in_brand(domain):
-    print("DOMAIN: ", domain)
+    # print("DOMAIN: ", domain)
     if domain in allbrand:
         return 1
     else:
@@ -404,8 +403,9 @@ def check_com(words_raw):
 #################################################################################################################################
 
 def port(url):
-    if re.search("^[a-z][a-z0-9+\-.]*://([a-z0-9\-._~%!$&'()*+,;=]+@)?([a-z0-9\-._~%]+|\[[a-z0-9\-._~%!$&'()*+,;=:]+\]):([0-9]+)",url):
-        return 1
+    m = re.search("^[a-z][a-z0-9+\-.]*://([a-z0-9\-._~%!$&'()*+,;=]+@)?([a-z0-9\-._~%]+|\[[a-z0-9\-._~%!$&'()*+,;=:]+\]):([0-9]+)",url)
+    if m:
+        return m
     return 0
 
 #################################################################################################################################
@@ -488,6 +488,9 @@ def statistical_report(url, domain):
     except:
         return 2
 
+
+
+
 #################################################################################################################################
 #               Suspecious TLD
 #################################################################################################################################
@@ -505,6 +508,8 @@ suspecious_tlds = ['fit','tk', 'gp', 'ga', 'work', 'ml', 'date', 'wang', 'men', 
 
 def suspecious_tld(tld):
    if tld in suspecious_tlds:
-       return 1
-   return 0
-    
+       return tld
+   return "{} is not a suspecious tld".format(tld)
+
+import requests
+

@@ -9,6 +9,8 @@ from datetime import datetime
 from re import compile
 from json import dump, loads
 from time import sleep
+import requests
+import sys
 
 cache = []
 
@@ -18,7 +20,7 @@ cache = []
 #    for i in seen:
 #        print('Caching {}'.format(i))
 #        cache.append(i)
-
+import time
 class HostFeatures:
     def __init__(self, url):
         self.url = url
@@ -31,6 +33,7 @@ class HostFeatures:
         if self.url not in cache:
             self.whois = self.__get__whois_dict()
             self.shodan = self.__get_shodan_dict()
+            self.ipinfo = self.__get_ipinfo()
             self.snapshots = self.__get_site_snapshots()
             return True
         else:
@@ -57,6 +60,14 @@ class HostFeatures:
             return host
         except:
             return {}
+        
+
+    def __get_ipinfo(self):
+        ip_address = self.host
+        response = requests.get(f'https://ipinfo.io/{ip_address}?token=989dd6f8811365').json()
+        return response
+    
+
 
     def __parse__before__date(self, date_string):
         month_year = date_string.split()[-1]
@@ -96,22 +107,25 @@ class HostFeatures:
         ln2 = self.shodan.get('domains', None)
         ln = ln1 or ln2
         return len(ln) if ln else 0
+    
+    
+    
     def subdomains(self):
-        print("Subdomains ++ ")
         ln1 = self.whois.get('nets', None)
         ln2 = self.shodan.get('domains', None)
         ln = ln1 or ln2
         return ln if ln else 0
     
     def hostnames(self):
-        ln = self.shodan.get('hostnames', None)
+        ln1 = self.shodan.get('hostnames', None)
+        hs = self.ipinfo.get('hostnames', None)
+        ln = ln1 or hs 
         if ln!=None:
             ln = list(set(ln))
             r = ""
             for i in ln:
                 r += '{0}\n'.format(i)
 
-            print("HOSTNAMES: " , r)
         return r if ln else 0
 
     def url_creation_date(self):
@@ -155,15 +169,16 @@ class HostFeatures:
         return c
 
     def url_host_country(self):
-        c = self.shodan.get('country_name', 0)
-        return c
+        i = self.ipinfo.get('country', None)
+        c = self.shodan.get('country_name', None)
+        ii = i or c
+        return ii
     
     def get_latitude(self):
-        print('latitude')
         c = self.shodan.get('latitude', 0)
         return c
+    
     def get_longitude(self):
-        print('longitude')
         c = self.shodan.get('longitude', 0)
         return c
 
@@ -195,14 +210,18 @@ class HostFeatures:
 
 
     def get_os(self):
-        print("os")
         oss = self.shodan.get('os', 0)
         return oss
     
     def get_asn(self):
-        print("asn")
-        oss = self.shodan.get('asn', 0)
-        return oss
+        # ipinfo
+        asn1 = str(self.ipinfo.get('org', 0)).split(' ')[0]
+        asn1 = asn1 if asn1 != "0" else 0
+        asn2 = self.shodan.get('asn', 0)
+        asnn = asn1 or asn2
+        return asnn
+    
+    
     
     def first_seen(self):
             try:
@@ -246,12 +265,14 @@ class HostFeatures:
         return ttl_from_reg
 
     def run(self):
+        print("=================HOST FEATURES================\n")
+        s = time.time()
         if self.init_sub_params:
             try:
                 fv = {
                     # "host": self.host,
                     # "num_subdomains": self.number_of_subdomains(),
-                    "get_os": self.get_os(),
+                    # "get_os": self.get_os(),
                     "subdomains": self.subdomains(),
                     "get_asn": self.get_asn(),
                     "latitude": self.get_latitude(), 
@@ -279,10 +300,19 @@ class HostFeatures:
                     # "total_updates": self.number_of_updates(),
                     "ttl": self.ttl_from_registration()
                 }
-                cache.append(self.url)
+                end = time.time()
+                print("HOST FEATURES -> ", end -s)
                 return fv
             except Exception as e:
-                print('Op',e)
+                
+                exception_type, _, exception_traceback = sys.exc_info()
+                filename = exception_traceback.tb_frame.f_code.co_filename
+                line_number = exception_traceback.tb_lineno
+
+                print("Exception type: ", exception_type)
+                print("File name: ", filename)
+                print("Line number: ", line_number)
+                print("e = ", e)
                 return None
         else:
             print('Seen URL')
