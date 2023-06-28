@@ -14,9 +14,9 @@ pandas
 tldextract
 bs4
 Pillow
-plotly
+# plotly
 gdown
-kaleido
+# kaleido
 webdriver-manager
 django-redis
 django-debug-toolbar

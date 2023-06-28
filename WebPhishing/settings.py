@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-of4&$=29!9544%kc$i9-f4%j0a0at@gzlpe)3-(kokgl6_%6k4
 DEBUG = True
 
 ALLOWED_HOSTS = []
+if DEBUG:
+    INTERNAL_IPS = ["127.0.0.1"]
 
 
 # Application definition
@@ -42,9 +44,11 @@ INSTALLED_APPS = [
     'mainpage.apps.MainpageConfig',
     'adminmanage.apps.AdminmanageConfig',
     'mathfilters',
+    'debug_toolbar'
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -105,7 +109,18 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+CACHES = {
+    'default': {
+    'BACKEND': 'django_redis.cache.RedisCache',
+    'LOCATION': 'redis://127.0.0.1:6379/',
+    "TIMEOUT": 604800  ,
+    "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient"
+        },
+    
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/

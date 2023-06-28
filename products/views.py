@@ -1,78 +1,116 @@
 """Import models"""
 from django.core.files.base import ContentFile
-from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib import messages
-from django.db.models import Sum, Q
-from django.http import HttpResponse
-from django.utils.html import escape
+from django.shortcuts import render
 from products.forms import URLForm
 from .models import *
-from django.http import HttpResponseRedirect
-import datetime
-from django.utils import timezone
-import os 
 from Main_extract.feature_extractor import *
-from django.urls import reverse
-from django.http.response import Http404
-from django.shortcuts import redirect, render, get_object_or_404
-from PIL import Image as im
-import plotly.express as px
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import as_completed
+from django.core.cache import cache
 import pandas as pd
-import plotly.io as pio
 import time
 from pathlib import Path
 from ml_model_src.prediction import *
-from decimal import Decimal, ROUND_HALF_UP
+import folium
+import geocoder
+from urllib.parse import urlparse
+import csv
 
-dir = os.getcwd()
-# result_file = result_folder_dir + r'\results_data_final.csv'
 
 
-predict_results = {"model_path": 0, "classifier": 0, "prediction": 0, "conf_score": 0, "error": 0,  "message": 'None'}
+
+RESULT_FILE = ""
+PROCESS_FALG = None
+FEATURES = []
+RESULTS_PREDICT = {}
+FOLDER_RESULT_NAME = ""
+ALL_URLS_DB = None
+RELATED_PULSES = []
+
+
 drop_list = [ 
                 # Investigation findings
-                'host', "get_os","get_asn",  "longitude", "latitude" , 'num_open_ports' , "hostnames", 'open_ports',"subdomains", 'isp', 'connection_speed',  'is_live', 
+                'host', # ip address
+                "get_asn",  # asn                           | source Shodan, ipinfo
+                "longitude", # lon                          | shource Shodan
+                "latitude" , # lat                          | shource Shodan
+                'num_open_ports' , # number of open ports   | source shodan
+                "hostnames", # host names | source shodan, ipinfo
+                'open_ports', # open ports | source shodan
+                "subdomains", # subdomain | source shodan, whois
+                'isp', # isp source shodan
+                'connection_speed',  
+                'is_live', 
                 # Lifecycle Information
-                'registration_date', 'expiration_date', 'last_updates_dates', 'intended_life_span', 'life_remaining', 'ttl', 
+                'registration_date', # source whois
+                'expiration_date', # source whois
+                'last_updates_dates', # source whois 
+                'intended_life_span', # (self.url_expiration_date() - self.url_creation_date()).days
+                'life_remaining', # (self.url_expiration_date() - self.now).days
+                'ttl', # ttl_from_registration
                 # HTTP Response
-                "url",  'tld',   'suspecious_tld', 'abnormal_subdomain', 'is_encoded',  'status_code', 'header',
-                # Website Access
-                'has_login', 'has_admin', 'login_form', 'submit_email', 'has_port_in_string',  'ip',
+                "url",  
+                'tld',   
+                'suspecious_tld', 
+                'status_code', 
+                'header',
+                
+                 
+                'has_port_in_string',  
+                'ip', # is have ip in url
 
 
-                'domain_in_brand', 'brand_in_subdomain', 'brand_in_path',
-                'ratio_digits_url',  'punycode', 'port','prefix_suffix', 'shortening_service', 'path_extension', 'char_repeat', 
-                'avg_word_host',  'statistical_report', 'external_favicon', 'links_in_tags', 'ratio_intMedia', 'sfh', 'iframe', 
-                'popup_window', 'safe_anchor', 'domain_in_title',  'whois_registered_domain',  'fragments', 'phish_hints', 
-                'num_hidden_tags', 'alexa_dis_similarity', 'tag','nameServerwhois']
+                'domain_in_brand','port_in_url','shortening_service',
+                'statistical_report', 'external_favicon', 'links_in_tags', 'sfh',  
+                'popup_window', 'whois_registered_domain',
+                'nameServerwhois', 'HTMLinfo']
 
-# Create your views here.
-def location_view(data, folder_result_name):
-    color_scale = [(0, 'orange'), (1,'red')]
-    fig = px.scatter_mapbox(data, 
-                            lat="latitude", 
-                            lon="longitude", 
-                            hover_name="host", 
-                            hover_data=["host"],
-                            color="host",
-                            size="num_open_ports",
-                            color_continuous_scale=color_scale,
-                            zoom=8, 
-                            height=1080,
-                            width=1920)
-    
-    fig.update_layout(mapbox_style="open-street-map")
-    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
-   
-    path = 'media/loc/' + 'loc_{}.png'.format(Path(folder_result_name).name)
-    pio.write_image(fig, file=path)
+def run_tasks_in_parallel(tasks, request,submitedUrl ):
+    global RESULTS_PREDICT
+    start = time.time()
+    with ThreadPoolExecutor() as executor:
+        running_tasks = [executor.submit(task, request,submitedUrl ) for task in tasks]
+        for running_task in as_completed(running_tasks):
+            # running_task.result()
+            taskres = running_task.result()
+            RESULTS_PREDICT.update(taskres)
+    end = time.time()
+
+    print(f"\n------------------------------------TIME-----------------------------\n: {end-start}s")
+
+def get_related_urls(URLsubmitByUser):
+    global ALL_URLS_DB
+    global RELATED_PULSES
+    RELATED_PULSES = []
+
+
+    parsed_url = urlparse(URLsubmitByUser)
+    base_url = parsed_url.netloc
+    for i in ALL_URLS_DB:
+        if base_url in i.url:
+            RELATED_PULSES.append(i)
+
+def location_view(data):
+    global FOLDER_RESULT_NAME
+    print("============MAP VIEW============\n")
+    start = time.time()
+    ip = str(data["host"].values[0])
+    IPLocache = geocoder.ip(ip)
+    mapPlot = folium.Map(location=IPLocache.latlng, titles = "Open test", zoom_start=12)
+    folium.Circle(location=IPLocache.latlng, radius=50).add_to(mapPlot)
+    folium.Marker(location=IPLocache.latlng, popup="My location").add_to(mapPlot)
+    path = 'media/loc/' + 'loc_{}.html'.format(Path(FOLDER_RESULT_NAME).name)
+  
+    mapPlot.save(path)
+    end = time.time()
+    print(f"\n------------TIME MAP VIEW----------\n: {end-start}s")
     return path
 
-
-def save_staticResults(request,features, submitedUrl):
-
+def save_staticResults(request, submitedUrl):
+    print("============STATIC============\n")
+    global FEATURES
     url_submit_by_user = submitedUrl.url
-    res = static_prediction(features)
+    res = static_prediction(FEATURES)
 
     static_result.objects.get_or_create(user = request.user, url = submitedUrl)
     staticResult = static_result.objects.get(url = submitedUrl)
@@ -86,12 +124,15 @@ def save_staticResults(request,features, submitedUrl):
     else:
         staticResult.status = 'Normal'
     staticResult.save()
-    return 0 if staticResult.status == 'Normal' else 1
+    return {'static':res["prediction"]}
 
-def save_dynamicResult(request, folder_screenshot, submitedUrl):
-    # dynamic prediction process
+def save_dynamicResult(request,submitedUrl):
+    print("============DYNAMIC============\n")
+    # dynamic prediction PROCESS_FALG
+    global FOLDER_RESULT_NAME
+    print("------------Screenshot folder------------\n", FOLDER_RESULT_NAME)
     url_submit_by_user = submitedUrl.url
-    res = dynamic_predictions(folder_screenshot)
+    res = dynamic_predictions(FOLDER_RESULT_NAME)
 
     dynamic_result.objects.get_or_create(user = request.user, url = submitedUrl)
     dynamicResult = dynamic_result.objects.get(url = submitedUrl)
@@ -106,16 +147,12 @@ def save_dynamicResult(request, folder_screenshot, submitedUrl):
     else:
         dynamicResult.status = 'Normal'
     dynamicResult.save()
-    r = 0 if  dynamicResult.status == 'Normal' else 1
-    return { "vt_score" : res["virustotal"], "img_path" : res['image_result'], 'brand_name': b_name,  "pre": r }
+    
+    return { "vt_score" : res["virustotal"], "img_path" : res['image_result'], 'brand_name': b_name, 'dynamic':res["prediction"] }
 
-
-
-
-
-def MyUrl(request):
-    all_url = final_result.objects.filter(user=request.user).order_by('-time')
-    return render(request, 'MyUrl.html', { 'count': all_url.count(), 'url': all_url})
+# def MyUrl(request):
+#     all_url = final_result.objects.filter(user=request.user).order_by('-time')
+#     return render(request, 'MyUrl.html', { 'count': all_url.count(), 'url': all_url})
 
 # Trang thông báo lỗi
 def error404(request, *args, **kwargs):
@@ -125,145 +162,171 @@ def error404(request, *args, **kwargs):
 
 
 def url_details(request, pid):
-    url = final_result.objects.get(url_id = pid)
-    return render(request, 'url_detail.html', {'Result': url})
-
+    global RELATED_PULSES
+    global ALL_URLS_DB
+    ALL_URLS_DB = []
+    ALL_URLS_DB = final_result.objects.all().order_by('-time')
+    re = final_result.objects.get(url_id = pid)
+    get_related_urls(re.url)
+    return render(request, 'url_detail.html', {'Result': re, 'related_pulses': RELATED_PULSES})
+    
 def img_details(request, pid):
     obj = final_result.objects.get(url_id = pid) 
     return render(request, 'img_details.html', {'obj': obj})
 
-def loc_details(request, pid):
-    obj = final_result.objects.get(url_id = pid) 
-    return render(request, 'loc_details.html', {'obj': obj})
 
 def home(request):
-    global process
-    global _url
-    process = ""
-    _url = ""
-    features = []
-    all_URLs = final_result.objects.all().order_by('-time')[:10]
-    form = URLForm()
+    global RESULT_FILE
+    global PROCESS_FALG 
+    global FEATURES
+    global RESULTS_PREDICT
+    global FOLDER_RESULT_NAME
+    global ALL_URLS_DB
+    global RELATED_PULSES
 
+    ALL_URLS_DB = final_result.objects.all().order_by('-time')
+    top_URLs = ALL_URLS_DB[:15]
+
+    form = URLForm()
     if request.method == 'POST':
         form = URLForm(request.POST, user=request.user)
         if form.is_valid():
             #save url to final_result form
-            form.save()
-
-            # get url 
-            submitedUrl = final_result.objects.filter(user=request.user).latest('time')
-            _url = submitedUrl.url
-            _id = submitedUrl.url_id
-            start_time = time.time()
-
-            #caculate conf_score & prediction
-            folder_result_name, result_file = generate_external_dataset(submitedUrl.url)
+            # form.save()
+            URLsubmitByUser = form.showURL()
+            get_related_urls(URLsubmitByUser)
             
-            if folder_result_name == False:
-                process = False
-                final_result.objects.filter(url_id = _id).delete()
-                all_URLs = final_result.objects.all().order_by('-time')[:10]
-                return render(request, 'detect.html', { 'count': all_URLs.count(), 'url': all_URLs, 'form':form, 'process': process})
-            
-            
-            # read result
-            results = pd.read_csv(result_file, on_bad_lines='skip')
-            path = location_view(results, folder_result_name)
 
-
-            submitedUrl.loc_path = path
-            submitedUrl.host = results["host"].values[0]
-            submitedUrl.is_live = results["is_live"].values[0]
-            submitedUrl.host_country = results["host_country"].values[0]
-            submitedUrl.get_os = results["get_os"].values[0]
-            submitedUrl.get_asn = results["get_asn"].values[0]
-            submitedUrl.num_open_ports = results["num_open_ports"].values[0]
-            submitedUrl.subdomains = results["subdomains"].values[0]
-            submitedUrl.hostnames = results['hostnames'].values[0]
-            submitedUrl.open_ports= results["open_ports"].values[0]
-            submitedUrl.connection_speed = results["connection_speed"].values[0]
-            submitedUrl.isp= results["isp"].values[0]
-            submitedUrl.nameServerwhois = results["nameServerwhois"].values[0]
-            
-            
-            submitedUrl.registration_date = results["registration_date"].values[0]
-            submitedUrl.expiration_date= results["expiration_date"].values[0]
-            submitedUrl.last_updates_dates = results['last_updates_dates'].values[0]
-            submitedUrl.intended_life_span = results['intended_life_span'].values[0]
-            submitedUrl.life_remaining = results['life_remaining'].values[0]
-            submitedUrl.ttl = results['ttl'].values[0]
-
-            # "url",  'tld',   'suspecious_tld', 'abnormal_subdomain', 'is_encoded',  'status_code', 'header',
-            submitedUrl.url = results['url'].values[0]
-            submitedUrl.scheme = results["scheme"].values[0]
-            submitedUrl.status_code = results['status_code'].values[0]
-            submitedUrl.headers = results['header'].values[0]
-            submitedUrl.tld = results['tld'].values[0]
-            submitedUrl.suspecious_tld = results['suspecious_tld'].values[0]
-            submitedUrl.abnormal_subdomain = results['abnormal_subdomain'].values[0]
-            submitedUrl.is_encoded = results['is_encoded'].values[0]
-
-
-            #
-            submitedUrl.has_login = results['has_login'].values[0]
-            submitedUrl.has_admin = results['has_admin'].values[0]
-            submitedUrl.login_form = results['login_form'].values[0]
-            submitedUrl.submit_email = results['submit_email'].values[0]
-            submitedUrl.has_port_in_string = results['has_port_in_string'].values[0]
-            submitedUrl.ip = results['ip'].values[0]
-
-
-
-            data = results.drop(columns=drop_list)
-            data = convertData(data)
-            data = data.fillna(0)
-            fields = data.columns
-
-            i = 0
-            for f in fields:
-                features.append(float(data[str(f)].values[i]))
-            
-            s = save_staticResults(request, features, submitedUrl)
-            d = save_dynamicResult(request, folder_result_name, submitedUrl)
-
-            with open(d['img_path'], 'rb') as f:
-                data = f.read()
-
-            print("s = ", s)
-            print("d['pre']= ", d['pre'])
-            score = float(s)*0.3 + float(d['pre'])* 0.7
-            ## final results evaluation 7:3 
-            final_score = 0
-
-            if score >=0.5:
-                final_score = 1
-            elif score >0 and score <0.5:
-                final_score = 0.5
+            if cache.get(URLsubmitByUser):
+                submitedUrl = cache.get(URLsubmitByUser)
+                print("HIT THE CACHE")
+                # return render(request, 'url_detail.html', {'Result': submitedUrl , 'get_all_urls_from_wayback':None, 'find_login_page_from_wayback':None, 'find_admin_page_from_wayback':None})
+                return render(request, 'url_detail.html', {'Result': submitedUrl , 'related_pulses': RELATED_PULSES})
             else:
-                final_score = 0
-            
-            submitedUrl.prediction_final = final_score
-            if final_score == 1:
-                submitedUrl.status = "phishing"
-            elif final_score == 0.5:
-                submitedUrl.status = "warning"
-            else: 
-                submitedUrl.status = "normal"
+                try:
+                    start_time = time.time()
+                    #caculate conf_score & prediction
+                    print("============START PREPROCESS: EXTRACTION & SCREENSHOT TAKING============\n")
+                    FOLDER_RESULT_NAME, RESULT_FILE = Extracter(URLsubmitByUser)
+                    print("============END PREPROCESS============\n")
+
+                    if FOLDER_RESULT_NAME == False:
+                        PROCESS_FALG = False
+                        return render(request, 'detect.html', { 'count': top_URLs.count(), 'url': top_URLs, 'form':form, 'process': PROCESS_FALG})
+
+                    form.save()
+                    submitedUrl = final_result.objects.filter(user=request.user).latest('time')
+                    print("============WORKING ON OBJECT WITH URL {0}============\n".format(submitedUrl.url))
+                    # read result
+                    results = pd.read_csv(RESULT_FILE, on_bad_lines='skip')
+                    submitedUrl.loc_path = location_view(results)
+                    submitedUrl.host = results["host"].values[0]
+                    submitedUrl.is_live = results["is_live"].values[0]
+                    submitedUrl.host_country = results["host_country"].values[0]
+                    submitedUrl.get_asn = results["get_asn"].values[0]
+                    submitedUrl.num_open_ports = results["num_open_ports"].values[0]
+                    submitedUrl.subdomains = results["subdomains"].values[0]
+                    submitedUrl.hostnames = results['hostnames'].values[0]
+                    submitedUrl.open_ports= results["open_ports"].values[0]
+                    submitedUrl.connection_speed = results["connection_speed"].values[0]
+                    submitedUrl.isp= results["isp"].values[0]
+                    submitedUrl.nameServerwhois = results["nameServerwhois"].values[0]
+                    submitedUrl.HTMLinfo = results["HTMLinfo"].values[0]
+                    submitedUrl.registration_date = results["registration_date"].values[0]
+                    submitedUrl.expiration_date= results["expiration_date"].values[0]
+                    submitedUrl.last_updates_dates = results['last_updates_dates'].values[0]
+                    submitedUrl.intended_life_span = results['intended_life_span'].values[0]
+                    submitedUrl.life_remaining = results['life_remaining'].values[0]
+                    submitedUrl.ttl = results['ttl'].values[0]
+                    submitedUrl.finalurl = results['url'].values[0]
+                    submitedUrl.scheme = results["scheme"].values[0]
+                    submitedUrl.status_code = results['status_code'].values[0]
+                    submitedUrl.headers = results['header'].values[0]
+                    submitedUrl.tld = results['tld'].values[0]
+                    submitedUrl.suspecious_tld = results['suspecious_tld'].values[0]
+                    
                 
-            print("score: ", score)
-            print("final score: ", final_score)
-            submitedUrl.vt_score = d['vt_score']
-            submitedUrl.img_path.save("predict.png", ContentFile(data) )
-            submitedUrl.brand_name = d['brand_name'] 
-            submitedUrl.save()
-            process = True
+                    submitedUrl.has_port_in_string = results['has_port_in_string'].values[0]
+                    submitedUrl.ip = results['ip'].values[0]
 
-            print("TIME ----->: ", round(time.time() - start_time, 4))
-        return render(request, 'url_detail.html', {'Result': submitedUrl })
-    # final_result.objects.filter(url_id = _id).delete()
-    # all_URLs = final_result.objects.all().order_by('-time')[:10]
-    return render(request, 'detect.html', { 'count': all_URLs.count(), 'url': all_URLs, 'form':form, 'process': process})
+                    print("============DATA ANALYSIS============\n")
+                    data = results.drop(columns=drop_list)
+                    
+                    data = convertData(data)
+                    data = data.fillna(0)
+                    fields = data.columns
 
+                    
+                    FEATURES = []
+                    for f in fields:
+                        FEATURES.append(float(data[str(f)].values[0]))
+                    
+                    with open("data.csv", "w", encoding='utf-8', newline="") as f:
+                        writer = csv.writer(f)
+                        writer.writerow(fields)
+                        writer.writerow(FEATURES)
+                        
+                    print("============X FEATURES============\n", len(FEATURES))
+                    print("============FOLDER_RESULT_NAME============\n", FOLDER_RESULT_NAME)
+                    run_tasks_in_parallel([
+                        save_staticResults,
+                        save_dynamicResult
+                    ], request,submitedUrl )
+                    print("============ RESULTS_PREDICT ============ \n",RESULTS_PREDICT)
+                    
+                    # start = time.time()
+                    # s = save_staticResults(request,  submitedUrl)
+                    # end = time.time()
+                    # print(f"\n------------TIME STATIC----------\n: {end-start}s")
 
+                    
+                    # start = time.time()
+                    # d = save_dynamicResult(request, submitedUrl)
+                    # end = time.time()
+                    # print(f"\n------------TIME DYNAMIC----------\n: {end-start}s")
+
+                   
+
+                    print("Random Forest Result = ", RESULTS_PREDICT['static'])
+                    print("Object Detection Model Result ", RESULTS_PREDICT['dynamic'])
+                    score = float(RESULTS_PREDICT['static'])*0.3 + float(RESULTS_PREDICT['dynamic'])* 0.7
+                    ## final results evaluation 7:3 
+                    final_score = 0
+
+                    if score >=0.5:
+                        final_score = 1
+                    elif score >0 and score <0.5:
+                        final_score = 0.5
+                    else:
+                        final_score = 0
+                    
+                    submitedUrl.prediction_final = final_score
+                    if final_score == 1:
+                        submitedUrl.status = "phishing"
+                    elif final_score == 0.5:
+                        submitedUrl.status = "warning"
+                    else: 
+                        submitedUrl.status = "normal"
+                    print("============ FINAL RESULT ============ \n",RESULTS_PREDICT)
+                    print("Score: ", score)
+                    print("Final score: ", final_score)
+                    submitedUrl.vt_score = RESULTS_PREDICT['vt_score']
+
+                    with open(RESULTS_PREDICT['img_path'], 'rb') as f:
+                        data = f.read()
+                    submitedUrl.img_path.save("predict.png", ContentFile(data) )
+                    submitedUrl.brand_name = RESULTS_PREDICT['brand_name'] 
+
+                    submitedUrl.save()
+                    PROCESS_FALG = True
+
+                    print("TIME ----->: ", round(time.time() - start_time, 4))
+
+                    cache.set(URLsubmitByUser, submitedUrl) # cache for 7 days
+                    print("HIT THE DB")
+                    return render(request, 'url_detail.html', {'Result': submitedUrl , 'related_pulses': RELATED_PULSES})
+                except final_result.DoesNotExist:
+                    print("Does not exist")
+                    return render(request, 'detect.html', { 'count': top_URLs.count(), 'url': top_URLs, 'form':form, 'process': PROCESS_FALG})
+    return render(request, 'detect.html', { 'count': top_URLs.count(), 'url': top_URLs, 'form':form, 'process': PROCESS_FALG})
 
