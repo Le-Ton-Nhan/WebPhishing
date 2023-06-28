@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #0b4dda;
+  
   max-width: 85%;
   margin: auto;
 }
@@ -336,10 +336,6 @@ div.brand {
   padding: 10px 20px;
   color: #333;
 }
-h3 {
-  color: #333;
-  font-size: 1.2rem;
-}
 b, p {
 color: #333;
 }
@@ -360,5 +356,21 @@ color: #333;
 
 .card-warning {
   color:#ff4d00;
+}
+
+/* Report Section */
+
+.report-wrapper {
+  padding: 30px 0px
+}
+
+.report-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tab-content-wrapper {
+  padding: 32px 20px
 }
 
