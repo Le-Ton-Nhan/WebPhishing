@@ -295,8 +295,8 @@ def home(request):
 
                     if score >=0.5:
                         final_score = 1
-                    elif score >0 and score <0.5:
-                        final_score = 0.5
+                    elif score == 0.3:
+                        final_score = 0
                     else:
                         final_score = 0
                     
