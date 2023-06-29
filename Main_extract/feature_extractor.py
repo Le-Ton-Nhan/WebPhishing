@@ -99,7 +99,8 @@ def take_screenshot():
     hostname, _,_ = get_domain(url)
     
     try:
-        FOLDER_RESULT_NAME = base_dir + r'\\results\\' + hostname
+        FOLDER_RESULT_NAME = os.path.join(os.path.dirname(__file__), '/results')
+        FOLDER_RESULT_NAME += hostname
         print("...." ,FOLDER_RESULT_NAME)
         os.mkdir(FOLDER_RESULT_NAME)
     except FileExistsError:
