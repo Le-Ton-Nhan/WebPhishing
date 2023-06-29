@@ -20,9 +20,6 @@ from . import LexicalFeatures as lxfe
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
 
 
 # import ml_models as models
@@ -39,11 +36,12 @@ import re
 # from pandas2arff import pandas2arff
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
-
 key = 'gks80wkockcokoo444sok4480wgk0g480ko84kwg '
 
 import signal
-
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
 chrome_options = Options()
 chrome_options.add_argument("--headless")
@@ -54,14 +52,23 @@ chrome_options.add_argument("--start-maximized")
 chrome_options.add_argument("--start-fullscreen")
 chrome_options.add_argument("--window-size=1920,1040")
 
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+# service = Service('/usr/bin/chromedriver')
+# driver = webdriver.Chrome(service=service, options=chrome_options )
+driver = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options )
 driver.set_window_size(1920,1080 )
-dir = os.getcwd()
-base_dir = dir + r'\Main_extract'
-# cache_file_dir = base_dir + r'\data\cache.csv'
 
-RESULTS_FILE_DIR = base_dir + r'\results\results_data_final.csv'
-# data_file_dir = base_dir + r'\data\data_final.csv'
+RESULTS_FILE_DIR = os.path.join(os.path.dirname(__file__),  '/results/results_data_final.csv')
+
+
+
+# driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+# driver.set_window_size(1920,1080 )
+# dir = os.getcwd()
+# base_dir = dir + r'\Main_extract'
+# # cache_file_dir = base_dir + r'\data\cache.csv'
+
+# RESULTS_FILE_DIR = base_dir + r'\results\results_data_final.csv'
+# # data_file_dir = base_dir + r'\data\data_final.csv'
 
 
 # result variables
@@ -1024,8 +1031,8 @@ def Extracter(urlSubmited):
     SUBMITED_URL = urlSubmited
 
     try:
-        removeFolder(base_dir + r"\results")
-        os.mkdir(base_dir + r"\results")
+        removeFolder(os.path.join(os.path.dirname(__file__), '/results'))
+        os.mkdir(os.path.join(os.path.dirname(__file__), '/results'))
     except FileExistsError:
         print(e)
 

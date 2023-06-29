@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-of4&$=29!9544%kc$i9-f4%j0a0at@gzlpe)3-(kokgl6_%6k4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 if DEBUG:
     INTERNAL_IPS = ["127.0.0.1"]
 
