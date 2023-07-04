@@ -1,0 +1,86 @@
+# set the base image 
+FROM nvidia/cuda:11.7.1-devel-ubuntu20.04
+ARG conda_env=env
+
+RUN apt-get update -y                                                   \
+    && apt-get install -y --no-install-recommends --no-install-suggests \
+    wget                                                                \
+    git                                                                 \
+    chromium-browser                                                    \
+    unzip                                                               \
+    pip
+
+RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh  -O /tmp/Miniconda3-latest-Linux-x86_64.sh\
+    && bash /tmp/Miniconda3-latest-Linux-x86_64.sh -b -p /opt/miniconda  \
+    && rm -rf /tmp/Miniconda3-latest-Linux-x86_64.sh         
+
+# ENV PATH /opt/miniconda/envs/$conda_env/bin:$PATH
+ENV PATH="/opt/miniconda/bin:${PATH}"
+RUN conda create -n $conda_env python=3.7.16 -y
+RUN conda --version
+
+
+RUN conda init bash && . ~/.bashrc && conda activate env && python --version    \
+    && pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 -f https://download.pytorch.org/whl/torch_stable.html
+
+RUN conda init bash && . ~/.bashrc && conda activate env && python --version    \
+    && apt-get install build-essential -y                                       \
+    && apt-get update -y                                                        \
+    && pip install cython \
+    && pip install "git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"
+
+
+RUN ln -snf /usr/share/zoneinfo/$CONTAINER_TIMEZONE /etc/localtime && echo $CONTAINER_TIMEZONE > /etc/timezone
+RUN conda init bash && . ~/.bashrc && conda activate env                                                                            \
+    && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/google-chrome-stable_current_amd64.deb \
+    && apt-get install ./tmp/google-chrome-stable_current_amd64.deb -y    \
+    && rm -rf /tmp/google-chrome-stable_current_amd64.deb
+                         
+
+RUN conda init bash && . ~/.bashrc && conda activate env && python --version                                            \
+    && wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip -O /tmp/chromedriver.zip \
+    && rm -rf /usr/bin/chromedriver                                                                                     \
+    && rm -rf /usr/bin/LICENSE.chromedriver                                                                             \
+    && unzip /tmp/chromedriver.zip -d /usr/bin/ && rm -rf /tmp/chromedriver.zip                                    \
+    && chown root:root /usr/bin/chromedriver                                                                            \
+    && chmod +x /usr/bin/chromedriver
+
+
+
+RUN conda init bash && . ~/.bashrc && conda activate env && python --version \  
+    && pip --version && git --version                                       \
+    && apt-get install git-lfs                                              \
+    && git lfs install --skip-repo --skip-smudge
+
+
+RUN mkdir /code
+WORKDIR /code
+COPY . /code/
+
+
+RUN conda init bash && . ~/.bashrc && conda activate env \
+    && pip install -r requirements.txt
+
+
+# INSTALL DETECTRON2 ...
+RUN conda init bash && . ~/.bashrc && conda activate env \
+    && pip install 'git+https://github.com/facebookresearch/detectron2.git@17e95486fdfee2408b2c0b6d2dd5b775f91e814f'
+
+
+RUN conda init bash && . ~/.bashrc && conda activate env \
+    && git clone https://github.com/LamThanhNgan/Phishpedia.git \
+    && cd Phishpedia \
+    && git checkout lamthanhngan/deploy \
+    && cd .. \
+    && pip install gdown \
+    && gdown --folder "https://drive.google.com/drive/folders/1rCEqhu1CS8tphwDKoxsCRh5t1PXfSceH"       \
+    && cp -r phishpedia_models/detectron2_pedia/* Phishpedia/phishpedia/src/detectron2_pedia        \     
+    && cp -r phishpedia_models/siamese_pedia/* Phishpedia/phishpedia/src/siamese_pedia              \   
+    # && cp -r phishpedia_models/siamese_retrain/* Phishpedia/phishpedia/src/siamese_pedia/siamese_retrain    \
+    && rm -rf phishpedia_models 
+
+RUN conda init bash && . ~/.bashrc && conda activate env \
+    && pip install -e Phishpedia 
+
+CMD conda init bash && . ~/.bashrc && conda activate env \
+    && python ./manage.py migrate && python ./manage.py runserver 0.0.0.0:8000

@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  # db:
+  #   container_name: test_django_app_db
+  #   image: postgres
+  #   restart: always
+  #   environment:
+  #     POSTGRES_PASSWORD: admin
+    
+  web:
+    container_name: test_django_app_web
+    build: .
+    user: root
+    volumes:
+      - .:/code
+    command: bash -c "python ./manage.py migrate && python ./manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    tty: true
+    # depends_on:
+    #   - db
+    restart: always

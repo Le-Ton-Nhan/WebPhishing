@@ -1,0 +1,7 @@
+.git
+*.md
+./model/Lib/
+venv/
+**/__pycache__/**
+.in
+.gitignore

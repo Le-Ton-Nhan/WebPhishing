@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web-app:
+    image: phishdetect:v1
+    container_name: phishdetect-web-app
+    build: .
+    ports:
+      - "8000:8000"
+    restart: always
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["0"]
+              capabilities: [gpu]
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
