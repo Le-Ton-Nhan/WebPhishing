@@ -110,7 +110,7 @@ def take_screenshot():
             f.write(url)
             
         driver.get(url)
-        time.sleep(1)
+        time.sleep(3)
         driver.save_screenshot(FOLDER_RESULT_NAME + "/shot.png")
     except Exception as e:
         removeFolder(FOLDER_RESULT_NAME)

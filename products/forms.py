@@ -12,7 +12,7 @@ class URLForm(forms.ModelForm):
         url.user = self.user
         url.save()
 
-    def showURL(self, commit=False):
+    def getText(self, commit=False):
         url = super().save(commit)
         return url.url
     class Meta:

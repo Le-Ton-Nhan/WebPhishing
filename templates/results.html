@@ -1,0 +1,74 @@
+{% extends 'base/navbar.html' %}
+
+{% load static %}
+
+{% block title_extend %}PhishDetect{% endblock %}
+
+{% block head_extend %}
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'product/css/detect.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+
+<div class="wrapper" style="margin-bottom: 10rem;">
+    <div class="container-fluid mt-5 pt-3">
+        <section id="header" class="title">
+            <h1>PHISHDETECT</h1>
+            <p class="text">Using intelligent algorithms, PhishDetect
+                scrutinizes URLs, swiftly identifying and flagging suspicious
+                elements associated with phishing attempts, empowering users to
+                stay protected in the digital landscape.</p>
+            <hr>
+        </section>
+
+    <div>
+        <h4 style="margin-bottom: 10px; ">IOCs detected</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-wrap">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Analysis date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for url in Result %}
+                                <tr>
+                                    <td>{{url.url}}</td>
+                                    <td>URL</td>
+                                    <td>{{url.time.date|date:"D d M Y"}}</td>
+                                    <td><a href="/products/viewurl/{{url.url_id}}" class="link-underline-light"
+                                        style="color: #333;">See more</a></td>
+                                </tr>
+                                {% endfor %}
+                                
+                                {% if count != 0 %}
+                                
+                                {% for ioc in dif_iocs %}
+                                <tr>
+                                    <td>{{ioc.value}}</td>
+                                    <td>{{ioc.type}}</td>
+                                    <td>{% now "D d M Y" %}
+                                    </td>
+                                    
+                                </tr>
+                                {% endfor %}
+                                {% endif %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</div>
+{% endblock %}
+<script src="https://kit.fontawesome.com/9439a40bb1.js" crossorigin="anonymous"></script>
+{% block script_extend %}
+{% endblock %}

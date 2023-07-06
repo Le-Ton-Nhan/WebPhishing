@@ -9,7 +9,7 @@ def convertData(data):
     for col in data.columns:
         col_type = data[col].dtype
         if col_type == 'object' or col_type == 'bool' :
-        
+            print("COL TEST: ", col)
             label_encoder = preprocessing.LabelEncoder()
             # Encode labels in column 'species'.
             data[col]= label_encoder.fit_transform(data[col])
@@ -33,8 +33,7 @@ def dynamic_predictions(folder_result_name):
     cfg_path = None # None means use default config.yaml
     reload_targetlist = False
     ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH = load_config(cfg_path, reload_targetlist)
-    # phish_category, pred_target, plotvis, siamese_conf, pred_boxes = test(url_path, screenshot_path,
-    #                                                                   ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH)
+    
     phish_category, phish_target, siamese_conf, vt_result, img_path = runit( folder_result_name, ELE_MODEL, SIAMESE_THRE, SIAMESE_MODEL, LOGO_FEATS, LOGO_FILES, DOMAIN_MAP_PATH )
     return {"prediction": phish_category, "brand_name": phish_target, "conf_score": siamese_conf, "virustotal": vt_result,"image_result": img_path}
 
