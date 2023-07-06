@@ -3,7 +3,12 @@ services:
   web-app:
     image: phishdetect:v1
     container_name: phishdetect-web-app
-    build: .
+    build: 
+      context: .
+      args:
+        DJANGO_SUPERUSER_EMAIL: "admin@gmail.com"
+        DJANGO_SUPERUSER_USERNAME: "admin"
+        DJANGO_SUPERUSER_PASSWORD: "admin"
     ports:
       - "8000:8000"
     restart: always

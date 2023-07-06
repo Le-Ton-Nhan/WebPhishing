@@ -1,5 +1,5 @@
 # set the base image 
-FROM nvidia/cuda:11.1.1-devel-ubuntu20.04 AS dependencies
+FROM nvidia/cuda:11.1.1-runtime-ubuntu20.04 AS dependencies
 ARG conda_env=env
 
 ENV NVIDIA_VISIBLE_DEVICES all
@@ -75,5 +75,15 @@ RUN git clone https://github.com/LamThanhNgan/Phishpedia.git                    
 # # INSTALL PHISHPEDIA ...
 RUN pip install -e Phishpedia 
 
-CMD python ./manage.py migrate                      \
-    && python ./manage.py runserver 0.0.0.0:8000
+ARG DJANGO_SUPERUSER_EMAIL
+ARG DJANGO_SUPERUSER_USERNAME
+ARG DJANGO_SUPERUSER_PASSWORD
+
+RUN python manage.py makemigrations
+RUN python manage.py migrate                      
+RUN python manage.py createsuperuser            \
+        --noinput                               \
+        --email $DJANGO_SUPERUSER_EMAIL         \
+        --username $DJANGO_SUPERUSER_USERNAME 
+
+CMD python manage.py runserver 0.0.0.0:8000
