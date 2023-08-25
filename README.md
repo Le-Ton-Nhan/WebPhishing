@@ -5,10 +5,10 @@
 - Using deep learning and object detection algorithms.
 
 ## Group member information 
-|Id|Full name|Student ID|
-|-|-|-|
-|1|Lê Tôn Nhân|19520199|
-|2|Lâm Thanh Ngân|19521884|
+|Id|Full name|Student ID|Role|
+|-|-|-|-|
+|1|Lê Tôn Nhân|19520199|Research, Design, Dev|
+|2|Lâm Thanh Ngân|19521884|Research, Design, Dev|
 ## Environment settings
 - First, Open tempinal on vscode
 - Execute the command `python -m venv venv`
