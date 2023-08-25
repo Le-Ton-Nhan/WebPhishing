@@ -8,7 +8,7 @@
 |Id|Full name|Student ID|
 |-|-|-|
 |1|Lê Tôn Nhân|19520199|
-|2|Lâm Thanh Ngân|19520220|
+|2|Lâm Thanh Ngân|19521884|
 ## Environment settings
 - First, Open tempinal on vscode
 - Execute the command `python -m venv venv`
